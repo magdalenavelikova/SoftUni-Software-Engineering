@@ -13,9 +13,9 @@ public class DailyEarnings {
         double exchange = Double.parseDouble(scanner.nextLine());
         double salaryPerYear = (salaryPerDay * days) * 12;
         double bonus = 2.5 * (salaryPerDay * days);
-        double taxes = (salaryPerYear+bonus)*.25;
+        double taxes = (salaryPerYear + bonus) * .25;
         double amount = salaryPerYear + bonus - taxes;
-        double salaryPerDayLv=(amount/365)*exchange;
-        System.out.printf("%.2f",salaryPerDayLv);
+        double salaryPerDayLv = (amount / 365) * exchange;
+        System.out.printf("%.2f", salaryPerDayLv);
     }
 }

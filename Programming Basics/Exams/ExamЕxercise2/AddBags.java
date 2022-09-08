@@ -5,10 +5,6 @@ import java.util.Scanner;
 public class AddBags {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-//Цената на багаж над 20кг - реално число в диапазона [10.0…80.0]
-//Килограми на багажа – реално число в диапазона [1.0…32.0]
-//Дни до пътуването – цяло число в диапазона [1…60]
-//Брой багажи – цяло число в диапазона [1…10]
         double priceForAbove20KiloBag = Double.parseDouble(scanner.nextLine());
         double weight = Double.parseDouble(scanner.nextLine());
         int daysBeforeFlight = Integer.parseInt(scanner.nextLine());

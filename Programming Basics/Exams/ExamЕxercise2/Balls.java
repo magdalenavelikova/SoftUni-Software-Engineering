@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Balls {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-//        От конзолата се чете 1 цяло число N, което е броят на топките в диапазон (0-1000).
-//2. След това се четат N на брой цветове.
         int n = Integer.parseInt(scanner.nextLine());
 
         double totalPoints = 0;

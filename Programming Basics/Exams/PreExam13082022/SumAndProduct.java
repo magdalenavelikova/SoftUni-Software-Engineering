@@ -1,4 +1,4 @@
-package Examine13082022;
+package PreExam13082022;
 
 import java.util.Scanner;
 
@@ -40,8 +40,8 @@ public class SumAndProduct {
             }
 
         }
-if (!isConditionAchieved){
-    System.out.println("Nothing found");
-}
+        if (!isConditionAchieved) {
+            System.out.println("Nothing found");
+        }
     }
 }
