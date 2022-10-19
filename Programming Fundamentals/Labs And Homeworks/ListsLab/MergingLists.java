@@ -1,4 +1,4 @@
-package ListsLab;
+package listsLab;
 
 import java.util.ArrayList;
 import java.util.Arrays;

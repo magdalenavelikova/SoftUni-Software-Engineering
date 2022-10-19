@@ -1,4 +1,4 @@
-package MethodsLab;
+package methodsLab;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

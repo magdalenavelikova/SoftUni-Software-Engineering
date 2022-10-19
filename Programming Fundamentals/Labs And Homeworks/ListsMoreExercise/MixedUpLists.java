@@ -1,4 +1,4 @@
-package ListsMoreExercise;
+package listsMoreExercise;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package MidExam;
+package midExam;
 
 import java.util.Arrays;
 import java.util.List;
@@ -48,9 +48,13 @@ public class MemoryGame {
         }
         if (!elements.isEmpty()) {
             System.out.println("Sorry you lose :(");
-            for (String item : elements) {
-                System.out.print(item + " ");
-            }
+            printList(elements);
+        }
+    }
+
+    private static void printList(List<String> elements) {
+        for (String item : elements) {
+            System.out.print(item + " ");
         }
     }
 

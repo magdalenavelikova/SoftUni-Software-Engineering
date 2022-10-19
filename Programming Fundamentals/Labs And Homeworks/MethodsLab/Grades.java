@@ -1,4 +1,4 @@
-package MethodsLab;
+package methodsLab;
 
 import java.util.Scanner;
 
