@@ -6,19 +6,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int rows = Integer.parseInt(scanner.nextLine());
-        Map<String, Team> usersTeams = new TreeMap<>();
-        Map<String, Team> namesTeams = new TreeMap<>();
+        Map<String, Team> usersByTeam = new TreeMap<>();
+        Map<String, Team> titleByTeams = new TreeMap<>();
         Team team = new Team();
         for (int i = 0; i < rows; i++) {
             String[] inputLine = scanner.nextLine().split("-");
             String teamName = inputLine[1];
             String creator = inputLine[0];
-            Team result = usersTeams.get(creator);
-            Team resultForTeams = namesTeams.get(teamName);
+            Team result = usersByTeam.get(creator);
+            Team resultForTeams = titleByTeams.get(teamName);
             if (result == null && resultForTeams == null) {
                 team = new Team(teamName, creator);
-                usersTeams.put(creator, team);
-                namesTeams.put(teamName, team);
+                usersByTeam.put(creator, team);
+                titleByTeams.put(teamName, team);
                 System.out.printf("Team %s has been created by %s!%n", teamName, creator);
             } else {
                 if (resultForTeams != null) {
@@ -34,16 +34,16 @@ public class Main {
             String user = commandLine.split("->")[0];
             String teamName = commandLine.split("->")[1];
 
-            Team resultForTeams = namesTeams.get(teamName);
+            Team resultForTeams = titleByTeams.get(teamName);
             if (resultForTeams == null) {
                 System.out.printf("Team %s does not exist!%n", teamName);
             } else {
-                Team resultForUsers = usersTeams.get(user);
+                Team resultForUsers = usersByTeam.get(user);
                 if (resultForUsers == null) {
                     List<String> users = resultForTeams.getMembers();
                     users.add(user);
                     resultForTeams.setMembers(users);
-                    usersTeams.put(user, team);
+                    usersByTeam.put(user, team);
                 } else {
                     System.out.printf("Member %s cannot join team %s!%n", user, teamName);
                 }
@@ -52,39 +52,38 @@ public class Main {
             commandLine = scanner.nextLine();
 
         }
-        Map<String, Integer> nameMembers = new TreeMap<>();
+        Map<String, Integer> TeamsByMembersCount = new TreeMap<>();
         List<String> teamsToDisband = new ArrayList<>();
-        for (Map.Entry<String, Team> entry : namesTeams.entrySet()) {
+        for (Map.Entry<String, Team> entry : titleByTeams.entrySet()) {
             int listSize = entry.getValue().getMembers().size();
             if (listSize == 0) {
                 teamsToDisband.add(entry.getValue().getTeamName());
             } else {
-                nameMembers.put(entry.getKey(), entry.getValue().getMembers().size());
+                TeamsByMembersCount.put(entry.getKey(), entry.getValue().getMembers().size());
             }
         }
 
 
         for (String item : teamsToDisband) {
-            namesTeams.remove(item);
+            titleByTeams.remove(item);
         }
 
-        LinkedHashMap<String, Integer> reverseNamesMembers = new LinkedHashMap<>();
+        LinkedHashMap<String, Integer> reversedTeamsByMembersCount = new LinkedHashMap<>();
 
-//Use Comparator.reverseOrder() for reverse ordering
-        nameMembers.entrySet()
+        TeamsByMembersCount.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                .forEachOrdered(x -> reverseNamesMembers.put(x.getKey(), x.getValue()));
-        for (Map.Entry<String, Integer> entry : reverseNamesMembers.entrySet()) {
+                .forEachOrdered(x -> reversedTeamsByMembersCount.put(x.getKey(), x.getValue()));
+
+                for (Map.Entry<String, Integer> entry : reversedTeamsByMembersCount.entrySet()) {
             String nameTeam = entry.getKey();
-            for (Map.Entry<String, Team> teamEntry : namesTeams.entrySet()) {
+            for (Map.Entry<String, Team> teamEntry : titleByTeams.entrySet()) {
                 if (nameTeam.equals(teamEntry.getKey())) {
                     System.out.println(teamEntry.getValue().toString());
                 }
             }
 
         }
-
 
         Collections.sort(teamsToDisband);
         System.out.println("Teams to disband:");
