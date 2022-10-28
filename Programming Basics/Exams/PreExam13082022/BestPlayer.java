@@ -8,6 +8,7 @@ public class BestPlayer {
         String command = scanner.nextLine();
         int maxGoals = Integer.MIN_VALUE;
         String bestPlayer = "";
+
         while (!command.equals("END")) {
             String player = command;
             int goals = Integer.parseInt(scanner.nextLine());
