@@ -1,4 +1,4 @@
-package PreExam13082022;
+package preExam13082022;
 
 import java.util.Scanner;
 
