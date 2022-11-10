@@ -3,22 +3,21 @@ package regularExpressionsExercise;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class StarEnigma {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int massageCount = Integer.parseInt(scanner.nextLine());
+        int messageCount = Integer.parseInt(scanner.nextLine());
         List<String> attackedPlanets = new ArrayList<>();
         List<String> destroyedPlanets = new ArrayList<>();
-        for (int i = 0; i < massageCount; i++) {
-            String encryptedMassage = scanner.nextLine();
-            String decryptedMassage = getDecryptedMassage(encryptedMassage);
+        for (int i = 0; i < messageCount; i++) {
+            String encryptedMessage = scanner.nextLine();
+            String decryptedMessage = getDecryptedMessage(encryptedMessage);
 //         planet name, population, attack type ('A', as an attack or 'D', as destruction), and soldier count.
 
             String regex = "@(?<planet>[A-z]+)([^@\\-!:>]*):(?<population>\\d+)![^@\\-!:>]*(?<attack>[AD])![^@\\-!:>]*->(?<soldier>\\d+)";
             Pattern pattern = Pattern.compile(regex);
-            Matcher matcher = pattern.matcher(decryptedMassage);
+            Matcher matcher = pattern.matcher(decryptedMessage);
             while (matcher.find()) {
 
                 if (matcher.group("attack").equals("A")) {
@@ -41,15 +40,15 @@ public class StarEnigma {
     }
 
 
-    private static String getDecryptedMassage(String encryptedMassage) {
-        int countSpecialLetters = getCounterForSpecialLetter(encryptedMassage);
-        StringBuilder decryptedMassage = new StringBuilder();
-        for (char c : encryptedMassage.toCharArray()) {
+    private static String getDecryptedMessage(String encryptedMessage) {
+        int countSpecialLetters = getCounterForSpecialLetter(encryptedMessage);
+        StringBuilder decryptedMessage = new StringBuilder();
+        for (char c : encryptedMessage.toCharArray()) {
             char decryptedLetter = (char) (c - countSpecialLetters);
-            decryptedMassage.append(decryptedLetter);
+            decryptedMessage.append(decryptedLetter);
         }
 
-        return decryptedMassage.toString();
+        return decryptedMessage.toString();
     }
 
     private static int getCounterForSpecialLetter(String encryptedMassage) {
