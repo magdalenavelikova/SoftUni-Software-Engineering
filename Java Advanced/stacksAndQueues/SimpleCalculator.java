@@ -10,9 +10,9 @@ public class SimpleCalculator {
         Deque<String> stack = new ArrayDeque<>();
         Collections.addAll(stack, tokens);
         while (stack.size() > 1) {
-            int firstNumber = Integer.valueOf(stack.pop());
+            int firstNumber = Integer.parseInt(stack.pop());
             String operator = stack.pop();
-            int secondNumber = Integer.valueOf(stack.pop());
+            int secondNumber = Integer.parseInt(stack.pop());
             if (operator.equals("+")) {
                 stack.push(String.valueOf(firstNumber + secondNumber));
             } else {
