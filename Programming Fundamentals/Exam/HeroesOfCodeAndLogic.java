@@ -18,7 +18,6 @@ public class HeroesOfCodeAndLogic {
             heroesMap.get(heroName).add(mp);
 
         }
-        //100 HP and 200 MP
         String commandLine = scanner.nextLine();
         while (!commandLine.equals("End")) {
             String command = commandLine.split(" \\- ")[0];
@@ -79,9 +78,6 @@ public class HeroesOfCodeAndLogic {
             commandLine = scanner.nextLine();
         }
         for (Map.Entry<String, List<Integer>> hero : heroesMap.entrySet()) {
-//            Solmyr
-//  HP: 95
-//  MP: 170
             System.out.println(hero.getKey());
             System.out.println("  HP: " + hero.getValue().get(0));
             System.out.println("  MP: " + hero.getValue().get(1));
