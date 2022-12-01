@@ -10,7 +10,7 @@ public class SoftUniBarIncome {
         String input = scanner.nextLine();
         double totalSum = 0;
         while ((!input.equals("end of shift"))) {
-            String regex = "@(?<planet>[A-z]+)([^@\\-!:>]*):(?<population>\\d+)![^@\\-!:>]*(?<attack>[AD])![^@\\-!:>]*->(?<soldier>\\d+)";
+            String regex = "%(?<customer>[A-Z][a-z]+)%[^\\|\\$\\%\\.]*<(?<product>\\w+)>[^\\|\\$\\%\\.]*\\|(?<count>\\d+)\\|[^\\|\\$\\%\\.\\d]*(?<price>\\d+[\\.]?[0-9]+)\\$";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(input);
             while (matcher.find()) {
