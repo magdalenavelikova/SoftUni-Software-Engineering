@@ -3,4 +3,4 @@
 
 ## Certificates
 [![Programing Basics](https://user-images.githubusercontent.com/113022603/188857264-eccc12ad-6b77-401a-8b09-1bec19f82ba4.png)](https://softuni.bg/certificates/details/140148/1dc3f6b5)
-[![Programming Fundamentals with Java](https://user-images.githubusercontent.com/113022603/188857264-eccc12ad-6b77-401a-8b09-1bec19f82ba4.png)](https://softuni.bg/certificates/details/148534/1546be9d)
+[![Programming Fundamentals with Java](https://user-images.githubusercontent.com/113022603/206157667-507ca754-e435-4f35-8815-d50a042f6d10.jpg)](https://softuni.bg/certificates/details/148534/1546be9d)
