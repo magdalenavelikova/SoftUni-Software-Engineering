@@ -1,15 +1,19 @@
 package streamsFilesAndDirectories;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
 
-public class SerializeCustomObject {
-
+public class DeserializeObject {
     public static class Cube implements Serializable {
         private String color;
         private double width;
         private double height;
         private double depth;
+public Cube(){
 
+}
         public Cube(String color, double width, double height, double depth) {
             this.color = color;
             this.width = width;
@@ -19,18 +23,11 @@ public class SerializeCustomObject {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Cube cube = new Cube("green", 15.3, 12.4, 3.0);
-        String path = "C:\\IdeaProjects\\Java Advanced\\Resources\\save.ser";
-        FileOutputStream fos = new FileOutputStream(path);
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        String path = "C:\\IdeaProjects\\Java Advanced\\Resources\\save.txt";
 
-
-        oos.writeObject(cube);
-
-        ObjectInputStream ios = new ObjectInputStream(new FileInputStream(path));
-
-        Cube deserializedCube = (Cube) ios.readObject();
-        System.out.println();
+        ObjectInputStream oos = new ObjectInputStream(new FileInputStream(path));
+//       does not work
+        Cube cube = (Cube) oos.readObject();
 
 
     }
