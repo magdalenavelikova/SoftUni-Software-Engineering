@@ -1,4 +1,4 @@
-package FunctionalProgrammingExercise;
+package functionalProgrammingExercise;
 
 import java.util.Scanner;
 

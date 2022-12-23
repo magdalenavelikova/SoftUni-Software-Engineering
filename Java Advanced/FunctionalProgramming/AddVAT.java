@@ -1,9 +1,7 @@
-package FunctionalProgramming;
+package functionalProgramming;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.function.Consumer;
-import java.util.function.DoubleUnaryOperator;
 import java.util.function.UnaryOperator;
 
 public class AddVAT {

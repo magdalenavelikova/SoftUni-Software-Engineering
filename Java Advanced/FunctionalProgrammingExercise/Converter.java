@@ -1,4 +1,4 @@
-package FunctionalProgrammingExercise;
+package functionalProgrammingExercise;
 
 @FunctionalInterface
 

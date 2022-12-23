@@ -1,9 +1,8 @@
-package FunctionalProgramming;
+package functionalProgramming;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
