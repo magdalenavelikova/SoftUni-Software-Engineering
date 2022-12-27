@@ -3,7 +3,7 @@ package definingClasses;
 import java.util.*;
 import java.util.function.BiFunction;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
