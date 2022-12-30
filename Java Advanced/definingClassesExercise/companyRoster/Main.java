@@ -67,7 +67,7 @@ public class Main {
         String departmentName = "";
 
         for (Department dp : departments) {
-            double averageSalary = dp.getAverageSalary(dp);                    
+            double averageSalary = dp.getAverageSalary(dp);
 
             if (averageSalary > maxAverageSalary) {
                 maxAverageSalary = averageSalary;
