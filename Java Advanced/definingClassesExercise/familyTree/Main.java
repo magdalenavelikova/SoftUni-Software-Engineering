@@ -11,6 +11,7 @@ public class Main {
         LinkedHashMap<String, List<String>> childrenByParents = new LinkedHashMap<>();
         List<Person> personList = new ArrayList<>();
         Set<String> inputSet = new LinkedHashSet<>();
+
         while (!input.equals("End")) {
 
             if (input.contains(" - ")) {
@@ -32,21 +33,22 @@ public class Main {
 
         for (String inputInfo : inputSet) {
             Person currentPerson = getPersonInfo(inputInfo, personList);
+
             for (Map.Entry<String, List<String>> entry : childrenByParents.entrySet()) {
                 Person parent = getPersonInfo(entry.getKey(), personList);
+
                 for (String childInfo : entry.getValue()) {
                     Person child = getPersonInfo(childInfo, personList);
+
                     if (currentPerson == child) {
                         currentPerson.addToParentList(parent);
-                    } else if (currentPerson==parent) {
+                    } else if (currentPerson == parent) {
                         currentPerson.addToChildrenList(child);
                     }
                 }
-
             }
 
         }
-
 
         System.out.println(getPersonInfo(info, personList).toString());
     }

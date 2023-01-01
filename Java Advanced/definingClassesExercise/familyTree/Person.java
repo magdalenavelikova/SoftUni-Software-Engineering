@@ -26,53 +26,35 @@ public class Person {
         return birthday;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-   public void addToParentList(Person person){
-        if(isNew(person,parentsList)) {
+    public void addToParentList(Person person) {
+        if (isNew(person, parentsList)) {
             this.parentsList.add(person);
         }
-   }
-    public void addToChildrenList(Person person){
-        if(isNew(person,childrenList)) {
+    }
+
+    public void addToChildrenList(Person person) {
+        if (isNew(person, childrenList)) {
             this.childrenList.add(person);
         }
     }
-public boolean isNew(Person person, List<Person> personList){
-    for (Person p : personList) {
-        if(p.equals(person)){
-            return false;
-        }
-    }
-        return true;
-}
-    public void setChildrenList(List<Person> childrenList) {
-        this.childrenList = childrenList;
-    }
 
-    public String getOutputForParents(List<Person> parentList) {
-        StringBuilder output = new StringBuilder();
-        output.append(String.format("Parents:%n"));
-        if (!parentList.isEmpty()) {
-            for (Person parent : parentList) {
-                output.append(String.format("%s %s%n", parent.getName(), parent.getBirthday()));
+    public boolean isNew(Person person, List<Person> personList) {
+        for (Person p : personList) {
+            if (p.equals(person)) {
+                return false;
             }
         }
-        return output.toString();
+        return true;
     }
 
-    public String getOutputForChildren(List<Person> childList) {
+
+
+    public String getOutputForList(List<Person> list) {
         StringBuilder output = new StringBuilder();
-        output.append(String.format("Children:%n"));
-        if (!childList.isEmpty()) {
-            for (Person child : childList) {
-                output.append(String.format("%s %s%n", child.getName(), child.getBirthday()));
+
+        if (!list.isEmpty()) {
+            for (Person p : list) {
+                output.append(String.format("%s %s%n", p.getName(), p.getBirthday()));
             }
         }
         return output.toString();
@@ -80,6 +62,6 @@ public boolean isNew(Person person, List<Person> personList){
 
     @Override
     public String toString() {
-        return String.format("%s %s%n%s%s", name, String.join("/", birthday), getOutputForParents(parentsList), getOutputForChildren(childrenList));
+        return String.format("%s %s%nParents:%n%sChildren:%n%s", name, String.join("/", birthday), getOutputForList(parentsList), getOutputForList(childrenList));
     }
 }
