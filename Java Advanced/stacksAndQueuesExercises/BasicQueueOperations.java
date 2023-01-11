@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class BasicQueueOperations {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,9 +24,11 @@ public class BasicQueueOperations {
         for (int i = 0; i < counterToOffer; i++) {
             queue.offer(numbers[i]);
         }
+
         for (int i = 0; i < counterToPoll; i++) {
             queue.poll();
         }
+
         if (queue.isEmpty()) {
             System.out.println("0");
         } else if (queue.contains(numberToSearch)) {

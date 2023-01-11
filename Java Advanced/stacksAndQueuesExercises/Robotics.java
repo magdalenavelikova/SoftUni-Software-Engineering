@@ -67,7 +67,9 @@ public class Robotics {
     }
 
     private static void decreasingWorkingTime(Map<Robot, Integer> robotsInProcess) {
+
         for (Map.Entry<Robot, Integer> entry : robotsInProcess.entrySet()) {
+
             if (entry.getValue() > 0) {
                 robotsInProcess.put(entry.getKey(), entry.getValue() - 1);
             }

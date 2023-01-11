@@ -22,9 +22,11 @@ public class BasicStackOperations {
         for (int i = 0; i < counterToPush; i++) {
             stack.push(numbers[i]);
         }
+
         for (int i = 0; i < counterToPop; i++) {
             stack.pop();
         }
+
         if (stack.isEmpty()) {
             System.out.println("0");
         } else if (stack.contains(numberToSearch)) {

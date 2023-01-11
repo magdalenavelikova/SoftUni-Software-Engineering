@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class InfixToPostfix {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<String> input = Arrays.stream(scanner.nextLine()
@@ -16,22 +17,29 @@ public class InfixToPostfix {
                 .collect(Collectors.toList());
         ArrayDeque<String> stack = new ArrayDeque<>();
         ArrayDeque<String> queue = new ArrayDeque<>();
+
         for (String token : input) {
+
             if (isOperator(token)) {
+
                 if (token.equals("(") || token.equals(")")) {
+
                     if (token.equals("(")) {
                         stack.push(token);
                     } else {
+
                         while (!stack.peek().equals("(")) {
                             queue.offer(stack.pop());
                         }
                         stack.pop();
                     }
                 } else {
+
                     if (stack.isEmpty()) {
                         stack.push(token);
                     } else {
                         String operator = stack.peek();
+
                         if (getPriority(token) <= getPriority(operator)) {
                             queue.offer(stack.pop());
                             stack.push(token);
@@ -45,6 +53,7 @@ public class InfixToPostfix {
             }
 
         }
+
         for (String s : stack) {
             queue.offer(s);
         }
@@ -53,6 +62,7 @@ public class InfixToPostfix {
     }
 
     private static int getPriority(String operator) {
+
         if (operator.equals("*") || operator.equals("/")) {
             return 2;
         } else if (operator.equals("-") || operator.equals("+")) {

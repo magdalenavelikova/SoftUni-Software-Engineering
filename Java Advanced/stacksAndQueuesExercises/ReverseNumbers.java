@@ -12,11 +12,13 @@ public class ReverseNumbers {
                 .mapToInt(Integer::parseInt)
                 .toArray();
         ArrayDeque<Integer> reversedNumbers = new ArrayDeque<>();
+
         for (int number : numbers) {
             reversedNumbers.push(number);
         }
-while (!reversedNumbers.isEmpty()){
-    System.out.print(reversedNumbers.pop()+" ");
-}
+
+        while (!reversedNumbers.isEmpty()) {
+            System.out.print(reversedNumbers.pop() + " ");
+        }
     }
 }

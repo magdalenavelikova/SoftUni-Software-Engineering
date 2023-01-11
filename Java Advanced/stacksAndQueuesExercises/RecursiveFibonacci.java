@@ -14,12 +14,15 @@ public class RecursiveFibonacci {
     }
 
     private static long getFibonacci(int number) {
+
         if (number < 2) {
             return 1;
         }
+
         if (memory[number] != 0) {
             return memory[number];
         }
+        
         memory[number] = (getFibonacci(number - 1) + getFibonacci(number - 2));
         return memory[number];
     }
