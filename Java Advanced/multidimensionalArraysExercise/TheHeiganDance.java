@@ -3,6 +3,7 @@ package multidimensionalArraysExercise;
 import java.util.Scanner;
 
 public class TheHeiganDance {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -44,6 +45,7 @@ public class TheHeiganDance {
             fillDamageHSChamber(row, col, chamber);
 
             if (chamber[startPlRow][startPlCol]) {
+
                 if (isRowValid(chamber, startPlRow - 1) && !chamber[startPlRow - 1][startPlCol]) {
                     startPlRow--; // move up
                 } else if (isColValid(chamber, startPlCol + 1) && !chamber[startPlRow][startPlCol + 1]) {
@@ -86,8 +88,11 @@ public class TheHeiganDance {
     }
 
     private static void fillDamageHSChamber(int row, int col, boolean[][] chamber) {
+
         for (int i = row - 1; i <= row + 1; i++) {
+
             if (i >= 0 && i < chamber.length) {
+
                 for (int j = col - 1; j <= col + 1; j++) {
                     if (j >= 0 && j < chamber[row].length) {
                         chamber[i][j] = true;

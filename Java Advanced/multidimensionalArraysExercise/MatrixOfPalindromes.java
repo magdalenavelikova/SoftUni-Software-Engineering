@@ -3,6 +3,7 @@ package multidimensionalArraysExercise;
 import java.util.Scanner;
 
 public class MatrixOfPalindromes {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
@@ -11,6 +12,7 @@ public class MatrixOfPalindromes {
         String[][] matrix = new String[row][column];
         StringBuilder string = new StringBuilder();
         int asciiCode = 97;
+
         for (int r = 0; r < row; r++) {
             for (int c = 0; c < column; c++) {
                 string.append((char) (asciiCode + r));

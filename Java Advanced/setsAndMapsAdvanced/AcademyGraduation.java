@@ -17,6 +17,7 @@ public class AcademyGraduation {
                     .toArray();
 
             averageGradeByStudents.putIfAbsent(name, new ArrayList<>());
+
             for (double grade : grades) {
                 averageGradeByStudents.get(name).add(grade);
             }

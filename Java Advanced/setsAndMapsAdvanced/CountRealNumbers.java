@@ -14,6 +14,7 @@ public class CountRealNumbers {
         Map<Double, Integer> counterByNumbers = new LinkedHashMap<>();
 
         for (Double entry : list) {
+
             if (!counterByNumbers.containsKey(entry)) {
                 counterByNumbers.put(entry, 1);
             } else {

@@ -21,6 +21,7 @@ public class AverageStudentsGrades {
         }
 
         for (Map.Entry<String, List<Double>> entry : gradesByStudentsName.entrySet()) {
+
             System.out.print(entry.getKey() + " -> ");
             double sumOfGrades = 0;
             for (Double grade : entry.getValue()) {
@@ -28,7 +29,10 @@ public class AverageStudentsGrades {
                 sumOfGrades += grade;
 
             }
+
             System.out.printf("(avg: %.2f)%n", sumOfGrades / entry.getValue().size());
         }
+
     }
+
 }

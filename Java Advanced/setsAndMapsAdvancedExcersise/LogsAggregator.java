@@ -3,6 +3,7 @@ package setsAndMapsAdvancedExcersise;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class LogsAggregator {
 
@@ -35,12 +36,12 @@ public class LogsAggregator {
 
         for (Map.Entry<String, Integer> e : durationsByUsers.entrySet()) {
             System.out.printf("%s: %d [", e.getKey(), e.getValue());
-            final int[] size = new int[1];
-            size[0] = logsByUsers.get(e.getKey()).size();
+
+            AtomicInteger size = new AtomicInteger(logsByUsers.get(e.getKey()).size());
             logsByUsers.get(e.getKey()).forEach((key, value) -> {
-                if (size[0] > 1) {
+                if (size.get() > 1) {
                     System.out.print(key + ", ");
-                    size[0]--;
+                    size.getAndDecrement();
                 } else {
                     System.out.print(key);
                 }

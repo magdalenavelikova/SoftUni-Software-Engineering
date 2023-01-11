@@ -28,6 +28,7 @@ public class ReverseMatrixDiagonals {
                     System.out.print(matrix[row][col] + " ");
                     int dr = row;
                     int dc = col;
+
                     while (dr - 1 >= 0 && dc + 1 <= c - 1) {
                         System.out.print(matrix[dr - 1][dc + 1] + " ");
                         dr--;
@@ -42,6 +43,7 @@ public class ReverseMatrixDiagonals {
                     System.out.print(matrix[row][col] + " ");
                     int dr = row;
                     int dc = col;
+
                     while (dr - 1 >= 0 && dc + 1 <= c - 1) {
                         System.out.print(matrix[dr - 1][dc + 1] + " ");
                         dr--;

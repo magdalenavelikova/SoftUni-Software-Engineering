@@ -44,11 +44,11 @@ public class DragonArmy {
             String type = inputLine[0];
             String name = inputLine[1];
             String damageString = inputLine[2];
-            int damage = 0;
+            int damage;
             String healthString = inputLine[3];
-            int health = 0;
+            int health;
             String armorString = inputLine[4];
-            int armor = 0;
+            int armor;
 
             if (damageString.equals("null")) {
                 damage = 45;

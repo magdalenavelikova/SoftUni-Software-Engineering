@@ -10,21 +10,22 @@ public class SoftUniParty {
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        Set<String> reservationSet = new TreeSet<>();
+        Set<String> reservationsSet = new TreeSet<>();
+
         while (!input.equals("PARTY")) {
-            reservationSet.add(input);
+            reservationsSet.add(input);
             input= scanner.nextLine();
         }
 
         input = scanner.nextLine();
 
         while (!input.equals("END")) {
-            reservationSet.remove(input);
+            reservationsSet.remove(input);
             input = scanner.nextLine();
         }
 
-        System.out.println(reservationSet.size());
-        for (String s : reservationSet) {
+        System.out.println(reservationsSet.size());
+        for (String s : reservationsSet) {
             System.out.println(s);
         }
 

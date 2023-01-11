@@ -12,10 +12,12 @@ public class PopulationCounter {
         String input = scanner.nextLine();
         Map<String, LinkedHashMap<String, Long>> populationsByCountries = new LinkedHashMap<>();
         LinkedHashMap<String, Long> totalPopulationByCountries = new LinkedHashMap<>();
+
         while (!input.equals("report")) {
             String city = input.split("\\|")[0];
             String country = input.split("\\|")[1];
             Long population = Long.parseLong(input.split("\\|")[2]);
+
             if (totalPopulationByCountries.containsKey(country)) {
                 totalPopulationByCountries.put(country, totalPopulationByCountries.get(country) + population);
             } else {

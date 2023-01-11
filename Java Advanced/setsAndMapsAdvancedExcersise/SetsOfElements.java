@@ -19,13 +19,14 @@ public class SetsOfElements {
             Integer firstSetNumber = Integer.parseInt(scanner.nextLine());
             firstSet.add(firstSetNumber);
         }
+
         while (--secondSetLength >= 0) {
             Integer secondSetNumber = Integer.parseInt(scanner.nextLine());
             secondSet.add(secondSetNumber);
         }
         firstSet.retainAll(secondSet);
 
-        firstSet.forEach(e -> System.out.println(e + " "));
+        firstSet.forEach(e -> System.out.print(e + " "));
 
         /*for (Integer entryFirstSet : firstSet) {
             for (Integer entrySecondSet : secondSet) {

@@ -25,6 +25,7 @@ public class ParkingSystem {
             int rightDistance = -1;
             int rightIndex = -1;
             boolean isSpotFree = false;
+
             if (!isSpotTaken(matrix, rowIndexForPark, colIndexForPark)) {
                 distance += colIndexForPark + 1;
                 matrix[rowIndexForPark][colIndexForPark] = true;
@@ -69,13 +70,13 @@ public class ParkingSystem {
     }
 
     private static boolean isSpotTaken(boolean[][] matrix, int row, int col) {
-        if (AreValidIndexes(matrix, row, col)) {
+        if (isInBounds(matrix, row, col)) {
             return (matrix[row][col]);
         }
         return true;
     }
 
-    private static boolean AreValidIndexes(boolean[][] matrix, int row, int col) {
+    private static boolean isInBounds(boolean[][] matrix, int row, int col) {
 
         return (row >= 0 && row < matrix.length && col > 0 && col < matrix[row].length);
     }

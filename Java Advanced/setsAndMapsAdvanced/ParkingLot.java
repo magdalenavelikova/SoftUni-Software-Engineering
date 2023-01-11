@@ -17,6 +17,7 @@ public class ParkingLot {
             String direction = input.split(", ")[0];
             String carNumber = input.split(", ")[1];
             input = scanner.nextLine();
+
             if(direction.equals("IN")){
                 parking.add(carNumber);
             } else if (direction.equals("OUT")) {

@@ -21,9 +21,9 @@ public class Phonebook {
         input = scanner.nextLine();
 
         while (!input.equals("stop")) {
+
             if (phonebook.containsKey(input)) {
                 System.out.println(input + " -> " + phonebook.get(input));
-
             } else {
                 System.out.println("Contact " + input + " does not exist.");
             }

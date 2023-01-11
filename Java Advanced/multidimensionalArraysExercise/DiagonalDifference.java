@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DiagonalDifference {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int size = Integer.parseInt(scanner.nextLine());
@@ -26,6 +27,7 @@ public class DiagonalDifference {
 
     private static int getSumPrimaryDiagonal(int size, int[][] matrix) {
         int sum = 0;
+
         for (int index = 0; index < size; index++) {
             sum += matrix[index][index];
 
@@ -34,6 +36,7 @@ public class DiagonalDifference {
     }
 
     private static void fillMatrix(Scanner scanner, int size, int[][] matrix) {
+
         for (int r = 0; r < size; r++) {
             matrix[r] = Arrays.stream(scanner.nextLine().split("\\s+"))
                     .mapToInt(Integer::parseInt)

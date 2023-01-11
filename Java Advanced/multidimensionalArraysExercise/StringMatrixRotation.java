@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StringMatrixRotation {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,14 +16,19 @@ public class StringMatrixRotation {
         String input = scanner.nextLine();
         List<String> stringList = new ArrayList<>();
         int maxLength = Integer.MIN_VALUE;
+
         while (!input.equals("END")) {
+
             if (input.length() > maxLength) {
                 maxLength = input.length();
             }
+
             stringList.add(input);
             input = scanner.nextLine();
         }
+
         for (int i = 0; i < stringList.size(); i++) {
+
             if (stringList.get(i).length() < maxLength) {
                 int difference = maxLength - stringList.get(i).length();
                 String current = stringList.get(i);
@@ -33,6 +39,7 @@ public class StringMatrixRotation {
         int col = maxLength;
 
         char[][] matrix = new char[row][col];
+
         for (int r = 0; r < row; r++) {
             matrix[r] = stringList.get(r).toCharArray();
         }

@@ -3,6 +3,7 @@ package multidimensionalArraysExercise;
 import java.util.*;
 
 public class Crossfire {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String dimensions = scanner.nextLine();
@@ -19,8 +20,8 @@ public class Crossfire {
         }
 
         String input = scanner.nextLine();
-        while (!input.equals("Nuke it from orbit")) {
 
+        while (!input.equals("Nuke it from orbit")) {
             replaceElementsByExplosion(matrix, input);
             matrix = getMatrixAfterExplosion(matrix);
             input = scanner.nextLine();
@@ -30,14 +31,17 @@ public class Crossfire {
 
     private static int[][] getMatrixAfterExplosion(int[][] matrix) {
         Map<Integer, List<Integer>> map = new LinkedHashMap<>();
+
         for (int r = 0; r < matrix.length; r++) {
             List<Integer> list = new ArrayList<>();
             int counter = 0;
+
             for (int c = 0; c < matrix[r].length; c++) {
                 if (matrix[r][c] != -1) {
                     list.add(matrix[r][c]);
                 }
             }
+
             if (!list.isEmpty()) {
                 map.put(r, list);
             }
@@ -54,6 +58,7 @@ public class Crossfire {
 
 
     private static void print(int[][] matrix) {
+
         for (int[] x : matrix) {
             for (int y : x) {
                 System.out.print(y + " ");

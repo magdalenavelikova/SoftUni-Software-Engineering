@@ -42,9 +42,7 @@ public class SerbianMusicUnleashed {
             venue.getValue().entrySet().stream()
                     .sorted(Map.Entry.<String, Integer>comparingByValue()
                                             .reversed())
-                    .forEach(e -> {
-                        System.out.printf("#  %s -> %d%n", e.getKey(), e.getValue());
-                    });
+                    .forEach(e -> System.out.printf("#  %s -> %d%n", e.getKey(), e.getValue()));
 
         }
 
