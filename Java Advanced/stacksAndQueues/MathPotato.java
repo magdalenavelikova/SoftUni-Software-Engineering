@@ -1,6 +1,7 @@
 package stacksAndQueues;
 
 import java.util.ArrayDeque;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class MathPotato {
@@ -8,19 +9,19 @@ public class MathPotato {
         Scanner scanner = new Scanner(System.in);
         String[] children = scanner.nextLine().split("\\s+");
         int n = Integer.parseInt(scanner.nextLine());
-        ArrayDeque<String> childrenQueue = new ArrayDeque<>();
+        PriorityQueue<String> childrenQueue = new PriorityQueue<>();
 
         for (String child : children) {
             childrenQueue.offer(child);
         }
-        int counter = 0;
+        int cycle = 0;
         while (childrenQueue.size() > 1) {
             for (int i = 1; i < n; i++) {
                 String currentChild = childrenQueue.poll();
                 childrenQueue.offer(currentChild);
             }
-            counter++;
-            if (isPrime(counter)) {
+            cycle++;
+            if (isPrime(cycle) ) {
                 System.out.println("Prime " + childrenQueue.peek());
 
             } else {
@@ -32,17 +33,16 @@ public class MathPotato {
 
     }
 
-    private static boolean isPrime(int counter) {
+    private static boolean isPrime(int cycle) {
 
-        if (counter <= 1) {
+        if (cycle <= 1) {
             return false;
         }
-        for (int i = 2; i <= counter / 2; i++) {
-            if ((counter % i) == 0)
+        for (int i = 2; i <= Math.sqrt(cycle); i++) {
+            if ((cycle % i) == 0)
                 return false;
         }
         return true;
-
     }
 
 

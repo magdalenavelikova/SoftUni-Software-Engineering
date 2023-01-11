@@ -13,60 +13,57 @@ public class ReverseMatrixDiagonals {
 
         int[][] matrix = new int[r][c];
 
+        fillMatrix(scanner, matrix, r);
 
-        fillMatrix(scanner, matrix, r, c);
-
-        printReverseDiagonal(matrix, r, c);
+        printReversedDiagonal(matrix, r, c);
 
 
     }
 
-    private static void printReverseDiagonal(int[][] matrix, int r, int c) {
-        int row = r - 1;
-        
-        for (int col = c - 1; col >= 0; col--) {
+    private static void printReversedDiagonal(int[][] matrix, int r, int c) {
+        for (int row = r - 1; row >= 0; row--) {
 
-            System.out.print(matrix[row][col] + " ");
-            int dr = row;
-            int dc = col;
-            while (dr - 1 >= 0 && dc + 1 <= c - 1) {
-                System.out.print(matrix[dr - 1][dc + 1] + " ");
-                dr--;
-                dc++;
+            if (row == r - 1) {
+                for (int col = c - 1; col >= 0; col--) {
+                    System.out.print(matrix[row][col] + " ");
+                    int dr = row;
+                    int dc = col;
+                    while (dr - 1 >= 0 && dc + 1 <= c - 1) {
+                        System.out.print(matrix[dr - 1][dc + 1] + " ");
+                        dr--;
+                        dc++;
+                    }
+                    System.out.println();
+                }
+            } else {
+
+                for (int col = 0; col < c; col++) {
+
+                    System.out.print(matrix[row][col] + " ");
+                    int dr = row;
+                    int dc = col;
+                    while (dr - 1 >= 0 && dc + 1 <= c - 1) {
+                        System.out.print(matrix[dr - 1][dc + 1] + " ");
+                        dr--;
+                        dc++;
+
+                    }
+                    System.out.println();
+                    col = c;
+                }
+
             }
-            System.out.println();
-
-
+            }
         }
-        for (row = r - 1 - 1; row >= 0; row--) {
 
-            for (int col = 0; col < c; col++) {
+            private static void fillMatrix (Scanner scanner,int[][] matrix, int r){
 
-                System.out.print(matrix[row][col] + " ");
-                int dr = row;
-                int dc = col;
-                while (dr - 1 >= 0 && dc + 1 <= c - 1) {
-                    System.out.print(matrix[dr - 1][dc + 1] + " ");
-                    dr--;
-                    dc++;
+                for (int i = 0; i < r; i++) {
+                    matrix[i] = Arrays.stream(scanner.nextLine().split("\\s+"))
+                            .mapToInt(Integer::parseInt).toArray();
 
                 }
-                System.out.println();
-                col = c;
             }
-        }
 
-
-    }
-
-    private static void fillMatrix(Scanner scanner, int[][] matrix, int r, int c) {
-
-        for (int i = 0; i < r; i++) {
-            matrix[i] = Arrays.stream(scanner.nextLine().split("\\s+"))
-                    .mapToInt(Integer::parseInt).toArray();
 
         }
-    }
-
-
-}
