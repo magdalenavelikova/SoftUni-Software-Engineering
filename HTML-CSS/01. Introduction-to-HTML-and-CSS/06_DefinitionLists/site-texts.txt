@@ -1,0 +1,8 @@
+Definition Lists
+
+List Header
+
+JavaScript
+Programming language, that runs on the Web.
+HTML
+Language for describing Web content, using text and tags.
