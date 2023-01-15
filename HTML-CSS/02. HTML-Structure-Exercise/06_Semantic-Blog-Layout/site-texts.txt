@@ -1,0 +1,46 @@
+Semantic Blog Layout
+
+Developer News
+
+HTML
+JavaScript
+
+HTML
+
+New feature: JPEG XL image format
+
+JPEG XL image format is a modern image format optimized for web environments. JPEG XL generally has better compression than WebP, JPEG, PNG and GIF and is designed to supersede them.
+
+Learn more at: https://en.wikipedia.org/wiki/JPEG_XL
+
+By The HTTP Working Group. Published January 23rd
+
+New feature: Cookie Store API
+
+Cookie Store API is a JS API for reading and modifying cookies. Compared to the existing `document.cookie` method, the API provides a much more modern interface, which can also be used in service workers.
+
+Learn more at: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies/CookieStore
+
+By Joshua Bell. Published December 15th
+
+JavaScript
+
+Billboard.js 3.0: The D3.js-Powered Chart Library
+
+Billboard.js is a popular library supporting a whole range of chart types out of the box (bar, line, areas, donuts, radars, and various hybrids) – 3.0 brings candlestick / OHLC chart support (often used in financial contexts) and supports D3.js v6.
+
+Learn more at: https://github.com/naver/billboard.js
+
+By Jae Sung Park. Published March 24th
+
+Nine JavaScript and TypeScript ORMs
+
+A roundup, complete with code examples, showing off a variety of tools like Knex.js, Mongoose, TypeORM, Waterline, and Bookshelf.
+
+Learn more at: https://www.sitepoint.com/javascript-typescript-orms/
+
+By Michael Wanyoike. Published March 31rd
+
+&copy; 2021 DeveloperNewsPortal.info
+
+Please contact Troy McClure for questions about these articles.
