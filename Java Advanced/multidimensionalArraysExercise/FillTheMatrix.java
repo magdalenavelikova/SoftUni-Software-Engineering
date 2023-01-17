@@ -9,7 +9,7 @@ public class FillTheMatrix {
         String input = scanner.nextLine();
         int size = Integer.parseInt(input.split(",\\s+")[0]);
         String pattern = input.split(",\\s+")[1];
-        int matrix[][] = new int[size][size];
+        int[][] matrix = new int[size][size];
 
         if (pattern.equals("A")) {
             patternA(size, matrix);
