@@ -1,0 +1,35 @@
+/* TODO: style the html
+•	<body>:
+o	Font: Montserrat
+-	Use CSS import: @import 'https://fonts.googleapis.com/css?family=Montserrat';
+o	Generic Font: sans-serif
+o	Paddings: 16px
+•	<th>:
+o	Background color: lightblue
+•	<th> and <td>:
+o	Width: 144px
+o	Height: 32px
+o	Solid border with size 1px and color #ccc
+o	Left padding: 5px
+
+
+
+ */
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+body {
+    font-family: Montserrat, sans-serif;
+    padding: 16px;
+}
+
+th {
+    background-color: lightblue;
+}
+
+th,
+td {
+    width: 144px;
+    height: 32px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
