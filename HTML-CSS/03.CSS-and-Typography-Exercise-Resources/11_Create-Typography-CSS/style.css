@@ -1,0 +1,60 @@
+/*•	Use Helvetica, sans-serif font-family for the document
+o	Make the font-size 16px
+o	Change the line-height to 1.5
+•	Use Georgia, serif font-family for the headings
+•	Use headings from h1 to h6
+•	Create a HTML table and style it
+•	
+
+*/
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+table {
+    border-color: grey;
+    border-radius: 100px;
+    width: 100%;
+}
+
+table thead {
+    padding: 20px 20px;
+    font-size: 18px;
+
+    line-height: 1.4;
+    background-color: #c7c7c7;
+}
+
+table tr {
+    line-height: 1.4;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+table td {
+    width: 33%;
+    padding-left: 40px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.odd {
+    background-color: rgb(235, 235, 235);
+}
+
+blockquote {
+    border-left-color: rgb(221, 221, 221);
+    font-style: italic;
+}

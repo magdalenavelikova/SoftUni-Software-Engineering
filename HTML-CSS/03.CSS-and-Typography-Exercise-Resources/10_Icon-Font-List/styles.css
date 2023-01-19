@@ -1,0 +1,26 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.check i {
+    color: #2fcc71;
+    font-size: 25px;
+}
+
+ul.star i {
+    color: coral;
+    font-size: 25px;
+}
+
+ul.contact i {
+    color: #3498da;
+    font-size: 25px;
+}

@@ -1,0 +1,62 @@
+/* TODO: style the html
+•	<body>:
+o	Background color: darkred
+•	<h1>:
+o	Font: 'Righteous'
+-	Use CSS import: @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+o	Generic Font: cursive
+o	Font size: 45px
+o	Font weight: normal
+o	Height of the line: 60px
+o	Text color: #fff
+o	All characters to be UPPERCASE
+o	Align the text to the center
+•	<h2>:
+o	Font size: 30px
+o	Height of the line: 50px
+o	Space between letters: -1px
+o	Text color: #DFBF84
+o	All characters to be UPPERCASE
+o	Align the text to the center
+•	<p>:
+o	Font: 'Orienta'
+-	Use CSS import: @import url('https://fonts.googleapis.com/css2?family=Orienta&display=swap');
+o	Generic Font: sans-serif
+o	Font size: 16px
+o	Height of the line: 24px
+o	Text color: #f6f6f6
+o	Align the text to the center
+ */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orienta&display=swap');
+
+body {
+    background-color: darkred;
+}
+
+h1 {
+    font-family: Righteous, cursive;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #DFBF84;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-family: Orienta, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f6f6f6;
+    text-align: center;
+}
