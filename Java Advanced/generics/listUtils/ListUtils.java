@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.function.Function;
 
 
-public class ListUtils<T> {
+public class ListUtils {
 
 
     public static <T extends Comparable<T>> T getMin(List<T> list) {
