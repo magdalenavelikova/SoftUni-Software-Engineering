@@ -5,32 +5,32 @@ package workshopDataStructure;
 
 import java.util.function.Consumer;
 
-public class Stack {
+public class StackGeneric<T> {
 
-    private static class Node {
-        int element;
-        private Node prev;
+    private static class Node<T> {
+        T element;
+        private Node<T> prev;
 
-        private Node(int element) {
+        private Node(T element) {
             this.element = element;
         }
 
 
     }
 
-    private Node top;
+    private Node<T> top;
     private int size;
 
-    public void push(int element) {
-        Node newNode = new Node(element);
+    public void push(T element) {
+        Node<T> newNode = new Node<>(element);
         newNode.prev = top;
         top = newNode;
         size++;
     }
 
-    public int pop() {
+    public T pop() {
         ensureNotEmpty();
-        int last = top.element;
+        T last = top.element;
         top = top.prev;
         size--;
         return last;
@@ -38,17 +38,17 @@ public class Stack {
 
     private void ensureNotEmpty() {
         if (top == null) {
-            throw new IllegalArgumentException("Error");
+            throw new IllegalArgumentException("Error! Stack is Empty!");
         }
     }
 
-    public int peek() {
+    public T peek() {
         ensureNotEmpty();
         return top.element;
     }
 
-    public void forEach(Consumer<Integer> consumer) {
-        Node current = top;
+    public void forEach(Consumer<T> consumer) {
+        Node<T> current = top;
         while (current != null) {
             consumer.accept(current.element);
             current = current.prev;
