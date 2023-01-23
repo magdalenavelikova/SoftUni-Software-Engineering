@@ -3,10 +3,25 @@ package genericsExercise.customList;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CustomList<T extends Comparable<T>> {
+public class CustomList<T extends Comparable<T>> implements Iterable<T> {
+
+    private class CustomListIterator implements Iterator<T>   {
+        int index=0;
+
+        @Override
+        public boolean hasNext() {
+            return index<list.size();
+        }
+
+        @Override
+        public T next() {
+            return list.get(index++);
+        }
+    }
     private List<T> list = new ArrayList<>();
 
 //    •	void add(T element)
@@ -65,5 +80,10 @@ public class CustomList<T extends Comparable<T>> {
             System.out.println(element);
         }
 
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new CustomListIterator();
     }
 }

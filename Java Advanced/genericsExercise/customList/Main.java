@@ -42,7 +42,10 @@ public class Main {
                     System.out.println(customList.getMin());
                     break;
                 case "Print":
-                    customList.print();
+                    customList.forEach(System.out::println);
+//                    for (String list: customList ) {
+//                        System.out.println(list);
+//                    }
                     break;
                 case "Sort":
                    Sorter.sort(customList);
