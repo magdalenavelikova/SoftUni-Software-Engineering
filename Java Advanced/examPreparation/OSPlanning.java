@@ -15,8 +15,8 @@ public class OSPlanning {
 
         ArrayDeque<Integer> taskStack = new ArrayDeque<>();
         ArrayDeque<Integer> threadsQueue = new ArrayDeque<>();
-        Arrays.stream(task).mapToInt(Integer::parseInt).forEach(e -> taskStack.push(e));
-        Arrays.stream(threads).mapToInt(Integer::parseInt).forEach(e -> threadsQueue.offer(e));
+        Arrays.stream(task).mapToInt(Integer::parseInt).forEach(taskStack::push);
+        Arrays.stream(threads).mapToInt(Integer::parseInt).forEach(threadsQueue::offer);
 
         while (!threadsQueue.isEmpty()) {
             int threadValue = threadsQueue.peek();
@@ -30,10 +30,8 @@ public class OSPlanning {
                 if (threadValue >= taskValue) {
                     taskStack.pop();
                     threadsQueue.poll();
-
-                }else {
-                    threadsQueue.poll();
-                }
+               }
+               threadsQueue.poll();
             }
         }
        while (!threadsQueue.isEmpty()){
