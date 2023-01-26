@@ -26,14 +26,15 @@ table {
     border-color: grey;
     border-radius: 100px;
     width: 100%;
+    border-collapse: collapse;
 }
 
-table thead {
+table thead th{
     padding: 20px 20px;
     font-size: 18px;
-
     line-height: 1.4;
-    background-color: #c7c7c7;
+    background-color: #c5c5c5;
+    border: 1px solid grey;
 }
 
 table tr {
@@ -42,17 +43,19 @@ table tr {
     padding-bottom: 16px;
 }
 
+table tr:nth-child(odd) {
+    background-color: rgb(235, 235, 235);
+}
 table td {
     width: 33%;
     padding-left: 40px;
     text-align: center;
     padding: 10px;
+    border: 1px solid grey;
 
 }
 
-.odd {
-    background-color: rgb(235, 235, 235);
-}
+
 
 blockquote {
     border-left-color: rgb(221, 221, 221);

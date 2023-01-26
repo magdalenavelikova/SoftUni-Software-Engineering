@@ -1,0 +1,43 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.4;
+    margin: 0 80px;
+}
+
+header {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+header nav,
+h1,
+ul,
+li,
+a {
+    display: inline-block;
+}
+
+nav {
+    margin-left: 80px;
+
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 6px 8px;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: aquamarine;
+    text-align: left;
+
+
+}

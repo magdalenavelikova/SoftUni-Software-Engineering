@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    width: auto;
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    padding-left: 40px;
+
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+article {
+    display: inline-block;
+    width: 70%;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    padding-left: 30px;
+}
+
+img {
+    width: 80%;
+}

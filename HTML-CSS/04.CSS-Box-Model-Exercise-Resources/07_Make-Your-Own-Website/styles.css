@@ -1,0 +1,31 @@
+/* •	<div>:
+o	Width: 280px
+o	Display the divs as inline-block
+o	Padding top, right and bottom: 16px
+o	Padding left: 32px
+o	Top margin: 20px
+o	Background color: #0A2C48
+o	Text color: #fff
+o	Radius of the border: 4px
+•	<div> on mouse hover:
+o	Background color: #2A4C68
+•	<p>:
+o	Text color: #c9d6ff
+o	Font size: 18px
+ */
+ div{
+    width: 280px;
+    display: inline-block;
+    padding: 16px 16px 16px 32px;
+    margin-top: 20px;
+    background-color: #0A2C48;
+    color: #fff;
+    border-radius: 4px;
+     }
+     div:hover{
+        background-color:#2A4C68 ;
+     }
+     p{
+        color: #c9d6ff;
+        font-size: 18px;
+     }

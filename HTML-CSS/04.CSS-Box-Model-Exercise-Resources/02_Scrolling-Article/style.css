@@ -1,0 +1,34 @@
+/*•	<article>:
+o	Width: 500px
+o	Height: 200px
+o	Background color: lightgray
+o	Paddings: 10px
+o	Auto overflow
+•	<h2>:
+o	All characters to be UPPERCASE
+o	Align the text to the center
+•	<h3>:
+o	Align the text to the center
+•	<p>:
+o	Indent text in the first line 30px
+*/
+article {
+    width: 500px;
+    height: 200px;
+    background-color: lightgray;
+    padding: 10px;
+    overflow: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-indent: 30px;
+}
