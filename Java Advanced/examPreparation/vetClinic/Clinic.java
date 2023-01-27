@@ -20,14 +20,7 @@ public class Clinic {
     }
 
     public boolean remove(String name) {
-        for (int i = 0; i < data.size(); i++) {
-            Pet pet = data.get(i);
-            if (pet.getName().equals(name)) {
-                data.remove(i);
-                return true;
-            }
-        }
-        return false;
+        return data.removeIf(pet -> pet.getName().equals(name));
     }
 
     public Pet getPet(String name, String owner) {
@@ -49,10 +42,11 @@ public class Clinic {
 
     public String getStatistics() {
         StringBuilder output = new StringBuilder();
-        output.append(String.format("The clinic has the following patients:%n"));
+        output.append("The clinic has the following patients:");
 
         for (Pet pet : data) {
-            output.append(String.format("%s %s%n", pet.getName(), pet.getOwner()));
+            output.append(System.lineSeparator());
+            output.append(String.format("%s %s", pet.getName(), pet.getOwner()));
         }
         return output.toString();
 
