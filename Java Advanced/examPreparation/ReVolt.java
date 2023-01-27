@@ -83,9 +83,6 @@ public class ReVolt {
         }
     }
 
-    private static boolean isInBounds(char[][] matrix, int row, int column) {
-        return (row >= 0 && row < matrix.length && column >= 0 && column < matrix[row].length);
-    }
 
     private static boolean isThereABonus(char[][] matrix, int row, int column) {
         return matrix[row][column] == 'B';
