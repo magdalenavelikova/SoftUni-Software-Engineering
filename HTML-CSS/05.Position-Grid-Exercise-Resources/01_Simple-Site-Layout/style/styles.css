@@ -1,0 +1,54 @@
+/*•	Define two grid columns and their size. 100px for the first column and auto for the second. 
+•	Define the grid areas: header, main, aside, footer.
+•	Reference the grid areas: "header header", "aside main", "footer footer".
+•	Set gap: 10px.
+*/
+body {
+    display: grid;
+    grid-column: 100px 1fr;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    gap: 10px;
+}
+
+header,
+aside,
+main,
+footer {
+    border-radius: 3px;
+    background: rgb(181, 216, 255);
+    padding: 5px 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+aside ul a {
+    display: block;
+    padding: 5px 0px;
+    color: rgb(86, 40, 129);
+    text-decoration: none;
+}

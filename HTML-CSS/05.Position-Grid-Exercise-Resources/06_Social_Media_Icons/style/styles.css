@@ -1,0 +1,25 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+a {
+  border-radius: 50%;
+  background-color: #ececec;
+  color: black;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 10px 10px 12px;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+.google_icon:hover {
+  color: darkred;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+
+}

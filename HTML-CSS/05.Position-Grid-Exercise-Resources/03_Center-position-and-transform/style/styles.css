@@ -1,0 +1,60 @@
+/**•	Use rgb(238, 238, 238) for body background
+•	Use rgb(255, 255, 255) for card background
+•	Use rgb(0, 153, 0) for card button background
+•	Use font Georgia, serif with size 1em/1.2 for the headings
+•	Set the image position property to absolute
+*/
+body {
+  font-family: Georgia, serif;
+  background-color: rgb(238, 238, 238);
+  font-weight: 1em;
+}
+
+
+
+.card {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 450px;
+  outline: darkslategrey;
+  left: 33%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+img {
+  position: absolute;
+  width: 100%;
+
+}
+
+.card_button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 8px 16px;
+  background-color: rgb(0, 153, 0);
+}
+
+h3 {
+  left: 20px;
+  bottom: 150px;
+  font-weight: 1.2em;
+  position: absolute;
+}
+
+p {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 90px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+Welcome
+
+Home
+Tasks
+Create
+
+Tasks: 6
+
+Open: 3
+In Progress: 1
+Done: 2
+
+&copy 2021 - Task Board

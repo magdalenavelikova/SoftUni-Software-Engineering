@@ -1,0 +1,15 @@
+main {
+  width: 700px;
+  height: 500px;
+  margin: 60px;
+}
+
+img {
+  display: inline-block;
+}
+
+.new {
+  position: relative;
+  top: -200px;
+  right: 150px;
+}
