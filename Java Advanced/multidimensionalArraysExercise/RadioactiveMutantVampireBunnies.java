@@ -3,7 +3,7 @@ package multidimensionalArraysExercise;
 import java.util.Scanner;
 
 public class RadioactiveMutantVampireBunnies {
-  public static   boolean isPlayerWin = false;
+    public static boolean isPlayerWin = false;
     public static boolean isPlayerDead = false;
 
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class RadioactiveMutantVampireBunnies {
         for (int row = 0; row < r; row++) {
             String data = scanner.nextLine();
             for (int i = 0; i < data.length(); i++) {
-                matrix[row][i] = data.charAt(i) ;
+                matrix[row][i] = data.charAt(i);
                 if (data.charAt(i) == 'P') {
                     playersIndexes[0] = row;
                     playersIndexes[1] = i;
@@ -30,34 +30,34 @@ public class RadioactiveMutantVampireBunnies {
         String direction = scanner.nextLine();
 
         for (int i = 0; i < direction.length(); i++) {
-                int row = playersIndexes[0];
-                int column = playersIndexes[1];
+            int row = playersIndexes[0];
+            int column = playersIndexes[1];
             matrix[row][column] = '.';
-                switch (direction.charAt(i)) {
-                    case 'R':
-                        column ++;
-                        break;
-                    case 'L':
-                        column --;
-                        break;
-                    case 'U':
-                        row --;
-                        break;
-                    case 'D':
-                        row ++;
-                        break;
-                }
-                if (isInBounds(matrix, row, column)) {
-                    if (isSpotFree(matrix, row, column)) {
-                        matrix[row][column] = 'P';
-                    } else {
-                        isPlayerDead = true;
-                    }
-                    playersIndexes[0] = row;
-                    playersIndexes[1] = column;
+            switch (direction.charAt(i)) {
+                case 'R':
+                    column++;
+                    break;
+                case 'L':
+                    column--;
+                    break;
+                case 'U':
+                    row--;
+                    break;
+                case 'D':
+                    row++;
+                    break;
+            }
+            if (isInBounds(matrix, row, column)) {
+                if (isSpotFree(matrix, row, column)) {
+                    matrix[row][column] = 'P';
                 } else {
-                    isPlayerWin = true;
+                    isPlayerDead = true;
                 }
+                playersIndexes[0] = row;
+                playersIndexes[1] = column;
+            } else {
+                isPlayerWin = true;
+            }
 
 
             bunniesSpread(matrix);
@@ -66,7 +66,7 @@ public class RadioactiveMutantVampireBunnies {
             if (isPlayerDead) {
                 print(matrix);
                 System.out.printf("dead: %d %d", playersIndexes[0], playersIndexes[1]);
-               return;
+                return;
             } else if (isPlayerWin) {
                 print(matrix);
                 System.out.printf("won: %d %d", playersIndexes[0], playersIndexes[1]);
@@ -80,7 +80,7 @@ public class RadioactiveMutantVampireBunnies {
     private static void normalizeMatrix(char[][] matrix) {
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[row].length; col++) {
-                if (matrix[row][col]=='b') {
+                if (matrix[row][col] == 'b') {
                     matrix[row][col] = 'B';
                 }
             }
@@ -99,39 +99,39 @@ public class RadioactiveMutantVampireBunnies {
     private static boolean bunniesSpread(char[][] matrix) {
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[row].length; col++) {
-                if (matrix[row][col]=='B') {
-                    if (isInBounds(matrix, row, col - 1) ) {
-                        if (matrix[row][col - 1]=='P') {
-                            isPlayerDead=true;
+                if (matrix[row][col] == 'B') {
+                    if (isInBounds(matrix, row, col - 1)) {
+                        if (matrix[row][col - 1] == 'P') {
+                            isPlayerDead = true;
                         }
-                        if (matrix[row][col - 1]!='B') {
+                        if (matrix[row][col - 1] != 'B') {
                             matrix[row][col - 1] = 'b';
                         }
                     }
-                    if (isInBounds(matrix, row, col + 1) ) {
-                        if (matrix[row][col+1]=='P') {
-                          isPlayerDead=true;
+                    if (isInBounds(matrix, row, col + 1)) {
+                        if (matrix[row][col + 1] == 'P') {
+                            isPlayerDead = true;
                         }
-                        if (matrix[row][col+1]!='B') {
+                        if (matrix[row][col + 1] != 'B') {
                             matrix[row][col + 1] = 'b';
                         }
                     }
                     if (isInBounds(matrix, row + 1, col)) {
 
-                        if (matrix[row + 1][col]=='P') {
-                           isPlayerDead=true;
+                        if (matrix[row + 1][col] == 'P') {
+                            isPlayerDead = true;
                         }
-                        if (matrix[row + 1][col]!='B') {
+                        if (matrix[row + 1][col] != 'B') {
                             matrix[row + 1][col] = 'b';
                         }
                     }
 
-                    if (isInBounds(matrix, row - 1, col) ) {
+                    if (isInBounds(matrix, row - 1, col)) {
 
-                        if (matrix[row - 1][col]=='P') {
-                           isPlayerDead=true;
+                        if (matrix[row - 1][col] == 'P') {
+                            isPlayerDead = true;
                         }
-                        if (matrix[row - 1][col]!='B') {
+                        if (matrix[row - 1][col] != 'B') {
                             matrix[row - 1][col] = 'b';
                         }
                     }
@@ -146,6 +146,6 @@ public class RadioactiveMutantVampireBunnies {
     }
 
     private static boolean isSpotFree(char[][] matrix, int row, int column) {
-        return matrix[row][column]=='.';
+        return matrix[row][column] == '.';
     }
 }
