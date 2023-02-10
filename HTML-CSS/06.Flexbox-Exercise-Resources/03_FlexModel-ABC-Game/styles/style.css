@@ -1,0 +1,58 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 15vw;
+    height: 35rem;
+    align-items: center;
+    gap: 8px;
+    flex-flow: column wrap;
+    margin: 2rem 4 rem;
+}
+
+span {
+
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.upper {
+    order: 9;
+}
+
+.first {
+    order: 1;
+}
+
+.second {
+    order: 2;
+}
+
+.third {
+    order: 3;
+}
+
+.fourth {
+    order: 4;
+}
+
+.fifth {
+    order: 5;
+}
+
+.sixth {
+    order: 6;
+}
+
+.seventh {
+    order: 7;
+}
+
+.eighth {
+    order: 8;
+}
