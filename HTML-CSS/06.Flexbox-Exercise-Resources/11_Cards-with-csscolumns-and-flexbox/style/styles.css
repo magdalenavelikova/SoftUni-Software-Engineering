@@ -1,6 +1,7 @@
 body {
   background-color: rgb(238, 238, 238);
 
+
 }
 
 .wrapper {
@@ -16,7 +17,7 @@ img {
 }
 
 .card footer {
-  
+
   border-top: 1px solid grey;
 }
 
@@ -58,7 +59,7 @@ h2 {
   width: 70vw;
   display: flex;
   flex-wrap: wrap;
-   gap: 10px;
+  gap: 10px;
   align-content: center;
 
 }
@@ -68,4 +69,4 @@ h2 {
   flex-direction: column;
   height: 700px;
   justify-content: space-between;
-
+}
