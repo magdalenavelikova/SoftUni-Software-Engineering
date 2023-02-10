@@ -10,7 +10,6 @@ body {
   justify-content: center;
 }
 
-
 img {
   width: 100%;
   object-fit: cover;
@@ -33,7 +32,6 @@ img {
 h2 {
   margin-left: 300px;
 }
-
 
 
 .cards-layout.masonry {
