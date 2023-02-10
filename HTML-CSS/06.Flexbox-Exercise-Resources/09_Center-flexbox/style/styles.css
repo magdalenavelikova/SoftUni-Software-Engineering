@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  height: 30%;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 6px grey;
+
+}
+
+h2 {
+  margin-bottom: 20px;
+}

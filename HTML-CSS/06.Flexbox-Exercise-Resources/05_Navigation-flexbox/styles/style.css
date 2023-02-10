@@ -1,0 +1,36 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+ 
+    margin: 40px;
+}
+
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+
+}
+
+
+
+li {
+    list-style: none;
+    padding: 10px;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+    text-align: left;
+}
