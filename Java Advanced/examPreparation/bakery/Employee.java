@@ -1,4 +1,4 @@
-package bakery;
+package examPreparation.bakery;
 
 public class Employee {
     private String name;

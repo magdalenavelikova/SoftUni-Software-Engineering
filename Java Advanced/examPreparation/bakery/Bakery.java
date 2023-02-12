@@ -1,4 +1,4 @@
-package bakery;
+package examPreparation.bakery;
 
 import java.util.ArrayList;
 import java.util.Comparator;
