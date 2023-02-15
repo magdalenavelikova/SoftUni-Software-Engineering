@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 600px) {
+  tr {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+  }
+
+  th,
+  tr:first-child {
+    background-color: transparent;
+    color: black;
+  }
+}

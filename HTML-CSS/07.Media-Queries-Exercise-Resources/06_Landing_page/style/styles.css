@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
+:root {
+  --clr-primary: #68347b;
+  --clr-bg: #fcfcfc;
+  --clr-grey: #ededed;
+  --clr-text: #6b5a55;
+
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+
+  background-color: var(--clr-bg);
+  color: var(--clr-text)
+}
+
+
+.header {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 16px 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: 0px;
+  background-color: var(--clr-bg);
+}
+
+.header .logo {
+  font-weight: 900;
+  color: var(--clr-primary);
+  letter-spacing: 0.1em;
+}
+
+.header .logo-text {
+  color: var(--clr-text);
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.header .navigation {
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.header .nav-list a {
+  text-decoration: none;
+  color: var(--clr-text);
+  letter-spacing: 1px;
+}
+
+/* Buttons */
+
+.btn {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+
+/* Hero */
+
+.hero {
+  max-width: 80vw;
+  padding: 70px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero .welcome {
+
+  margin: 0 auto 48px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.hero .welcome>* {
+  width: 80%;
+
+}
+
+.hero .welcome button {
+  width: max-content;
+
+}
+
+.hero .welcome .title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero .welcome .info {
+  margin-bottom: 12px;
+}
+
+.hero .image {
+  margin: 0 auto 48px auto;
+}
+
+
+/* ------------------
+    card-container
+------------------ */
+
+.card-container {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "title title title"
+    "divider divider divider"
+    "card card card";
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.card-container h2 {
+  grid-area: title;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-container .divider {
+  background-color: var(--clr-text);
+  width: 100px;
+  height: 2px;
+  grid-area: divider;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+
+}
+
+.card-container .card .circle_img {
+  box-shadow: 1px 1px 1px 1px lightgray;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+
+.card-container .card .circle_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.card-container .card .name {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+
+
+.card-container .card .position {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card-container .card .quote {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  padding: 0 20px 0 20px;
+}
+
+.sign_up {
+  width: 100vw;
+  background-color: var(--clr-primary);
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.sign_up h2 {
+  color: var(--clr-bg);
+  text-align: center;
+  margin: 0px auto;
+  padding-bottom: 10px;
+}
+
+.sign_up .divider {
+  background-color: black;
+  width: 100px;
+  height: 1px;
+
+  margin: 0 auto;
+  display: block;
+}
+
+.sign_up .input_form {
+
+  display: flex;
+  margin: 20px auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer {
+width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 200px;
+  margin: 0 auto;
+}
+footer .nav-list{
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer .nav-list .nav-item a{
+  text-decoration: none;
+  color: var(--clr-text);
+ 
+}
+
+
+@media (max-width:600px) {
+  .card-container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title title"
+      "divider divider"
+    ;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .header .navigation {
+    display: none;
+  }
+
+  html {
+    font-size: smaller;
+  }
+
+footer{
+  display: unset;
+  width: 90vw;
+  
+
+}
+footer div{
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+}

@@ -1,0 +1,135 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+:root {
+  --clr-primary: #f8f8f8;
+  --clr-btn: #2d2d2d;
+  --clr-white: #fff;
+
+}
+
+fieldset {
+  border: unset;
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+
+}
+
+.container * {
+  border-radius: 4px;
+
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+ 
+ 
+}
+
+legend {
+  padding: 8px;
+  width: 50%;
+  position: absolute;
+  top: -20px;
+  box-shadow: 1px 1px 1px 1px grey;
+  z-index: 100;
+  background-color: var(--clr-primary);
+
+  border-radius: 2px;
+
+}
+
+.container {
+  box-shadow: 1px 1px 1px 1px grey;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--clr-primary);
+  padding: 20px 0 0 20px;
+  border-radius: 4px;
+}
+
+input {
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px lightgrey;
+  margin-left: 10px;
+  width: 70%;
+}
+
+
+
+
+button {
+  background-color: var(--clr-btn);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+.user {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.user i {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+}
+
+
+.password {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.password i {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+}
+
+@media (max-width:600px) {
+
+fieldset {
+    width: 90vw;
+  }
+
+  .user i {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+
+  .password i {
+    top: 30px;
+    left: 10px;
+  }
+
+  input {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+  }
+}

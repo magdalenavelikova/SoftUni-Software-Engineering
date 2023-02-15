@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(212, 209, 209);
+}
+
+table{
+  width: 100vw;
+}
+table,
+th,
+td {
+  
+  text-align: left;
+  padding: 2px;
+  padding-right: 150px;
+}
+
+table {
+  margin: 20px;
+}
+
+th {
+  background-color: black;
+  color: #fff;
+}
+
+tr:first-child {
+  background-color: rgb(234, 231, 231);
+}
+
+tr:nth-child(2) {
+  background-color: #fff;
+}
