@@ -160,7 +160,7 @@ body {
 }
 
 .card-container .card .circle_img {
-  box-shadow: 1px 1px 1px 1px lightgray;
+  box-shadow: 1px 1px 18px 5px lightgray;
   position: relative;
   width: 100px;
   height: 100px;
