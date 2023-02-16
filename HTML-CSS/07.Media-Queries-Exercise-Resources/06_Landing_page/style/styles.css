@@ -31,6 +31,7 @@ body {
   position: sticky;
   top: 0px;
   background-color: var(--clr-bg);
+  z-index: 100;
 }
 
 .header .logo {
