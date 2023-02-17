@@ -17,12 +17,12 @@ public class StickyFingers {
         fillMatrix(scanner, matrix);
         setDillingerPosition(matrix, 'D');
         int stolenValue = 0;
-        boolean isGameOver = false;
-        for (int i = 0; i < direction.length; i++) {
+
+        for (String s : direction) {
             row = dillingerPosition[0];
             column = dillingerPosition[1];
 
-            move(direction[i]);
+            move(s);
             if (isInBounds(matrix, row, column)) {
                 matrix[dillingerPosition[0]][dillingerPosition[1]] = '+';
                 if (isSpotFree(matrix, row, column)) {
