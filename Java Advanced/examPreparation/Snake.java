@@ -134,9 +134,6 @@ public class Snake {
 
     }
 
-    private static boolean isSpotFree(char[][] matrix, int row, int column) {
-        return matrix[row][column] == '-';
-    }
 
     private static boolean isThereAFood(char[][] matrix, int row, int column) {
         return matrix[row][column] == '*';
