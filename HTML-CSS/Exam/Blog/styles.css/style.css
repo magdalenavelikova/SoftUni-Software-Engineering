@@ -1,0 +1,88 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+:root {
+    --clr-text: #786366;
+    --clr-bg-card: #66545e;
+    --clr-bg: #f6e0b5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100 vw;
+    margin: 0 auto;
+}
+
+#hero {
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-bg);
+}
+
+nav {
+    width: 25%;
+align-self: flex-start;
+margin-top: 4rem;
+font-weight: 600;
+}
+
+.nav-item a {
+    color: var(--clr-text);
+    display: block;
+    margin: 1rem 2rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+nav h2 {
+    font-size: 2.5rem;
+
+    color: var(--clr-text);
+}
+.nav-item a i {
+    margin: 0 1rem;
+    font-size: 3rem;
+}
+
+.card-container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 4rem;
+
+}
+
+.card {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--clr-bg-card);
+    border-radius: 2rem;
+    box-shadow: -21px -12px 64px 27px rgba(148,138,138,0.75);
+-webkit-box-shadow: -21px -12px 64px 27px rgba(148,138,138,0.75);
+-moz-box-shadow: -21px -12px 64px 27px rgba(148,138,138,0.75);
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.card {
+    color: white;
+    padding: 1rem auto;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 1.5;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    
+}
