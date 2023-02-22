@@ -4,5 +4,5 @@ public enum CardsSuits {
     CLUBS,
     DIAMONDS,
     HEARTS,
-    SPADES;
+    SPADES
 }

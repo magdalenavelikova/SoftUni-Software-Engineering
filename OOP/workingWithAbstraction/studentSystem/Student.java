@@ -20,7 +20,7 @@ public class Student {
         } else if (grade < 5.00 && grade >= 3.50) {
             studentInfo += " Average student.";
         } else {
-            studentInfo += " Very nice person.";
+            studentInfo += " Very nice inheritanceExercise.interfacesAndAbstractionExercise.interfacesAndAbstractionExercise.person.interfacesAndAbstractionExercise.person.";
         }
         return studentInfo;
     }

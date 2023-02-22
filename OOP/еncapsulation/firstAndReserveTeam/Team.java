@@ -32,11 +32,11 @@ public class Team {
     }
 
     public List<Person> getFirstTeam() {
-        return Collections.unmodifiableList(this.firstTeam);
+        return Collections.unmodifiableList(firstTeam);
     }
 
     public List<Person> getReserveTeam() {
-        return Collections.unmodifiableList(this.reserveTeam);
+        return Collections.unmodifiableList(reserveTeam);
     }
 
 }

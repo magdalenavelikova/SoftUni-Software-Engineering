@@ -15,7 +15,7 @@ public class Main {
             String command = commandLine[0];
             String teamName = commandLine[1];
             switch (command) {
-                case "Team":
+                case "еncapsulation.firstAndReserveTeam.Team":
                     try {
                         Team team = new Team(teamName);
                         teamMap.put(teamName, team);
@@ -73,6 +73,6 @@ public class Main {
     }
 
     private static void printMessage(String teamName) {
-        System.out.println("Team " + teamName + " does not exist.");
+        System.out.println("еncapsulation.firstAndReserveTeam.Team " + teamName + " does not exist.");
     }
 }
