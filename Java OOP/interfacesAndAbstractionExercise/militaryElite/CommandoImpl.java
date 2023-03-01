@@ -11,7 +11,12 @@ public class CommandoImpl extends PrivateImpl {
 
     public CommandoImpl(int id, String firstName, String lastName, double salary, String corp) {
         super(id, firstName, lastName, salary);
-        this.specialisedSoldier = SpecialisedSoldierImpl.valueOf(corp);
+     if(specialisedSoldier.isValidSpecialisedSoldierImpl(corp)){
+         this.specialisedSoldier = SpecialisedSoldierImpl.valueOf(corp);
+     }else {
+        throw  new IllegalArgumentException("No Such corp");
+     }
+
         missionList = new ArrayList<>();
     }
 
@@ -35,6 +40,7 @@ public class CommandoImpl extends PrivateImpl {
         if (getMissions().size() > 0) {
             sb.append(System.lineSeparator());
             getMissions().stream().forEach(m -> sb.append(" ").append(m).append(System.lineSeparator()));
+            sb.deleteCharAt(sb.length()-1);
         }
 
         return sb.toString();

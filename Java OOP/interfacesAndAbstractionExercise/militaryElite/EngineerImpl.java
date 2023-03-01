@@ -34,7 +34,9 @@ public class EngineerImpl extends PrivateImpl {
         if (getRepairs().size() > 0) {
             sb.append(System.lineSeparator());
             repairs.stream().forEach(r -> sb.append(" ").append(r).append(System.lineSeparator()));
+            sb.deleteCharAt(sb.length()-1);
         }
+
         return sb.toString().trim();
     }
 

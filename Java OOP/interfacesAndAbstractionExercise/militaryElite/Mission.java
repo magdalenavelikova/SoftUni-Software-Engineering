@@ -6,8 +6,13 @@ public class Mission {
 
     public Mission(String codeName, String st) {
         this.codeName = codeName;
-        this.state = State.valueOf(st);
+        if(State.isValidMissionState(st)) {
+            this.state = State.valueOf(st);
+        }else {
+            throw new IllegalArgumentException("No such state!");
+        }
     }
+
 
     @Override
     public String toString() {

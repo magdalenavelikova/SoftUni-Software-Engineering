@@ -29,7 +29,9 @@ public class LieutenantGeneralImpl extends PrivateImpl implements LieutenantGene
             sb.append(System.lineSeparator());
             privatesImpl.stream().sorted(Comparator.comparing(PrivateImpl::getFirstName).reversed())
                     .forEach(s -> sb.append(" ").append(s).append(System.lineSeparator()));
+            sb.deleteCharAt(sb.length()-1);
         }
+
         return sb.toString();
     }
 }
