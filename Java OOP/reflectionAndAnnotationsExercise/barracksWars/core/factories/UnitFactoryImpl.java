@@ -1,9 +1,7 @@
-package barracksWars.core.factories;
+package reflectionAndAnnotationsExercise.barracksWars.core.factories;
 
-import barracksWars.interfaces.Unit;
-import barracksWars.interfaces.UnitFactory;
-import barracksWars.models.units.*;
-import jdk.jshell.spi.ExecutionControl;
+import reflectionAndAnnotationsExercise.barracksWars.interfaces.Unit;
+import reflectionAndAnnotationsExercise.barracksWars.interfaces.UnitFactory;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -11,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 public class UnitFactoryImpl implements UnitFactory {
 
     private static final String UNITS_PACKAGE_NAME =
-            "barracksWars.models.units.";
+            "reflectionAndAnnotationsExercise.barracksWars.models.units.";
 
     @Override
     public Unit createUnit(String unitType)  {

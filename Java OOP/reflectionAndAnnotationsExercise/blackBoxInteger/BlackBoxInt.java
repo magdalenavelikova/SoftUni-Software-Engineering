@@ -1,4 +1,4 @@
-package blackBoxInteger;
+package reflectionAndAnnotationsExercise.blackBoxInteger;
 
 public class BlackBoxInt {
 

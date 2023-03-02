@@ -1,6 +1,4 @@
-package barracksWars.interfaces;
-
-import jdk.jshell.spi.ExecutionControl;
+package reflectionAndAnnotationsExercise.barracksWars.interfaces;
 
 public interface UnitFactory {
 

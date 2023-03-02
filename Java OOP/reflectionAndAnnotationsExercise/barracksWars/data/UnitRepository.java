@@ -1,7 +1,7 @@
-package barracksWars.data;
+package reflectionAndAnnotationsExercise.barracksWars.data;
 
-import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.Unit;
+import reflectionAndAnnotationsExercise.barracksWars.interfaces.Repository;
+import reflectionAndAnnotationsExercise.barracksWars.interfaces.Unit;
 
 import java.util.Map;
 import java.util.TreeMap;

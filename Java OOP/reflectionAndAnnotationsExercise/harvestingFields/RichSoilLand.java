@@ -1,4 +1,4 @@
-package harvestingFields;
+package reflectionAndAnnotationsExercise.harvestingFields;
 
 import java.math.BigInteger;
 import java.util.Calendar;

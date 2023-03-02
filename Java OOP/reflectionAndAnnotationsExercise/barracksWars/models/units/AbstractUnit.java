@@ -1,6 +1,6 @@
-package barracksWars.models.units;
+package reflectionAndAnnotationsExercise.barracksWars.models.units;
 
-import barracksWars.interfaces.Unit;
+import reflectionAndAnnotationsExercise.barracksWars.interfaces.Unit;
 
 public abstract class AbstractUnit implements Unit {
     private int health;
