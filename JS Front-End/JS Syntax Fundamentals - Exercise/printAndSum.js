@@ -1,8 +1,8 @@
 function printAndSum(start, end) {
     let sum = 0;
-    let output='';
+    let output = '';
     for (let i = start; i <= end; i++) {
-        output+=i+' ';
+        output += i + ' ';
         sum += i;
     }
     console.log(output);

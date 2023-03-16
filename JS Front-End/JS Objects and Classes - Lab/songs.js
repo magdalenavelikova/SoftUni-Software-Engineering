@@ -1,15 +1,10 @@
 function songs(arr) {
     class Song {
-        typeList;
-        name;
-        time;
-
         constructor(typeList, name, time) {
             this.typeList = typeList;
             this.name = name;
             this.time = time;
         }
-
     }
 
     let songs = [];

@@ -4,7 +4,7 @@ function sortingNumbers(numbers) {
         return result;
     });
     let newArray = [];
-    let counter=sorted.length;
+    let counter = sorted.length;
     for (let i = 0; i < counter; i++) {
         if (i % 2 === 0) {
             newArray.push(sorted.shift());
@@ -12,7 +12,7 @@ function sortingNumbers(numbers) {
             newArray.push(sorted.pop());
         }
     }
-   return newArray;
+    return newArray;
 
 }
 

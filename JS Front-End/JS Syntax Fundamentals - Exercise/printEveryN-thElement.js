@@ -1,7 +1,7 @@
-function printEveryNThElement(array,step){
-    let output=[];
+function printEveryNThElement(array, step) {
+    let output = [];
 
-    for (let i = 0; i < array.length; i+=step) {
+    for (let i = 0; i < array.length; i += step) {
         output.push(array[i]);
 
     }
@@ -9,12 +9,9 @@ function printEveryNThElement(array,step){
 
 }
 
-printEveryNThElement(	['dsa',
+printEveryNThElement(['dsa',
         'asd',
         'test',
         'tset'],
     2
-
-
-
 );

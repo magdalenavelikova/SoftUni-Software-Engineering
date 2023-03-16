@@ -2,7 +2,7 @@ function stringSubstring(word, text) {
     let transformedText = text.toLowerCase().split(" ");
 
     for (let element of transformedText) {
-        if(element===word.toLowerCase()){
+        if (element === word.toLowerCase()) {
             console.log(word);
             return;
         }
