@@ -1,0 +1,19 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solve.js",
+  "scripts": {
+    "test": "mocha tests",
+    "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "http-server": "^14.1.1",
+    "mocha": "^10.2.0",
+    "playwright-chromium": "1.9.2"
+  }
+}

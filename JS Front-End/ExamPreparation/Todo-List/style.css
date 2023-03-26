@@ -1,0 +1,41 @@
+#root {
+    text-align: center;
+    
+}
+li {
+    list-style-type: none;
+}
+
+form {
+    font-family: sans-serif
+}
+button {
+    cursor: pointer;
+    background-color:burlywood;
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px;
+    margin: 2px;
+}
+button:hover {
+    background-color: chocolate;
+    transition: 0.3s;
+    
+}
+input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    
+}
+span {
+    font-size: 20px;
+    font-weight: 600;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: rgb(159, 111, 47);
+}
