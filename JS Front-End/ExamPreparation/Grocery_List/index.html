@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Grocery Shop</title>
+</head>
+
+<body>
+    <h1>Grocery List</h1>
+
+    <section id="addForm">
+        <div class="form">
+            <div id="signup">
+                <h2>Add products</h2>
+                <form class="list">
+                    <div class="product">
+                        <label></label>
+                        <input id="product" type="text" placeholder="Product Name">
+                    </div>
+                    <div class="count">
+                        <label></label>
+                        <input id="count" type="number" placeholder="Count">
+                    </div>
+                    <div class="price">
+                        <label></label>
+                        <input id="price" type="number" placeholder="Price">
+                    </div>
+                    <button id="add-product" type="submit" class="button button-block" type="button">Add Products</button>
+                    <button id="update-product" class="button button-block" type="button" disabled >Update Product</button>
+                    <button id="load-product" class="button button-block">Load All Products</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="table">
+        <div class="tbl-header">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Count</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="tbl-content">
+            <table>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td class="name">Milk</td>
+                        <td class="count-product">4</td>
+                        <td class="product-price">2</td>
+                        <td class="btn"><button class="update">Update</button> <button class="delete">Delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
