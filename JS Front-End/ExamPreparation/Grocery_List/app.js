@@ -1,7 +1,6 @@
 function attachEvents() {
   document.getElementById("load-product").addEventListener("click", loadAll);
   addButton.addEventListener("click", addRecord);
-
   updateBtn.addEventListener("click", updateRecord);
 }
 
