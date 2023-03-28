@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Hotel reservation</title>
+</head>
+
+<body>
+
+    <section id="welcome">
+        <h1>&#9734; Welcome to our family hotel &#9734;</h1>
+        <div class="home-container">
+            <div class="info">
+                <h1>Hotel reservation</h1>
+            </div>
+        </div>
+    </section>
+
+    <div id="wrapper">
+
+        <section id="append-reservation">
+            <div class="first-container">              
+                <h1>Make reservation</h1>
+                
+                <div class="container-text">
+                    <form action="">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name">
+
+                        <label for="last-name">Last name:</label>
+                        <input type="text" id="last-name" name="last-name">
+
+                        <label for="date-in">Check-in:</label>
+                        <input type="date" id="date-in" name="date-in">
+
+                        <label for="date-out">Check-out:</label>
+                        <input type="date" id="date-out" name="date-out">
+
+                        <label for="people-count">Number of guests:</label>
+                        <input type="number" id="people-count" name="people-count" >
+
+                        <button id="next-btn" type="submit">Next</button>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <section id="info-reservations">
+            <div class="reservations-info-container">
+                <div class="first-container"> 
+                <h1>Reservation info</h1>
+                <ul class="info-list">
+
+                </ul>
+            </div>
+            </div>
+        </section>
+
+        <section id="confirm-reservations">
+            <div class="confirm-container">
+                <div class="first-container"> 
+                <h1>Confirm reservation</h1>
+                <ul class="confirm-list">
+
+                </ul>
+            </div>
+            </div>
+        </section>
+    </div>
+    <section id="complete-reservation">
+        <div>
+           <h1>Your reservation is:</h1>
+           <h1 id="verification"></h1>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

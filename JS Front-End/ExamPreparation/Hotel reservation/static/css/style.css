@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    place-items: center;
+    background-image: url("../img/zero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0; 
+    height: 100vh;
+}
+
+#wrapper {
+    justify-content: center;
+    margin: 2.35rem 0 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#welcome {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+#welcome>h1 {
+    text-align: center;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    background:linear-gradient(180deg, rgba(165,195,250,1) 17%, rgba(188,205,221,1) 48%, rgba(206,215,200,1) 57%, rgba(246,236,153,1) 69%, rgba(232,183,105,1) 78%);
+    color: transparent;
+    background-clip: text;
+-webkit-background-clip: text;
+}
+
+.home-container {
+    margin: 0px auto 4px 0;
+    height:1rem;
+    display: flex;
+    top: 0%;
+    left: 50%;
+    text-align: center;
+}
+
+.info {
+    justify-items: legacy;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    margin-top: 10rem;
+    
+}
+
+.info>h1 {
+    font-size: 2rem;
+    margin: -10.3rem 0 0px;
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    letter-spacing: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(242, 238, 213);
+}
+
+.first-container {
+    width: 25vw;
+    height: 42vh;
+    margin: 30px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: rgb(198, 180, 107);
+    opacity: 0.95;
+    border-radius: 5px;
+    align-items:center;
+    justify-content:baseline;
+    flex-direction: column;
+    
+}
+
+.first-container > h1 {
+  background-color: rgb(198, 180, 107);
+  opacity: 0.95;
+  padding: 0.25rem 0rem;
+  margin: -1rem ;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid black;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container-text> form {
+    padding: 1rem;
+}
+
+.container-text> form > input {
+    width: 13rem;
+    height: 1.5rem;
+    border-radius: 5px;
+
+}
+#complete-reservation {
+    background-color: rgb(198, 180, 107);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 5px;
+    width: 40vw;
+    height: 12vh;
+    margin:40px auto;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    opacity: 0.95;
+}
+
+
+label {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1A2250;
+}
+
+#next-btn {
+    display: block;
+    margin-top: 0.6rem;
+    width: 13rem;
+    border-radius: 5px;
+    background-color: rgb(159, 159, 17);
+    font-size:large;
+    font-weight: 700;
+    opacity: 0.9;
+}
+/* .info-list li {
+    margin-top: 3rem;
+    
+} */
+
+li {
+    list-style-type: none;
+}
+
+li > article {
+    margin-top: 2rem;
+    border: 2px solid black;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+article> h3,p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.1rem 0.6rem;
+    font-family: 'Alkalami', serif;
+   
+}
+
+.edit-btn, .continue-btn, .confirm-btn, .cancel-btn {
+    margin: 2.6rem 1rem ;
+    width: 6.5rem;
+    border-radius: 5px;
+    background-color: rgb(159, 159, 17);
+    font-size:large;
+    font-weight: 700;
+    opacity: 0.9;
+}
+.reservation-confirmed {
+    color: green;
+    text-align: center;
+}
+.reservation-cancelled {
+    color: red;
+    text-align: center;
+}
