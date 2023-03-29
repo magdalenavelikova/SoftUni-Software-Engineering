@@ -15,8 +15,8 @@ list.innerHTML="";
   fetch(BASE_URL)
     .then((result) => result.json())
     .then((data) => {
-      Object.entries(data).forEach((obj) => {
-        let li = createLi(obj[0], obj[1]);
+      Object.values(data).forEach((obj) => {
+        let li = createLi(obj);
         list.appendChild(li);
       });
     });
@@ -74,17 +74,17 @@ function deleteRecord(event) {
   }).then(() => loadAll(event));
 }
 
- function createLi(key, obj) {
+ function createLi( obj) {
   let li = document.createElement("li");
   let span = document.createElement("span");
   span.textContent = obj.name;
   let editBtn = document.createElement("button");
   editBtn.textContent = "Edit";
-  editBtn.id = key;
+  editBtn.id = obj._id;
   editBtn.addEventListener("click", editRecord);
   let deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Remove";
-  deleteBtn.id = key;
+  deleteBtn.id = obj._id;
   deleteBtn.addEventListener("click", deleteRecord);
   li.appendChild(span);
   li.appendChild(deleteBtn);
