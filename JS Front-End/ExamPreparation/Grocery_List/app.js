@@ -20,7 +20,7 @@ async function addRecord(ev) {
     count.value.length <= 0 ||
     price.value.length <= 0
   ) {
-    alert("Please fill all fields");
+    console.log("Please fill all fields");
   } else {
     try {
       let response = await fetch(url, {
@@ -40,7 +40,7 @@ async function addRecord(ev) {
       loadAll(ev);
       clearInputs();
     } catch (error) {
-      alert(error);
+      console.log(error);
     }
   }
 }
@@ -59,8 +59,8 @@ async function loadAll(ev) {
       throw new Error(`${response.status} ${response.statusText}`);
     }
     let data = await response.json();
-    Object.entries(data).forEach((obj) => {
-      let tr = createTr(obj[0], obj[1]);
+    Object.values(data).forEach((obj) => {
+      let tr = createTr( obj);
       tbody.appendChild(tr);
     });
   } catch (error) {
@@ -91,7 +91,7 @@ async function updateRecord(ev) {
     count.value.length <= 0 ||
     price.value.length <= 0
   ) {
-    alert("Please fill all fields");
+    console.log("Please fill all fields");
   } else {
     try {
       let response = await fetch(urlToken, {
@@ -114,7 +114,7 @@ async function updateRecord(ev) {
       clearInputs();
       loadAll(ev);
     } catch (error) {
-      alert(error);
+      console.log(error);
     }
   }
 }
@@ -132,11 +132,11 @@ async function deleteRecord(ev) {
     ev.target.parentElement.parentElement.remove();
     loadAll(ev);
   } catch (error) {
-    alert(error);
+    console.log(error);
   }
 }
 
-function createTr(id, obj) {
+function createTr(obj) {
   let tr = document.createElement("tr");
   let tdName = document.createElement("td");
   tdName.className = "name";
@@ -155,13 +155,13 @@ function createTr(id, obj) {
   let updateBtn = document.createElement("button");
   updateBtn.textContent = "Update";
   updateBtn.className = "update";
-  updateBtn.id = id;
+  updateBtn.id = obj._id;
   updateBtn.addEventListener("click", fillInputs);
   tdButtons.appendChild(updateBtn);
   let deleteBtn = document.createElement("button");
   deleteBtn.className = "delete";
   deleteBtn.textContent = "Delete";
-  deleteBtn.id = id;
+  deleteBtn.id = obj._id;
   deleteBtn.addEventListener("click", deleteRecord);
   tdButtons.appendChild(deleteBtn);
   tr.appendChild(tdButtons);
