@@ -15,7 +15,7 @@ function solve() {
   publishBtn.addEventListener("click", preview);
 
   function preview(ev) {
-    ev.preventDefault();
+    
     let inValid = Object.values(inputs).filter((i) => i.value === "");
 
     if (inValid.length > 0) {
