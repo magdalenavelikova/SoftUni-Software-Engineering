@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Car Magazine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <form>
+          <h1>Create offer</h1>
+
+          <fieldset>
+            <legend><span class="number">1</span> Car Details</legend>
+
+            <label for="make">Make:</label>
+            <input type="text" id="make" name="make" />
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" />
+
+            <label for="year">Production year:</label>
+            <input type="number" id="year" min="1990" max="2022" step="1" value="2017" />
+            
+            <label for="fuel">Fuel type:</label>
+            <select id="fuel" name="fuel" >
+              <option value="petrol">Petrol</option>
+              <option value="diesel">Diesel</option>
+              <option value="hybrid">Hybrid</option>
+              <option value="electric">Electric</option>
+            </select>
+          
+            <legend><span class="number">2</span> Price</legend>
+
+            <label for="original-cost">Original cost:</label>
+            <input type="number" id="original-cost" step="10" />
+
+            <label for="selling-price">Selling price:</label>
+            <input type="number" id="selling-price" step="10" />
+
+          <button id="publish" type="submit">Publish</button>
+        </form>
+      </div>
+
+      <div class="table-wrapper">
+        <section>
+            <div class="tbl-header">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Fuel</th>
+                    <th>Price</th>
+                    <th>New Price</th>
+                    <th>-</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="tbl-content">
+              <table>
+                <tbody id="table-body">
+                    
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="sold-wrapper">
+            
+              <div id="title-bar">
+                Sold cars:
+              </div>
+              <div id="nav">
+                <span>Make and model</span>
+                    <span>Production year</span>
+                    <span>Profit made</span>
+              </div>
+            <ul id="cars-list">
+              
+            </ul>
+          </section>
+          <p>Profit made: <strong id="profit">0.00</strong>$</p>
+</div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
