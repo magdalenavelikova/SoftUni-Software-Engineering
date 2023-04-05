@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Work Process</title>
+</head>
+
+<body>
+    <h1>Work Process</h1>
+
+    <section id="hireForm">
+        <div class="form">
+            <div id="signup">
+                <h2>Hire people for work</h2>
+                <form>
+                    <div class="top-row">
+                        <div class="fname">
+                            <label></label>
+                            <input id="fname" type="text" placeholder="First Name">
+                        </div>
+                        <div class="lname">
+                            <label></label>
+                            <input id="lname" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label></label>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="birth">
+                        <label></label>
+                        <input id="birth" type="text" placeholder="Date of Birth">
+                    </div>
+                    <div class="position">
+                        <label></label>
+                        <input id="position" type="text" placeholder="Position">
+                    </div>
+                    <div class="salary">
+                        <label></label>
+                        <input id="salary" type="number" placeholder="Salary">
+                    </div>
+                    <button id="add-worker" type="submit" class="button button-block">Hire Worker</button>
+                </form>
+            </div>
+    </section>
+
+    <section id="table">
+        <div class="tbl-header">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Date of Birth</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="tbl-content">
+            <table>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <p id='message'>Your budget for salary must be: $<span id="sum">0.00</span></p>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
