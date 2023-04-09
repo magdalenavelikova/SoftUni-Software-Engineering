@@ -1,0 +1,33 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url("../images/sprint-board-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+ul,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#root {
+    margin-top: 10px;
+}

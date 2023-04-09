@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprint Board</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/board.css">
+</head>
+<body>
+  <main id="root">
+    <section id="form-section">
+      <form>
+        <fieldset>
+         <legend>
+          <input id="load-board-btn" type="button" value="Load Board" />
+         </legend>
+          <div class="form-control">
+            <input type="text" id="title" placeholder="Enter task title..." />
+           </div>
+           <div class="form-control">
+            <textarea id="description" placeholder="Enter task description..."></textarea>
+           </div>
+         <div class="form-control">
+           <input id="create-task-btn" type="button" value="Add Task">
+         </div>
+        </fieldset>
+       </form>
+    </section>
+    <section id="board-section">
+      <article id="todo-section">
+        <h1>ToDo</h1>
+        <ul class="task-list">
+          
+        </ul>
+      </article>
+      <article id="in-progress-section">
+        <h1>In Progress</h1>
+        <ul class="task-list">
+          
+        </ul>
+      </article>
+      <article id="code-review-section">
+        <h1>Code Review</h1>
+        <ul class="task-list">
+          
+        </ul>
+      </article>
+      <article id="done-section">
+        <h1>Done</h1>
+        <ul class="task-list">
+          
+        </ul>
+      </article>
+    </section>
+  </main>
+  <script src="./solve.js"></script> 
+</body>
+</html>

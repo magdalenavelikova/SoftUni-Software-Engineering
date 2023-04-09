@@ -1,0 +1,185 @@
+window.addEventListener("load", solve);
+
+function solve() {
+  let count = 0;
+  let total = 0;
+  const mapOfTask = new Map();
+  let IdForDelete;
+  const info = {
+    id: null,
+    title: null,
+    description: null,
+    label: null,
+    points: null,
+    assignee: null,
+  };
+  const inputs = {
+    id: document.getElementById("task-id"),
+    title: document.getElementById("title"),
+    description: document.getElementById("description"),
+    label: document.getElementById("label"),
+    points: document.getElementById("points"),
+    assignee: document.getElementById("assignee"),
+  };
+  const otherSel = {
+    createBtn: document.getElementById("create-task-btn"),
+    section: document.getElementById("tasks-section"),
+    total: document.getElementById("total-sprint-points"),
+    deleteTaskBtn: document.getElementById("delete-task-btn"),
+    
+  };
+
+  otherSel.createBtn.addEventListener("click", create);
+  otherSel.deleteTaskBtn.addEventListener(
+    "click",
+    inDeleteTaskHandler
+  );
+
+  function create(event) {
+    event.preventDefault();
+    count++;
+    const { id, title, description, label, points, assignee } =
+      inputs;
+    id.value = count;
+    const areValidInputsValues = Object.values(inputs).every(
+      (input) => input.value != ""
+    );
+
+    if (!areValidInputsValues) {
+      console.log("Empty Field!");
+      return;
+    }
+
+    const article = createDom(
+      "article",
+      otherSel.section,
+      "",
+      `task-${id.value}`,
+      ["task-card"]
+    );
+
+    if (label.value === "Feature") {
+      let div = createDom("div", article, "", "", [
+        "task-card-label",
+        "feature",
+      ]);
+      div.innerHTML = "Feature &#8865";
+    } else if (label.value === "Low Priority Bug") {
+      let div = createDom("div", article, "", "", [
+        "task-card-label",
+        "low-priority",
+      ]);
+      div.innerHTML = "Low Priority Bug &#9737";
+    } else if (label.value === "High Priority Bug") {
+      let div = createDom("div", article, "", "", [
+        "task-card-label",
+        "high-priority",
+      ]);
+      div.innerHTML = "High Priority Bug &#9888";
+    }
+
+    createDom("h3", article, title.value, "", ["task-card-title"]);
+    createDom("p", article, description.value, "", [
+      "task-card-description",
+    ]);
+    createDom("div", article, `Estimated at ${points.value} pts`, "", [
+      "task-card-points",
+    ]);
+    total += Number(points.value);
+
+    createDom("div", article, `Assigned to: ${assignee.value}`, "", [
+      "task-card-assignee",
+    ]);
+    let div = createDom("div", article, "", "", ["task-card-actions"]);
+
+    const deleteBtn = createDom("button", div, "Delete");
+
+    deleteBtn.addEventListener("click", inDeleteHandler);
+
+    for (const key in inputs) {
+      info[key] = inputs[key].value;
+    }
+    mapOfTask.set(id.value, info);
+
+    otherSel.total.textContent = `Total Points ${total}pts`;
+    clearAll();
+  }
+  function  delete(){
+IdForDelete.remove();
+Object.values(inputs).forEach(
+    (input) =>{
+        (input.value = "");
+        (input.disabled = "")
+
+    } 
+  );
+  otherSel.createBtn.disabled = "";
+    otherSel.deleteTaskBtn.disabled = "true";
+
+  }
+ function clearAll() {
+    Object.values(inputs).forEach((input) => (input.value = ""));
+  }
+  function delete(event) {
+    let content = event.target.parentElement.parentElement.id;
+    console.log(content);
+    let text = content.split("-");
+    let id = text[1];
+    console.log(id);
+    let objForDelete=mapOfTask.get(id);
+    console.log(objForDelete);
+    for (const key in inputs) {
+      inputs[key].value = objForDelete[key];
+    }
+    IdForDelete=event.target.parentElement.parentElement;
+    count--;
+    total -= Number(info.points);
+    otherSel.total.textContent = `Total Points ${total}pts`;
+    Object.values(inputs).forEach(
+      (input) => (input.disabled = "true")
+    );
+    otherSel.createBtn.disabled = "true";
+    otherSel.deleteTaskBtn.disabled = "";
+  }
+
+ 
+
+  function createDom(type, parent, content, id, classes, attributes) {
+    //TYPE parse
+    const element = document.createDom(type);
+
+    //CONTENT Parse
+    if (content) {
+      if (type !== "input" && type !== "textarea") {
+        element.textContent = content;
+      } else {
+        element.value = content;
+      }
+    }
+
+    //ID Parse
+    if (id) {
+      element.setAttribute("id", id);
+    }
+
+    //CLASSES Parse
+    if (classes) {
+      for (const clazz of classes) {
+        element.classList.add(clazz);
+      }
+    }
+
+    //PARENT Parse
+    if (parent) {
+      parent.appendChild(element);
+    }
+
+    //ATTRIBUTES Parse
+    if (attributes) {
+      for (const key in attributes) {
+        element.setAttribute(key, attributes[key]);
+      }
+    }
+    return element;
+  }
+}

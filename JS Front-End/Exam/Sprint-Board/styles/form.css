@@ -1,0 +1,55 @@
+#form-section,
+#form-section > form > fieldset {
+    display: flex;
+}
+
+#form-section {
+    justify-content: center;
+    align-items: center;
+}
+
+#form-section > form > fieldset {
+    gap: 8px;
+    padding: 15px 30px;
+    border:3px solid #4238ca;
+    background:#f6f8ff;
+}
+
+#load-board-btn,
+#create-task-btn {
+    color: white;
+    background-color: #4238ca;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#load-board-btn:hover,
+#create-task-btn:hover {
+    color: #4238ca;
+    background: #f6f8ff;
+}
+
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  border: 2px solid rgb(142, 139, 139);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+    font-size: 18px;
+}
+
+#title {
+    height: 100%;
+}
