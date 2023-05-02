@@ -88,15 +88,13 @@ ORDER BY e.first_name , p.name
 LIMIT 5;
 
 #8
-
 SELECT 
     e.employee_id,
     e.first_name,
     (CASE
-        WHEN YEAR(p.start_date) > 2004 THEN 'NULL'
+        WHEN YEAR(p.start_date) > 2005 THEN ' '
         ELSE p.name
-    END) AS `project_name`,
-    p.start_date
+    END) AS `project_name`
 FROM
     employees AS e
         JOIN
@@ -105,7 +103,22 @@ FROM
     projects AS p ON ep.project_id = p.project_id
 WHERE
     e.employee_id = 24
-ORDER BY p.name;
+ORDER BY project_name;
+
+#9
+SELECT 
+    e.employee_id,
+    e.first_name,
+    e.manager_id,
+    m.first_name AS manager_name
+FROM
+    employees AS e
+        JOIN
+    employees AS m ON m.employee_id = e.manager_id
+WHERE
+    e.manager_id IN (3 , 7)
+ORDER BY e.first_name;
+
 
 
 
