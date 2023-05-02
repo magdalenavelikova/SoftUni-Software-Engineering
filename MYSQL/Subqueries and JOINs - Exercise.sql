@@ -92,7 +92,7 @@ SELECT
     e.employee_id,
     e.first_name,
     (CASE
-        WHEN YEAR(p.start_date) > 2005 THEN ' '
+        WHEN YEAR(p.start_date) >= 2005 THEN ' '
         ELSE p.name
     END) AS `project_name`
 FROM
