@@ -119,6 +119,90 @@ WHERE
     e.manager_id IN (3 , 7)
 ORDER BY e.first_name;
 
+#10
+SELECT 
+    e.employee_id,
+    CONCAT_WS(' ', e.first_name, e.last_name) AS employee_name,
+    CONCAT_WS(' ', m.first_name, m.last_name) AS manager_name,
+    d.name
+FROM
+    employees AS e
+        JOIN
+    employees AS m ON m.employee_id = e.manager_id
+        JOIN
+    departments AS d ON e.department_id = d.department_id
+WHERE
+    e.manager_id IS NOT NULL
+ORDER BY e.employee_id
+LIMIT 5;
 
+#11
+SELECT 
+    AVG(e.salary) AS min_average_salary
+FROM
+    departments AS d
+        JOIN
+    employees AS e ON e.department_id = d.department_id
+GROUP BY e.department_id
+ORDER BY min_average_salary
+LIMIT 1;
 
+#12
+SELECT 
+    mc.country_code, m.mountain_range, p.peak_name, p.elevation
+FROM
+    peaks AS p
+        JOIN
+    mountains AS m ON p.mountain_id = m.id
+        JOIN
+    mountains_countries AS mc ON p.mountain_id = mc.mountain_id
+WHERE
+    p.elevation > 2835
+        AND mc.country_code = 'BG'
+ORDER BY p.elevation DESC;
 
+#13
+SELECT 
+    mc.country_code, COUNT(m.mountain_range) AS mountain_range
+FROM
+    mountains AS m
+        JOIN
+    mountains_countries AS mc ON m.id = mc.mountain_id
+WHERE
+    mc.country_code IN ('BG' , 'RU', 'US')
+GROUP BY mc.country_code
+ORDER BY mountain_range DESC;
+
+#14
+SELECT 
+    c.country_name, r.river_name
+FROM
+    countries AS c
+        LEFT JOIN
+    countries_rivers AS cr ON c.country_code = cr.country_code
+        LEFT JOIN
+    rivers AS r ON cr.river_id = r.id
+WHERE
+    c.continent_code = 'AF'
+ORDER BY c.country_name
+LIMIT 5;
+
+#15
+SELECT 
+    continent_code,
+    currency_code,
+    COUNT(country_code) AS `currency_usage`
+FROM
+    countries AS c
+GROUP BY currency_code , continent_code
+HAVING COUNT(country_code) > 1
+    AND `currency_usage` = (SELECT 
+        COUNT(*) AS cn
+    FROM
+        `countries` AS c2
+    WHERE
+        c2.continent_code = c.continent_code
+    GROUP BY c2.currency_code
+    ORDER BY cn DESC
+    LIMIT 1)
+ORDER BY continent_code , currency_code;
