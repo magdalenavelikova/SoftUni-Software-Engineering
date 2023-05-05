@@ -160,9 +160,44 @@ account_holders AS ah
 END$$
 
 #12
+CREATE PROCEDURE `usp_deposit_money`(account_id INT, money_amount DECIMAL(10,4))
+BEGIN
+IF money_amount>0 THEN
+Start TRANSACTION;
+UPDATE accounts 
+SET 
+    balance = balance + money_amount
+WHERE
+    account_id = id;
 
+IF EXISTS(SELECT id FROM accounts WHERE account_id=id ) THEN
+COMMIT;
+ELSE
+ROLLBACK;
+END IF;
+END IF;
+END$$
 
 #13
+CREATE  PROCEDURE `usp_withdraw_money`(account_id INT, money_amount DECIMAL(19,4))
+BEGIN
+IF money_amount>0 AND (SELECT balance FROM accounts WHERE account_id=id)>= money_amount THEN
+Start TRANSACTION;
+UPDATE accounts 
+SET 
+    balance = balance - money_amount
+WHERE
+    account_id = id;
+
+IF EXISTS(SELECT id FROM accounts WHERE account_id=id ) 
+ THEN
+COMMIT;
+ELSE
+ROLLBACK;
+END IF;
+END IF;
+END$$
+
 
 
 #14
@@ -193,4 +228,45 @@ ROLLBACK;
 END IF;
 END$$
 
+#15
+CREATE TABLE `logs`
+(log_id INT PRIMARY KEY AUTO_INCREMENT, 
+account_id INT NOT NULL,
+ old_sum DECIMAL(19,4), 
+ new_sum DECIMAL(19,4))$$
+ 
+CREATE TRIGGER `accounts_AFTER_UPDATE` AFTER UPDATE ON `accounts` FOR EACH ROW
+BEGIN
+INSERT INTO `logs`(account_id, old_sum, new_sum)
+VALUES(old.id,old.balance,new.balance);
+END$$
 
+#16
+
+CREATE TABLE `logs`
+(log_id INT PRIMARY KEY AUTO_INCREMENT, 
+account_id INT NOT NULL,
+ old_sum DECIMAL(19,4), 
+ new_sum DECIMAL(19,4));
+ 
+CREATE TRIGGER `accounts_AFTER_UPDATE` AFTER UPDATE ON `accounts` FOR EACH ROW
+BEGIN
+INSERT INTO `logs`(account_id, old_sum, new_sum)
+VALUES(old.id,old.balance,new.balance);
+END;
+
+ 
+CREATE TABLE `notification_emails` (
+id INT PRIMARY KEY AUTO_INCREMENT, 
+recipient INT NOT NULL,
+ `subject` VARCHAR(100), 
+ body VARCHAR(255));
+
+
+CREATE TRIGGER `logs_AFTER_INSERT` BEFORE INSERT ON `logs` FOR EACH ROW BEGIN
+INSERT INTO `notification_emails`( `recipient`, `subject`, `body`)
+VALUES( new.account_id,
+concat( 'Balance change for account: ',new.account_id),
+CONCAT('On ', NOW(), ' your balance was changed from ', ROUND(NEW.old_sum, 0), ' to ', ROUND(NEW.new_sum, 0), '.')
+);
+END
