@@ -170,7 +170,7 @@ SELECT
 FROM
     `employees` AS e
 GROUP BY e.`department_id`
-HAVING e.`third_highest_salary` IS NOT NULL
+HAVING `third_highest_salary` IS NOT NULL
 ORDER BY e.`department_id`;
 
 #17
@@ -196,6 +196,7 @@ FROM
 GROUP BY department_id
 ORDER BY department_id;
 
+--RESOURCES
 CREATE DATABASE IF NOT EXISTS `gringotts` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `gringotts`;
 

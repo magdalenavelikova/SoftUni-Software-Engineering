@@ -36,6 +36,7 @@ WHERE
 ORDER BY `employee_id`;
 
 #5
+
 SELECT 
     `name`
 FROM
@@ -151,6 +152,8 @@ SELECT
 FROM
     `games`
 ORDER BY `name`;
+
+#16
 
 SELECT 
     `product_name` AS `name`,

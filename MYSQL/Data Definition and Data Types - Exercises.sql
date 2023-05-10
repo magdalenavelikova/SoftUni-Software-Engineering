@@ -94,7 +94,7 @@ ADD UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE;
 
 #11
 
-CREATE DATABASE `movies`;
+CREATE DATABASE `movies`; -- without this row for judge
 CREATE TABLE `directors`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `director_name` VARCHAR(40) NOT NULL,
@@ -155,8 +155,8 @@ VALUES
 
 
 #12
-CREATE DATABASE `car_rental`;
-USE `car_rental`;
+CREATE DATABASE `car_rental`; -- without this row for judge
+USE `car_rental`; -- without this row for judge
 
 CREATE TABLE `categories` (
 `id` INT PRIMARY KEY AUTO_INCREMENT,

@@ -1,3 +1,4 @@
+#1
 CREATE TABLE people (
     person_id INT,
     first_name VARCHAR(40) NOT NULL,
@@ -35,6 +36,7 @@ ADD CONSTRAINT `fk_people_passports`
 ALTER TABLE `people` 
 CHANGE COLUMN `salary` `salary` DECIMAL(10,2);
 
+#2
 CREATE TABLE manufacturers (
     manufacturer_id INT PRIMARY KEY NOT NULL,
     `name` VARCHAR(40) NOT NULL,
@@ -61,6 +63,8 @@ INSERT INTO models VALUES
 (104,'Model X',2),
 (105,'Model 3',2),
 (106,'Nova',3);
+
+#3
 
 CREATE TABLE students (
     student_id INT PRIMARY KEY NOT NULL,
@@ -100,6 +104,7 @@ INSERT INTO  students_exams VALUES
 (2,102),
 (2,103);
 
+#4
 CREATE TABLE teachers (
     teacher_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(40) NOT NULL,
@@ -120,9 +125,10 @@ ADD CONSTRAINT `fk_teachers_manager`
 FOREIGN KEY (manager_id)
 REFERENCES teachers(teacher_id);
 
-#5
+
 create database test;
 use test;
+#5
 CREATE TABLE cities (
     city_id INT PRIMARY KEY NOT NULL,
     `name` VARCHAR(50)
