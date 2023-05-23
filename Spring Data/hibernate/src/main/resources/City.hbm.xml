@@ -7,11 +7,7 @@
         <id name="id" type="int" column ="id">
             <generator class="native" />
         </id>
-
         <property name="name" type="java.lang.String" column="name"/>
-
-
-
         <set name="users" inverse="true" cascade="all">
             <key column="city_id" not-null="false"></key>
             <one-to-many class="org.example.entity.User"/>

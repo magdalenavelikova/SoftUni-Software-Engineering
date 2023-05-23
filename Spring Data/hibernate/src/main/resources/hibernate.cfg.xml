@@ -4,11 +4,11 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name = "hibernate.dialect">
+        <property name="hibernate.dialect">
             org.hibernate.dialect.MySQLDialect
         </property>
 
-        <property name = "hibernate.connection.driver_class">
+        <property name="hibernate.connection.driver_class">
             com.mysql.cj.jdbc.Driver
 
         </property>
@@ -16,23 +16,23 @@
 
         <!-- Assume test is the database name -->
 
-        <property name = "hibernate.connection.url">
-            jdbc:mysql://localhost/test_hibernate?createDatabaseIfNotExist=true
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/test_hibernate?createDatabaseIfNotExist=true
         </property>
 
-        <property name = "hibernate.connection.username">
+        <property name="hibernate.connection.username">
             root
         </property>
 
-        <property name = "hibernate.connection.password">
+        <property name="hibernate.connection.password">
 
         </property>
-<property name="hibernate.hbm2ddl.auto">
-    update
-</property>
+        <property name="hibernate.hbm2ddl.auto">
+            update
+        </property>
         <!-- List of XML mapping files -->
-        <mapping resource = "User.hbm.xml"/>
-        <mapping resource = "City.hbm.xml"/>
+        <mapping resource="User.hbm.xml"/>
+        <mapping resource="City.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>

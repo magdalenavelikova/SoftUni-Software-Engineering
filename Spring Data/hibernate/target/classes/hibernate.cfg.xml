@@ -17,7 +17,7 @@
         <!-- Assume test is the database name -->
 
         <property name = "hibernate.connection.url">
-            jdbc:mysql://localhost/test_hibernate?createDatabaseIfNotExist=true
+            jdbc:mysql://localhost:3306/test_hibernate?createDatabaseIfNotExist=true
         </property>
 
         <property name = "hibernate.connection.username">
@@ -25,7 +25,7 @@
         </property>
 
         <property name = "hibernate.connection.password">
-            ***REMOVED***
+***REMOVED***
         </property>
 <property name="hibernate.hbm2ddl.auto">
     update
