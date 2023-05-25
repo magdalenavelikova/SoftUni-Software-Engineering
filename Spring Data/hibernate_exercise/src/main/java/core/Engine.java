@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -115,9 +116,9 @@ public class Engine implements Runnable {
                 .forEach(p -> {
                     System.out.printf("Project name: %s%n", p.getName());
                     System.out.printf(" \tProject Description: %s%n", p.getDescription());
-                    System.out.printf(" \tProject Start Date:%s%n", p.getStartDate());
-                    System.out.printf(" \tProject End Date:%s%n", p.getEndDate());
-
+                    System.out.printf(" \tProject Start Date:%s%n", p.getStartDate().format(DateTimeFormatter.ofPattern("yyyy-mm-dd hh:mm:ss.S")));
+                    System.out.printf(" \tProject End Date:%s%n", p.getEndDate() == null ? "null" : p.getEndDate().format(DateTimeFormatter.ofPattern("yyyy-mm-dd hh:mm:ss.S")));
+//Project Start Date:2005-09-01 00:00:00.0
                 });
 
     }
