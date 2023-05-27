@@ -1,7 +1,7 @@
 package org.example.entity.university;
 
 import jakarta.persistence.*;
-import org.example.entity.BaseEntity;
+import org.example.entity.bank.BaseEntity;
 
 import java.time.LocalDate;
 import java.util.HashSet;

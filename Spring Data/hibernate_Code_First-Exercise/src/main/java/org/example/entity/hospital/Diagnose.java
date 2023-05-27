@@ -4,7 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
-import org.example.entity.BaseEntity;
+import org.example.entity.bank.BaseEntity;
 
 import java.util.Set;
 

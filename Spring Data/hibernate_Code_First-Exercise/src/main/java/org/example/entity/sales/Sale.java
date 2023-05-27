@@ -2,7 +2,7 @@ package org.example.entity.sales;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
-import org.example.entity.BaseEntity;
+import org.example.entity.bank.BaseEntity;
 
 import java.time.LocalDateTime;
 

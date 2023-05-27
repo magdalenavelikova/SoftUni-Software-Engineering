@@ -21,6 +21,7 @@ public class Main {
             case 2 -> persistenceUnitName = "sales";
             case 3 -> persistenceUnitName = "university";
             case 4 -> persistenceUnitName = "hospital";
+            case 5 -> persistenceUnitName = "bank";
         }
         entityManager = getEntityManagerDB(persistenceUnitName);
         entityManager.getTransaction().begin();

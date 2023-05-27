@@ -3,7 +3,7 @@ package org.example.entity.hospital;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import org.example.entity.BaseEntity;
+import org.example.entity.bank.BaseEntity;
 
 @Entity
 @Table(name = "medicaments")

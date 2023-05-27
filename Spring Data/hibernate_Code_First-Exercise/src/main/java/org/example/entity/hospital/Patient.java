@@ -1,7 +1,7 @@
 package org.example.entity.hospital;
 
 import jakarta.persistence.*;
-import org.example.entity.BaseEntity;
+import org.example.entity.bank.BaseEntity;
 
 import java.util.Date;
 import java.util.HashSet;

@@ -4,7 +4,7 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import org.example.entity.BaseEntity;
+import org.example.entity.bank.BaseEntity;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
