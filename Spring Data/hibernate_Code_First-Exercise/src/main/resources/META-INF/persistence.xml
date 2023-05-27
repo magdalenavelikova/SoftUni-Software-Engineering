@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+             http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="exercise">
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mysql://localhost:3306/exerciseDB?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=TRUE&amp;useSSL=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="PASSWORD/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="sales">
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mysql://localhost:3306/sales?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=TRUE&amp;useSSL=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="PASSWORD/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+
+    <persistence-unit name="hospital">
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mysql://localhost:3306/hospital?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=TRUE&amp;useSSL=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="PASSWORD/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+
+    <persistence-unit name="university">
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mysql://localhost:3306/university?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=TRUE&amp;useSSL=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="PASSWORD/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
