@@ -20,8 +20,8 @@ public abstract class Vehicle {
 	@Column(name = "fuel_type")
 	private String fuelType ;
 
-	public Vehicle(){}
-	public Vehicle(Long id, String type, String model, BigDecimal price, String fuelType) {
+	protected Vehicle(){}
+	protected Vehicle(Long id, String type, String model, BigDecimal price, String fuelType) {
 		this.id = id;
 		this.type = type;
 		this.model = model;
