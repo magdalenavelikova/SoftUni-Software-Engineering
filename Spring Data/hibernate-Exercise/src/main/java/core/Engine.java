@@ -59,8 +59,9 @@ public class Engine implements Runnable {
         Town town = entityManager.createQuery("SELECT t FROM Town t WHERE t.name=:p_town", Town.class)
                 .setParameter("p_town", townName)
                 .getSingleResult();
-        entityManager.getTransaction().begin();
 
+        setEmployeeAddressToNull(townName);
+        entityManager.getTransaction().begin();
         List<Address> addresses = entityManager.createQuery("SELECT a FROM Address a WHERE a.town.id=:p_id", Address.class)
                 .setParameter("p_id", town.getId())
                 .getResultList();
@@ -69,6 +70,19 @@ public class Engine implements Runnable {
         entityManager.remove(town);
         entityManager.getTransaction().commit();
         System.out.printf("%d address in %s deleted", addresses.size(), townName);
+    }
+
+    private void setEmployeeAddressToNull( String townName) {
+
+            String query = "SELECT e FROM Employee AS e WHERE e.address.town.name = '" + townName + "'";
+
+            List<Employee> employees =  entityManager.createQuery(query).getResultList();
+           entityManager.getTransaction().begin();
+            for (Employee employee : employees) {
+                employee.setAddress(null);
+                entityManager.persist(employee);
+            }
+        entityManager.getTransaction().commit();
     }
 
     private void task12() {
