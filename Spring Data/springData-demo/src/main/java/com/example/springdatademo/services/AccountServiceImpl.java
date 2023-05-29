@@ -4,8 +4,9 @@ import com.example.springdatademo.exeptions.AccountNotFoundException;
 import com.example.springdatademo.exeptions.InsufficientFundsException;
 import com.example.springdatademo.models.Account;
 import com.example.springdatademo.repositories.AccountRepository;
-import jakarta.transaction.Transactional;
+
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 
@@ -32,11 +33,13 @@ public class AccountServiceImpl implements AccountService {
         this.accountRepository.save(account);
 
     }
-@Transactional
+
     @Override
-    public void transferBetweenAccounts(Long formId, Long toId, BigDecimal amount) throws InsufficientFundsException, AccountNotFoundException {
-       this.withdrawMoney(amount,formId);
-       this.transferMoney(amount,toId);
+    @Transactional
+    public void transferBetweenAccounts(Long fromId, Long toId, BigDecimal amount) throws InsufficientFundsException, AccountNotFoundException {
+        this.transferMoney(amount,toId);
+        this.withdrawMoney(amount,fromId);
+
 
     }
     private static void throwIfInsufficientFunds(BigDecimal money, Account account) throws InsufficientFundsException {

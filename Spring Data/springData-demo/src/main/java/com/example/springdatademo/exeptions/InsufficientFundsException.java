@@ -1,4 +1,4 @@
 package com.example.springdatademo.exeptions;
 
-public class InsufficientFundsException extends Exception {
+public class InsufficientFundsException extends RuntimeException {
 }

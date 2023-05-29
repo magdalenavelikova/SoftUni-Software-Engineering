@@ -36,6 +36,6 @@ public class ConsoleRunner implements CommandLineRunner {
         }
 
 this.accountService.transferMoney(new BigDecimal(500),3L);
-        this.accountService.transferBetweenAccounts(3L,2L,new BigDecimal(100));
+        this.accountService.transferBetweenAccounts(5L,6L,new BigDecimal(1000));
     }
 }
