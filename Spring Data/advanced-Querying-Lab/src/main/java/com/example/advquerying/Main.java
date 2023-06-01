@@ -7,9 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 
@@ -27,16 +28,17 @@ public class Main implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
         System.out.println("Choose task /1-11/: ");
-        int task = Integer.parseInt(scanner.nextLine());
+        int task = Integer.parseInt(bufferedReader.readLine());
         while (task != 0) {
 
             switch (task) {
                 case 1 -> {
                     System.out.println("1. Select Shampoos by Size");
                     System.out.println("Input size:");
-                    String sizeName = scanner.nextLine();
+                    String sizeName = bufferedReader.readLine();
                     try {
                         Size size = Size.valueOf(sizeName);
                         printShampooByGivenSize(size);
@@ -47,9 +49,9 @@ public class Main implements CommandLineRunner {
                 case 2 -> {
                     System.out.println("2. Select Shampoos by Size or Label");
                     System.out.println("Input size:");
-                    String sizeName = scanner.nextLine();
+                    String sizeName = bufferedReader.readLine();
                     System.out.println("Input label id:");
-                    Long labelId = Long.parseLong(scanner.nextLine());
+                    Long labelId = Long.parseLong(bufferedReader.readLine());
                     try {
                         Size size = Size.valueOf(sizeName);
                         printShampoosBySizeOrLabel(size, labelId);
@@ -60,48 +62,90 @@ public class Main implements CommandLineRunner {
                 case 3 -> {
                     System.out.println("3. Select Shampoos by Price");
                     System.out.println("Input price:");
-                    BigDecimal price = new BigDecimal(scanner.nextLine());
-                    printShampoosWithPriceHigherThen(price);
+                    BigDecimal price = new BigDecimal(bufferedReader.readLine());
+                    printShampoosWithPriceHigherThan(price);
                 }
                 case 4 -> {
                     System.out.println("4.Select Ingredients by Name");
                     System.out.println("Input first letter:");
-                    String letters = scanner.nextLine();
+                    String letters = bufferedReader.readLine();
                     printIngredientsWhichNameStartsWithLetters(letters);
                 }
                 case 5 -> {
                     System.out.println("5.Select Ingredients by Names");
-                    System.out.println("Input Ingredients:");
+                    System.out.println("Input Ingredients: ");
                     Set<String> ingredients = new HashSet<>();
-                    String row = "";
-                    ingredients.add("Lavender");
-                    ingredients.add("Herbs");
-                    ingredients.add("Apple");
+                    String row;
+                    while ((row = bufferedReader.readLine()) != null && !row.isBlank()) {
+                        ingredients.add(row);
+                    }
+                    printIngredientsByNames(ingredients);
 
-//                    while ((row = scanner.nextLine()) != null) {
-//                        ingredients.add(row);
-//                    }
-                    printIngredientsIngredientsbyNames(ingredients);
+                }
+                case 6 -> {
+                    System.out.println("6.Count Shampoos by Price");
+                    System.out.println("Input price: ");
+                    BigDecimal price = new BigDecimal(bufferedReader.readLine());
+                    printCountOfShampoosWithPriceLowerThan(price);
 
+                }
+                case 7 -> {
+                    System.out.println("7. Select Shampoos by Ingredients");
+                    System.out.println("Input Ingredients: ");
+                    Set<String> ingredients = new HashSet<>();
+                    String row;
+                    while ((row = bufferedReader.readLine()) != null && !row.isBlank()) {
+                        ingredients.add(row);
+                    }
+                    printShampoosWithIngredients(ingredients);
+
+                }
+                case 8 -> {
+                    System.out.println("8. Select Shampoos by Ingredients Count");
+                    System.out.println("Input Ingredients Count: ");
+                    int count = Integer.parseInt(bufferedReader.readLine());
+                    printShampoosWithIngredientsLessThan(count);
+                }
+                case 9 -> {
+                    System.out.println("9. Delete Ingredients by Name");
+                    System.out.println("Input Ingredient Name: ");
+                    String name = bufferedReader.readLine();
+                    this.ingredientService.deleteIngredient(name);
+
+                }
+                case 10 -> {
+                    System.out.println("10. Update Ingredients by Price");
+                    this.ingredientService.updateIngredientsPrice();
+                }
+                case 11 -> {
+                    System.out.println("11. Update Ingredients by Names");
+                    System.out.println("Input Ingredient Name: ");
+                    String name = bufferedReader.readLine();
+                    this.ingredientService.updateIngredientsPriceByName(name);
                 }
                 default -> throw new IllegalStateException("Unexpected value: " + task);
             }
+            System.out.println();
             System.out.println("Choose task /1-11/: ");
             System.out.println("For exit press 0: ");
-            task = Integer.parseInt(scanner.nextLine());
-
+            task = Integer.parseInt(bufferedReader.readLine());
 
         }
-
-
-//
-//
-//
-//
-
     }
 
-    private void printIngredientsIngredientsbyNames(Set<String> ingredients) {
+    private void printShampoosWithIngredientsLessThan(int count) {
+        shampooService.findShampoosWithIngredientsLessThan(count).forEach(System.out::println);
+    }
+
+    private void printShampoosWithIngredients(Set<String> ingredients) {
+        shampooService.findShampoosWithIngredients(ingredients).forEach(System.out::println);
+    }
+
+    private void printCountOfShampoosWithPriceLowerThan(BigDecimal price) {
+        System.out.println("Count of shampoos: " + shampooService.findCountOfShampoosWithPriceLowerThan(price));
+    }
+
+    private void printIngredientsByNames(Set<String> ingredients) {
         this.ingredientService.findIngredientsIngredientsByNames(ingredients).forEach(System.out::println);
     }
 
@@ -109,8 +153,8 @@ public class Main implements CommandLineRunner {
         this.ingredientService.findIngredientsWhichNameStartsWithLetters(letters).forEach(System.out::println);
     }
 
-    private void printShampoosWithPriceHigherThen(BigDecimal price) {
-        this.shampooService.findShampoosWithPriceHigherThen(price).forEach(System.out::println);
+    private void printShampoosWithPriceHigherThan(BigDecimal price) {
+        this.shampooService.findShampoosWithPriceHigherThan(price).forEach(System.out::println);
     }
 
     private void printShampoosBySizeOrLabel(Size size, long labelId) {

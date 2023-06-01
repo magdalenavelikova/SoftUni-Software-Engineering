@@ -1,6 +1,7 @@
 package com.example.advquerying.entities;
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -65,5 +66,17 @@ public class Shampoo extends BaseEntity {
 
     public void setIngredients(Set<Ingredient> ingredients) {
         this.ingredients = ingredients;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Shampoo shampoo)) return false;
+        return Objects.equals(brand, shampoo.brand) && Objects.equals(price, shampoo.price) && size == shampoo.size && Objects.equals(label, shampoo.label) && Objects.equals(ingredients, shampoo.ingredients);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, price, size, label, ingredients);
     }
 }
