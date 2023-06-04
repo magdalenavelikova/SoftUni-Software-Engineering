@@ -7,8 +7,9 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Set;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 @Service
 public class AuthorServiceImpl implements AuthorService {
@@ -44,8 +45,25 @@ public class AuthorServiceImpl implements AuthorService {
         return authorRepository.findById(randomId).orElse(null);
     }
 
+
     @Override
-    public Set<Author> findAllAuthorsByBookCount() {
-        return authorRepository.findAuthorsByBooksSizeDesc();
+    public List<String> findAuthorsWithFirstName(String endsWith) {
+
+        return this.authorRepository.findAllByFirstNameEndingWith(endsWith).stream()
+                .map(author -> String.format("%s %s", author.getFirstName(), author.getLastName()))
+                .collect(Collectors.toList());
     }
+
+    @Override
+    public List<String> findTotalBookCopies() {
+        return this.authorRepository.findAuthorsByBooksCopies().stream()
+                .map(row -> {
+                    String[] split = row.split(",");
+                    String concat = split[0] + " " + split[1] + " - " + split[2];
+                    return concat;
+                })
+                .collect(Collectors.toList());
+    }
+
+
 }

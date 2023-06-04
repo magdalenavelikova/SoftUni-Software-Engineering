@@ -3,6 +3,7 @@ package bg.softuni.bookshop.services;
 import bg.softuni.bookshop.models.Author;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Set;
 
 public interface AuthorService  {
@@ -13,5 +14,8 @@ public interface AuthorService  {
     Author getRandomAuthor();
 
 
-    Set<Author> findAllAuthorsByBookCount();
+    List<String> findAuthorsWithFirstName(String endsWith);
+
+
+    List<String>  findTotalBookCopies();
 }
