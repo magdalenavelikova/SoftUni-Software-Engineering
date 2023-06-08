@@ -29,7 +29,7 @@ public class GameAddDto {
         this.releaseDate = releaseDate;
     }
 
-    @Pattern(regexp = "[A-Z][A-z]{3,100}", message = "Title – has to begin with an uppercase letter and must have length between 3 and 100 symbols ")
+    @Pattern(regexp = "[A-Z][\\w\\d\\s\\.]{3,100}", message = "Title – has to begin with an uppercase letter and must have length between 3 and 100 symbols ")
     public String getTitle() {
         return title;
     }

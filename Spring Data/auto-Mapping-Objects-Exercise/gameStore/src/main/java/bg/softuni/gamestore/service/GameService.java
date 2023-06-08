@@ -3,6 +3,8 @@ package bg.softuni.gamestore.service;
 import bg.softuni.gamestore.model.dto.AllGamesDto;
 import bg.softuni.gamestore.model.dto.DetailGameDto;
 import bg.softuni.gamestore.model.dto.GameAddDto;
+import bg.softuni.gamestore.model.dto.OwnedGamesDto;
+import bg.softuni.gamestore.model.entity.User;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -17,4 +19,6 @@ public interface GameService {
     List<AllGamesDto> allGames();
 
     DetailGameDto detailGame(String title);
+
+
 }

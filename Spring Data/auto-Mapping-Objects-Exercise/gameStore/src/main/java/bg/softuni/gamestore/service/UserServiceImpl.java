@@ -1,5 +1,6 @@
 package bg.softuni.gamestore.service;
 
+import bg.softuni.gamestore.model.dto.OwnedGamesDto;
 import bg.softuni.gamestore.model.dto.UserLoginDto;
 import bg.softuni.gamestore.model.dto.UserRegisterDto;
 import bg.softuni.gamestore.model.entity.User;
@@ -9,8 +10,10 @@ import jakarta.validation.ConstraintViolation;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -18,7 +21,6 @@ public class UserServiceImpl implements UserService {
     private final ModelMapper mapper;
     private final ValidationUtil validationUtil;
     private User loggedInUser;
-
 
 
     public UserServiceImpl(UserRepository userRepository, ModelMapper mapper, ValidationUtil validationUtil) {
@@ -36,8 +38,17 @@ public class UserServiceImpl implements UserService {
         if (isValidEntity(userRegisterDto)) return;
         User user = mapper.map(userRegisterDto, User.class);
         userRepository.save(user);
+        System.out.println(userRegisterDto.getFullName() + " was registered");
     }
 
+    @Override
+    public List<OwnedGamesDto> printOwnedGames(User loggedInUser) {
+
+        return userRepository.findAllByUser(loggedInUser.getId()).stream()
+                .map(game -> mapper.map(game, OwnedGamesDto.class))
+                .collect(Collectors.toList());
+
+    }
 
     @Override
     public void loginUser(UserLoginDto userLoginDto) {
@@ -55,7 +66,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void logoutUser() {
-        if (loggedInUser==null) {
+        if (loggedInUser == null) {
             System.out.println("Cannot log out. No user was logged in.");
             return;
         }

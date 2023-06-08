@@ -42,10 +42,7 @@ public class DetailGameDto {
     public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
-//Title: Overwatch
-//Price: 80.00
-//Description: Overwatch is a team-based multiplayer online first-person shooter video game developed and published by Blizzard Entertainment.
-//Release date: 24-05-2016
+
     @Override
     public String toString() {
         return String.format("Title: %s%nPrice: %.2f%nDescription: %s%nRelease date: %s%n",

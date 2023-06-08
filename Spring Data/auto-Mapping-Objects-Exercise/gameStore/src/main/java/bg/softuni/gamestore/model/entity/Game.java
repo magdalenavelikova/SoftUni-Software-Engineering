@@ -38,7 +38,7 @@ public class Game extends BaseEntity {
         this.trailer = trailer;
     }
 
-@Column(name = "image_thumbnail")
+    @Column(name = "image_thumbnail")
     public String getThumbnail() {
         return thumbnail;
     }
