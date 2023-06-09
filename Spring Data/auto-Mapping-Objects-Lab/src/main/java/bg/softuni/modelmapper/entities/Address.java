@@ -21,11 +21,11 @@ public class Address extends BaseEntity {
     public String getCountry() {
         return country;
     }
-    @Column(nullable = false)
+    
     public void setCountry(String country) {
         this.country = country;
     }
-
+	@Column(nullable = false)
     public String getCity() {
         return city;
     }

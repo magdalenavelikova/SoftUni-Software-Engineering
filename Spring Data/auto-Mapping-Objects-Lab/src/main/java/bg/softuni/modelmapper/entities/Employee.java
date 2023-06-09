@@ -63,7 +63,7 @@ public class Employee extends BaseEntity {
     public BigDecimal getSalary() {
         return salary;
     }
-
+	@Column(nullable = false)
     public LocalDate getBirthday() {
         return birthday;
     }
@@ -80,7 +80,7 @@ public class Employee extends BaseEntity {
     public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
-@Column(nullable = false)
+
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
