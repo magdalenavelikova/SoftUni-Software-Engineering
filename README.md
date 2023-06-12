@@ -8,6 +8,5 @@
 [![oop](https://user-images.githubusercontent.com/113022603/231089653-97f17b4b-5ae5-4e2f-b801-b77cd4ea3159.jpg)](https://softuni.bg/certificates/details/168983/dfc217f7)
 [![HTML CSS](https://user-images.githubusercontent.com/113022603/225333325-4a6ff10c-c3af-448a-bbc6-d38edaffee27.jpg)](https://softuni.bg/certificates/details/162880/a35436ca)
 [![JS Front-End](https://user-images.githubusercontent.com/113022603/230883365-65cb0e67-4680-429a-847f-a4ce07eccaa5.png)](https://softuni.bg/certificates/details/168321/28a3310d)
-[![MySQL](https://github.com/magdalenavelikova/SoftUni-Software-Engineering/assets/113022603/0d43f9c0-16b4-412c-b21d-2bfd5c0292fd)](https://softuni.bg/certificates/details/172101/0c7490b5)
-![MySQL](https://github.com/magdalenavelikova/SoftUni-Software-Engineering/assets/113022603/d0858a63-a6c8-4a2c-aa47-f835c467776d)
+[![MySQL]](https://softuni.bg/certificates/details/172101/0c7490b5)
 [![download](https://github.com/magdalenavelikova/SoftUni-Software-Engineering/assets/113022603/b38d1409-4a26-433b-bf7a-2fd69045c5ab)](https://softuni.bg/certificates/details/172101/0c7490b5)
