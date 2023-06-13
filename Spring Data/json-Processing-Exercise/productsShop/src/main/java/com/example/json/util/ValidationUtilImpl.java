@@ -15,8 +15,6 @@ public class ValidationUtilImpl implements ValidationUtil {
         this.validator =
                 Validation.buildDefaultValidatorFactory().getValidator();
     }
-
-
     @Override
     public <E> boolean isValid(E entity) {
         Set<ConstraintViolation<E>> validate = validator.validate(entity);

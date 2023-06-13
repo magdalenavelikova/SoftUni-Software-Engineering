@@ -35,13 +35,14 @@ public class Category extends BaseEntity {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Category category)) return false;
-        return Objects.equals(name, category.name) && Objects.equals(products, category.products);
+        if (o == null || getClass() != o.getClass()) return false;
+        Category category = (Category) o;
+        return id == category.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, products);
+        return Objects.hash(id);
     }
 }
 
