@@ -8,10 +8,13 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.*;
+import java.util.*;
 
 @Component("xml_format_converter")
 public class XMLFormatConverter implements FormatConverter {
     private boolean prettyPrint=false;
+    private Map<String,Marshaller> marshallers=new HashMap<>();
+
 
     @Override
     public void setPrettyPrint() {
@@ -21,11 +24,9 @@ public class XMLFormatConverter implements FormatConverter {
     @Override
     public String serialize(Object obj) throws UnableToConvertException {
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(obj.getClass());
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            if (this.prettyPrint) {
-                marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, this.prettyPrint);
-            }
+            Marshaller marshaller = getMarshaller(obj);
+
+
             StringWriter sw = new StringWriter();
 
             marshaller.marshal(
@@ -40,14 +41,11 @@ public class XMLFormatConverter implements FormatConverter {
 
     }
 
+
     @Override
     public void serialize(Object obj, String filename) throws UnableToConvertException {
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(obj.getClass());
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            if (this.prettyPrint) {
-                marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, this.prettyPrint);
-            }
+            Marshaller marshaller = getMarshaller(obj);
             FileWriter fw = new FileWriter(filename);
 
             marshaller.marshal(
@@ -93,4 +91,21 @@ public class XMLFormatConverter implements FormatConverter {
         }
 
     }
+
+    private Marshaller getMarshaller(Object obj) throws JAXBException {
+        Marshaller marshaller=null;
+        if (this.marshallers.containsKey(obj.getClass().getName())){
+            marshaller=this.marshallers.get(obj.getClass().getName());
+        }else {
+            JAXBContext jaxbContext = JAXBContext.newInstance(obj.getClass());
+            marshaller = jaxbContext.createMarshaller();
+            if (this.prettyPrint) {
+                marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, this.prettyPrint);
+            }
+            this.marshallers.put(obj.getClass().getName(),marshaller);
+        }
+
+        return marshaller;
+    }
+
 }
