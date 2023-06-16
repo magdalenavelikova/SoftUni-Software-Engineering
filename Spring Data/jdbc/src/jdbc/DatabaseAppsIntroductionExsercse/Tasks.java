@@ -227,7 +227,7 @@ public class Tasks {
         properties.setProperty("user", username);
         System.out.print("Password: ");
         String password = reader.readLine();
-        password = password.equals("") ? "***REMOVED***" : password;
+        password = password.equals("") ? "password" : password;
         properties.setProperty("password", password);
 
         connection = DriverManager.getConnection(connectionPath, properties);
