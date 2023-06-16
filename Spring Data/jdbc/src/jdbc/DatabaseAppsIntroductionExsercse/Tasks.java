@@ -27,40 +27,34 @@ public class Tasks {
         while (!task.equals("end")) {
             System.out.println("Choose task from 2 to 9: ");
             task = reader.readLine();
-            int id = -1;
+            int id ;
 
             switch (task) {
-                case "2":
-                    getVillainsNames();
-                    break;
-                case "3":
+                case "2" -> getVillainsNames();
+                case "3" -> {
                     System.out.println("Choose villain id:");
                     id = Integer.parseInt(reader.readLine());
                     getMinionNames(id);
-                    break;
-                case "4":
+                }
+                case "4" -> {
                     System.out.println("Input:");
                     String minion = reader.readLine().split(": ")[1];
                     String villain = reader.readLine().split(": ")[1];
                     addMinion(minion, villain);
-                    break;
-                case "5":
+                }
+                case "5" -> {
                     System.out.println("Enter country name: ");
                     String country = reader.readLine();
                     changeTownNamesCasing(country);
-                    break;
-                case "6":
+                }
+                case "6" -> {
                     System.out.println("Enter villain ID: ");
                     id = Integer.parseInt(reader.readLine());
                     removeVillain(id);
-                    break;
-                case "7":
-                    printAllMinionNames();
-                    break;
-                case "8":
-                    increaseMinionsAge();
-                    break;
-                case "9":
+                }
+                case "7" -> printAllMinionNames();
+                case "8" -> increaseMinionsAge();
+                case "9" -> {
                     /*  USE `minions_db`;
                         DROP procedure IF EXISTS `usp_get_older`;
 
@@ -76,11 +70,12 @@ public class Tasks {
                     System.out.println("Enter minion ID: ");
                     id = Integer.parseInt(reader.readLine());
                     increaseAgeByStoredProcedure(id);
-                    break;
-                default:
+                }
+                default -> {
                     if (!task.equals("end") && !task.equals("")) {
                         System.out.println("No such task");
                     }
+                }
             }
 
         }
@@ -105,12 +100,12 @@ public class Tasks {
     private static void increaseMinionsAge() throws IOException, SQLException {
         System.out.println("Input:");
         int[] minionsIds = Arrays.stream(reader.readLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e))
+                .mapToInt(Integer::parseInt)
                 .toArray();
 
         preparedStatement = connection.prepareStatement("UPDATE minions SET age=age+1, name=LOWER(name)  WHERE id=?;");
-        for (int i = 0; i < minionsIds.length; i++) {
-            preparedStatement.setInt(1, minionsIds[i]);
+        for (int minionsId : minionsIds) {
+            preparedStatement.setInt(1, minionsId);
             preparedStatement.execute();
         }
         preparedStatement = connection.prepareStatement("SELECT * FROM minions");
