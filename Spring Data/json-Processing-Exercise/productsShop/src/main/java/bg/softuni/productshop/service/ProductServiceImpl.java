@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
     private final ModelMapper mapper;
     private static final String FILENAME = "products.";
     private final ProductRepository productRepository;
-private ProductsXmlDto productsXmlDto;
+    private ProductsXmlDto productsXmlDto;
     private final ValidationUtil validationUtil;
     private final UserService userService;
     private final CategoryService categoryService;
@@ -60,7 +60,9 @@ private ProductsXmlDto productsXmlDto;
         return productRepository.findAllByPriceBetweenAndBuyerIsNullOrderByPriceDesc(min, max).stream()
                 .map(p -> {
                     ProductsInRangeDto productsInRangeDto = mapper.map(p, ProductsInRangeDto.class);
-                    productsInRangeDto.setSellerFullName(String.format("%s %S", p.getSeller().getFirstName(), p.getSeller().getLastName()));
+                    String firstName = p.getSeller().getFirstName();
+                    firstName = firstName == null ? "" : firstName;
+                    productsInRangeDto.setSellerFullName(String.format("%s %S", firstName, p.getSeller().getLastName()));
                     return productsInRangeDto;
                 }).collect(Collectors.toList());
 
@@ -81,7 +83,7 @@ private ProductsXmlDto productsXmlDto;
 
     @Override
     public ProductsXmlDto productsInRangeForXML(BigDecimal min, BigDecimal max) {
-        ProductsXmlDto productsXmlDto=new ProductsXmlDto();
+        ProductsXmlDto productsXmlDto = new ProductsXmlDto();
         productsXmlDto.setProducts(productsInRange(min, max));
         return productsXmlDto;
 
