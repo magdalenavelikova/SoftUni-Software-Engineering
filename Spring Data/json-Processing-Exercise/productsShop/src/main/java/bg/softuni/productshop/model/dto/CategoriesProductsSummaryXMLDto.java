@@ -10,7 +10,7 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CategoriesProductsSummaryXMLDto {
     @XmlElement(name = "category")
-    List<CategoryProductsSummaryDto> categories;
+    private List<CategoryProductsSummaryDto> categories;
 
     public CategoriesProductsSummaryXMLDto() {
     }

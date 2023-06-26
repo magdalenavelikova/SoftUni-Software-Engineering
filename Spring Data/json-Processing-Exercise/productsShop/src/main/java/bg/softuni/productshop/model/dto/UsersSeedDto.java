@@ -16,7 +16,7 @@ import java.util.List;
 public class UsersSeedDto {
 
     @XmlElement(name = "user")
-    List<UserSeedDto> users;
+    private List<UserSeedDto> users;
 
     public UsersSeedDto() {
     }

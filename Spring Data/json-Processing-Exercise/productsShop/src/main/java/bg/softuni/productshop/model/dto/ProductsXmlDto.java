@@ -5,11 +5,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
+
 @XmlRootElement(name = "products")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ProductsXmlDto {
     @XmlElement(name = "product")
-    List<ProductsInRangeDto> products;
+    private List<ProductsInRangeDto> products;
 
     public ProductsXmlDto() {
     }

@@ -20,7 +20,7 @@ public class UsersSoldProductsWithAgeDto {
     @XmlElement(name = "sold-products")
     @Expose
     @SerializedName("sold-products")
-    SoldProductsCountDto products;
+    private SoldProductsCountDto products;
 
     public UsersSoldProductsWithAgeDto() {
         products = new SoldProductsCountDto();

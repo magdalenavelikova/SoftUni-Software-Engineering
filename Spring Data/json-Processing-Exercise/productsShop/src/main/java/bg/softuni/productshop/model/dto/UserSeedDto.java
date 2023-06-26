@@ -3,16 +3,19 @@ package bg.softuni.productshop.model.dto;
 import com.google.gson.annotations.Expose;
 import jakarta.validation.constraints.Size;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class UserSeedDto  {
+public class UserSeedDto {
     @Expose
-    @XmlAttribute(name="first-name")
+    @XmlAttribute(name = "first-name")
     private String firstName;
     @Expose
-    @XmlAttribute(name="last-name")
+    @XmlAttribute(name = "last-name")
     private String lastName;
     @Expose
     @XmlAttribute(name = "age")
@@ -28,7 +31,8 @@ public class UserSeedDto  {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-   @Size(min = 3)
+
+    @Size(min = 3)
     public String getLastName() {
         return lastName;
     }

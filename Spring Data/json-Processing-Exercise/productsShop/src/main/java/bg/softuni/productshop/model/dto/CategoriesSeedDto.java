@@ -11,7 +11,7 @@ import java.util.List;
 public class CategoriesSeedDto {
 
     @XmlElement(name = "category")
-    List<CategorySeedDto> categories;
+    private List<CategorySeedDto> categories;
 
     public CategoriesSeedDto() {
     }

@@ -4,20 +4,21 @@ import com.google.gson.annotations.Expose;
 
 import javax.xml.bind.annotation.*;
 import java.util.List;
+
 @XmlRootElement(name = "users")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class UsersAndProductsDto {
     @Expose
     @XmlAttribute(name = "count")
-   private Integer usersCount;
+    private Integer usersCount;
     @XmlElement(name = "user")
     @Expose
-   private List<UsersSoldProductsWithAgeDto> users;
+    private List<UsersSoldProductsWithAgeDto> users;
 
     public UsersAndProductsDto() {
     }
 
-    public UsersAndProductsDto( List<UsersSoldProductsWithAgeDto> users) {
+    public UsersAndProductsDto(List<UsersSoldProductsWithAgeDto> users) {
         this.users = users;
         this.usersCount = users.size();
     }
