@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customers>
+  <customer name="Emmitt Benally">
+    <birth-date>1993-11-20T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Natalie Poli">
+    <birth-date>1990-10-04T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Marcelle Griego">
+    <birth-date>1990-10-04T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Zada Attwood">
+    <birth-date>1982-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Hai Everton">
+    <birth-date>1985-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Lino Subia">
+    <birth-date>1985-12-21T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Rico Peer">
+    <birth-date>1984-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Teddy Hobby">
+    <birth-date>1975-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Johnette Derryberry">
+    <birth-date>1995-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Audrea Cardinal">
+    <birth-date>1976-10-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Francis Mckim">
+    <birth-date>1977-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Carole Witman">
+    <birth-date>1987-10-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Oren Perlman">
+    <birth-date>1988-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Brett Brickley">
+    <birth-date>1980-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Kristian Engberg">
+    <birth-date>1981-10-03T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Carri Knapik">
+    <birth-date>1972-02-02T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Rema Revelle">
+    <birth-date>1970-05-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Taina Achenbach">
+    <birth-date>1994-10-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Yvonne Mccalla">
+    <birth-date>1992-03-02T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Nisha Markwell">
+    <birth-date>1994-04-04T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Cinthia Lasala">
+    <birth-date>1992-11-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Daniele Zarate">
+    <birth-date>1995-10-05T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Faustina Burgher">
+    <birth-date>1994-06-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Jimmy Grossi">
+    <birth-date>1986-07-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Sylvie Mcelravy">
+    <birth-date>1983-10-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Hipolito Lamoreaux">
+    <birth-date>1982-08-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Garret Capron">
+    <birth-date>1975-07-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Donnetta Soliz">
+    <birth-date>1963-10-01T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+  <customer name="Louann Holzworth">
+    <birth-date>1960-10-01T00:00:00</birth-date>
+    <is-young-driver>false</is-young-driver>
+  </customer>
+  <customer name="Ann Mcenaney">
+    <birth-date>1992-03-02T00:00:00</birth-date>
+    <is-young-driver>true</is-young-driver>
+  </customer>
+</customers>

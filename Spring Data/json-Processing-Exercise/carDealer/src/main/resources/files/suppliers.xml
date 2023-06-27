@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<suppliers>
+  <supplier name="3M Company" is-importer="true" />
+  <supplier name="Agway Inc." is-importer="false" />
+  <supplier name="Anthem, Inc." is-importer="true" />
+  <supplier name="Airgas, Inc." is-importer="false" />
+  <supplier name="Atmel Corporation" is-importer="true" />
+  <supplier name="Big Lots, Inc." is-importer="true" />
+  <supplier name="Caterpillar Inc." is-importer="false" />
+  <supplier name="Casey's General Stores Inc." is-importer="true" />
+  <supplier name="Cintas Corp." is-importer="false" />
+  <supplier name="Chubb Corp" is-importer="true" />
+  <supplier name="Cintas Corp." is-importer="false" />
+  <supplier name="CNF Inc." is-importer="true" />
+  <supplier name="CMGI Inc." is-importer="true" />
+  <supplier name="The Clorox Co." is-importer="false" />
+  <supplier name="Danaher Corporation" is-importer="true" />
+  <supplier name="E.I. Du Pont de Nemours and Company" is-importer="false" />
+  <supplier name="E*Trade Group, Inc." is-importer="true" />
+  <supplier name="Emcor Group Inc." is-importer="true" />
+  <supplier name="GenCorp Inc." is-importer="false" />
+  <supplier name="IDT Corporation" is-importer="true" />
+  <supplier name="Level 3 Communications Inc." is-importer="false" />
+  <supplier name="Merck &amp; Co., Inc." is-importer="true" />
+  <supplier name="Nicor Inc" is-importer="false" />
+  <supplier name="Olin Corp." is-importer="true" />
+  <supplier name="Paychex Inc" is-importer="true" />
+  <supplier name="Saks Inc" is-importer="false" />
+  <supplier name="Sunoco Inc." is-importer="true" />
+  <supplier name="Textron Inc" is-importer="true" />
+  <supplier name="VF Corporation" is-importer="false" />
+  <supplier name="Wyeth" is-importer="true" />
+  <supplier name="Zale" is-importer="false" />
+</suppliers>

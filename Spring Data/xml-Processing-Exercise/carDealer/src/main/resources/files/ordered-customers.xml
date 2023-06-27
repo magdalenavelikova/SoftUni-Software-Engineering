@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+    <customer>
+        <id>29</id>
+        <name>Louann Holzworth</name>
+        <birth-date>1960-10-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>28</id>
+        <name>Donnetta Soliz</name>
+        <birth-date>1963-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>17</id>
+        <name>Rema Revelle</name>
+        <birth-date>1970-05-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>16</id>
+        <name>Carri Knapik</name>
+        <birth-date>1972-02-02T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>27</id>
+        <name>Garret Capron</name>
+        <birth-date>1975-07-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>8</id>
+        <name>Teddy Hobby</name>
+        <birth-date>1975-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>10</id>
+        <name>Audrea Cardinal</name>
+        <birth-date>1976-10-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>11</id>
+        <name>Francis Mckim</name>
+        <birth-date>1977-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>14</id>
+        <name>Brett Brickley</name>
+        <birth-date>1980-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>15</id>
+        <name>Kristian Engberg</name>
+        <birth-date>1981-10-03T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>26</id>
+        <name>Hipolito Lamoreaux</name>
+        <birth-date>1982-08-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>4</id>
+        <name>Zada Attwood</name>
+        <birth-date>1982-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>25</id>
+        <name>Sylvie Mcelravy</name>
+        <birth-date>1983-10-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>7</id>
+        <name>Rico Peer</name>
+        <birth-date>1984-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>5</id>
+        <name>Hai Everton</name>
+        <birth-date>1985-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>6</id>
+        <name>Lino Subia</name>
+        <birth-date>1985-12-21T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>24</id>
+        <name>Jimmy Grossi</name>
+        <birth-date>1986-07-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>12</id>
+        <name>Carole Witman</name>
+        <birth-date>1987-10-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>13</id>
+        <name>Oren Perlman</name>
+        <birth-date>1988-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>3</id>
+        <name>Marcelle Griego</name>
+        <birth-date>1990-10-04T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>2</id>
+        <name>Natalie Poli</name>
+        <birth-date>1990-10-04T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>19</id>
+        <name>Yvonne Mccalla</name>
+        <birth-date>1992-03-02T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>30</id>
+        <name>Ann Mcenaney</name>
+        <birth-date>1992-03-02T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>21</id>
+        <name>Cinthia Lasala</name>
+        <birth-date>1992-11-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>1</id>
+        <name>Emmitt Benally</name>
+        <birth-date>1993-11-20T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>20</id>
+        <name>Nisha Markwell</name>
+        <birth-date>1994-04-04T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>23</id>
+        <name>Faustina Burgher</name>
+        <birth-date>1994-06-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>18</id>
+        <name>Taina Achenbach</name>
+        <birth-date>1994-10-01T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+    <customer>
+        <id>9</id>
+        <name>Johnette Derryberry</name>
+        <birth-date>1995-10-01T00:00</birth-date>
+        <is-young-driver>true</is-young-driver>
+    </customer>
+    <customer>
+        <id>22</id>
+        <name>Daniele Zarate</name>
+        <birth-date>1995-10-05T00:00</birth-date>
+        <is-young-driver>false</is-young-driver>
+    </customer>
+</customers>
