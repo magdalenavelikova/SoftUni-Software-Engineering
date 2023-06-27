@@ -35,16 +35,7 @@ public class CustomerServiceImpl implements CustomerService {
         this.customerRepository = customerRepository;
     }
 
-    @Override
-    public CustomerDTOForXML orderedCustomersXML() {
-        List<CustomerBasicDto> customerBasicDtoList = customerRepository.findAllByOrderByBirthDateAscIsYoungDriverDesc()
-                .stream()
-                .map(c -> mapper.map(c, CustomerBasicDto.class))
-                .collect(Collectors.toList());
-        CustomerDTOForXML customerDTOForXML = new CustomerDTOForXML();
-        customerDTOForXML.setCustomers(customerBasicDtoList);
-        return customerDTOForXML;
-    }
+
     @Override
     public List<CustomerDto> orderedCustomers() {
         return customerRepository.findAllByOrderByBirthDateAscIsYoungDriverDesc()
@@ -57,7 +48,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public List<CustomerWithTotalSalesDto> totalSalesByCustomer() {
-        List<CustomerWithTotalSalesDto> customerWithTotalSales = customerRepository.findAllBySalesIsNotNull().stream()
+        return customerRepository.findAllBySalesIsNotNull().stream()
                 .map(customer -> {
                     CustomerWithTotalSalesDto customerWithTotalSalesDto = mapper.map(customer, CustomerWithTotalSalesDto.class);
                     customerWithTotalSalesDto.setBoughtCars(customer.getSales().size());
@@ -73,12 +64,9 @@ public class CustomerServiceImpl implements CustomerService {
 
                     customerWithTotalSalesDto.setSpentMoney(spentMoney.setScale(2, RoundingMode.CEILING));
                     return customerWithTotalSalesDto;
-                }).collect(Collectors.toList());
-
-        customerWithTotalSales
-                .sort(Comparator.comparing(CustomerWithTotalSalesDto::getSpentMoney)
-                .thenComparing(CustomerWithTotalSalesDto::getBoughtCars).reversed());
-        return customerWithTotalSales;
+                }).sorted(Comparator.comparing(CustomerWithTotalSalesDto::getSpentMoney)
+                        .thenComparing(CustomerWithTotalSalesDto::getBoughtCars).reversed())
+                .collect(Collectors.toList());
 
     }
 

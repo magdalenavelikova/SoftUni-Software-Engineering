@@ -17,5 +17,5 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class CustomerDTOForXML {
     @XmlElement(name = "customer")
-    private List<CustomerBasicDto> customers;
+    private List<CustomerDto> customers;
 }

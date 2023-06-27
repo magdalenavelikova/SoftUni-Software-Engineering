@@ -74,7 +74,7 @@ public class Main implements CommandLineRunner {
         }
     }
 
-    private void salesWithAppliedDiscount() throws  UnableToConvertException {
+    private void salesWithAppliedDiscount() throws UnableToConvertException {
         System.out.println("========== Sales with Applied Discount ================");
         String fileName = RESOURCES_FILE_PATH + SALES_WITH_APPLIED_DISCOUNT_FILE_NAME + typeFormat;
         if (typeFormat.equals("json")) {
@@ -102,7 +102,7 @@ public class Main implements CommandLineRunner {
                     .serializeList(customerService.totalSalesByCustomer(),
                             fileName);
         } else {
-            CustomersWthTotalSalesDtoXML customersWthTotalSalesDtoXML=new CustomersWthTotalSalesDtoXML();
+            CustomersWthTotalSalesDtoXML customersWthTotalSalesDtoXML = new CustomersWthTotalSalesDtoXML();
             customersWthTotalSalesDtoXML.setCustomers(customerService.totalSalesByCustomer());
             this.converter
                     .serialize(customersWthTotalSalesDtoXML,
@@ -120,8 +120,10 @@ public class Main implements CommandLineRunner {
                     .serializeList(customerService.orderedCustomers(),
                             fileName);
         } else {
+            CustomerDTOForXML customerDTOForXML = new CustomerDTOForXML();
+            customerDTOForXML.setCustomers(customerService.orderedCustomers());
             this.converter
-                    .serialize(customerService.orderedCustomersXML(),
+                    .serialize(customerDTOForXML,
                             fileName);
         }
 
@@ -146,7 +148,7 @@ public class Main implements CommandLineRunner {
         }
     }
 
-    private void localSuppliers() throws  UnableToConvertException {
+    private void localSuppliers() throws UnableToConvertException {
         System.out.println("========== Local Suppliers ================");
         String fileName = RESOURCES_FILE_PATH + LOCAL_SUPPLIERS_FILE_NAME + typeFormat;
         if (typeFormat.equals("json")) {
@@ -163,7 +165,7 @@ public class Main implements CommandLineRunner {
 
     }
 
-    private void carsWithParts() throws  UnableToConvertException {
+    private void carsWithParts() throws UnableToConvertException {
         System.out.println("========== Cars with Their List of Parts ==================");
         String fileName = RESOURCES_FILE_PATH + CARS_WITH_PARTS_FILE_NAME + typeFormat;
         if (typeFormat.equals("json")) {

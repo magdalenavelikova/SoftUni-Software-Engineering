@@ -7,10 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.Set;
 @Getter
 @Setter
@@ -29,6 +26,6 @@ public class CustomerDto {
     @XmlElement(name = "is-young-driver")
     private boolean isYoungDriver;
     @SerializedName("Sales")
-    @XmlElement(name = "sales")
+    @XmlTransient
     private Set<SaleDto> sales;
 }

@@ -21,5 +21,5 @@ public interface CustomerService {
 
     void seedCustomersFromJSON(FormatConverter converter, String typeFormat) throws UnableToConvertException;
 
-    CustomerDTOForXML orderedCustomersXML();
+
 }
