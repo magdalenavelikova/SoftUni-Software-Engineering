@@ -90,7 +90,7 @@ public class Main implements CommandLineRunner {
         }
 
 
-        writeToFile(saleService.salesWithAppliedDiscount(), SALES_WITH_APPLIED_DISCOUNT_FILE_NAME);
+
 
     }
 
@@ -184,13 +184,7 @@ public class Main implements CommandLineRunner {
 
     }
 
-    private <E> void writeToFile(List<E> entities, String fileName) throws UnableToConvertException {
 
-        this.converter.serialize(
-                entities
-                , fileName);
-
-    }
 
     private void seedDataFromJSON() throws UnableToConvertException, IOException {
         supplierService.seedSuppliersFromJSON(this.converter, this.typeFormat);
