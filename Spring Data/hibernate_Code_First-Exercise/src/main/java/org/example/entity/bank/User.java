@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import org.example.entity.BaseEntity;
 
 import java.util.HashSet;
 import java.util.Set;

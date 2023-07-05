@@ -1,7 +1,7 @@
 package org.example.entity.hospital;
 
 import jakarta.persistence.*;
-import org.example.entity.bank.BaseEntity;
+import org.example.entity.BaseEntity;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -12,10 +12,11 @@ import java.util.Set;
 public class Patient extends BaseEntity {
     private String firstName;
     private String lastName;
+    private String address;
     private String email;
     private Date dateOfBirth;
     private String picturePath;
-    private String information;
+
     private Boolean hasMedicalInsurance;
     private Set<Medicament> medicaments;
     private Set<Visitation> visitations;
@@ -27,13 +28,13 @@ public class Patient extends BaseEntity {
         this.visitations = new HashSet<>();
     }
 
-    public Patient(String firstName, String lastName, String email, Date dateOfBirth, Boolean hasMedicalInsurance) {
+    public Patient(String firstName, String lastName, String address, String email, Date dateOfBirth, Boolean hasMedicalInsurance) {
         this();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.dateOfBirth = dateOfBirth;
-
+        this.address = address;
         this.hasMedicalInsurance = hasMedicalInsurance;
     }
 
@@ -50,7 +51,7 @@ public class Patient extends BaseEntity {
         this.medicaments = medicaments;
     }
 
-    @OneToMany(mappedBy = "patient",cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.PERSIST)
     public Set<Visitation> getVisitations() {
         return visitations;
     }
@@ -59,7 +60,7 @@ public class Patient extends BaseEntity {
         this.visitations = visitations;
     }
 
-    @ManyToMany (cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(name = "patients_diagnoses",
             joinColumns = @JoinColumn(name = "patient_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "diagnose_id", referencedColumnName = "id"))
@@ -99,13 +100,13 @@ public class Patient extends BaseEntity {
         this.picturePath = picturePath;
     }
 
-    @Column(columnDefinition = "TEXT")
-    public String getInformation() {
-        return information;
+    @Column(name = "address", nullable = false)
+    public String getAddress() {
+        return address;
     }
 
-    public void setInformation(String information) {
-        this.information = information;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Column(name = "first_name", length = 40, nullable = false)

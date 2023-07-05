@@ -1,7 +1,7 @@
 package org.example.entity.sales;
 
 import jakarta.persistence.*;
-import org.example.entity.bank.BaseEntity;
+import org.example.entity.BaseEntity;
 
 import java.util.HashSet;
 import java.util.Set;

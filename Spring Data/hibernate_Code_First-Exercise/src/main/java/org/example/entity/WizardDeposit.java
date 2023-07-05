@@ -3,7 +3,6 @@ package org.example.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import org.example.entity.bank.BaseEntity;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

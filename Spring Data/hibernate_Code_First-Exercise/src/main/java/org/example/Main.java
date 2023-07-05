@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         EntityManager entityManager = null;
         String persistenceUnitName = "";
-        System.out.println("Enter task /1-6/: ");
+        System.out.println("Enter task /1-5/: ");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         int task = Integer.parseInt(bufferedReader.readLine());
         switch (task) {
@@ -38,7 +38,7 @@ public class Main {
         entityManager.persist(product);*/
 
        /* Task 4
-        Patient patient = new Patient("Ivan", "Ivanov", "ivan@ivanov.bg", new Date(2000, 05, 05), true);
+        Patient patient = new Patient("Ivan", "Ivanov", "Varna, Madara 15","ivan@ivanov.bg", new Date(2000, 05, 05), true);
         Visitation visitation = new Visitation();
         visitation.setDate(LocalDateTime.now());
         visitation.setComments("Probably he has a Hypochondria");

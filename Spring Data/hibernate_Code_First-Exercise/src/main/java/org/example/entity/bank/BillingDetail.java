@@ -1,6 +1,7 @@
 package org.example.entity.bank;
 
 import jakarta.persistence.*;
+import org.example.entity.BaseEntity;
 
 @Entity
 @Table(name = "billing_details")
