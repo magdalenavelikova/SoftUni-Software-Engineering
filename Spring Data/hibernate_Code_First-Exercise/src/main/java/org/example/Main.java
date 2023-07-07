@@ -2,10 +2,14 @@ package org.example;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Persistence;
+import org.example.entity.sales.Product;
+import org.example.entity.sales.Sale;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 public class Main {
 
@@ -26,15 +30,15 @@ public class Main {
         entityManager = getEntityManagerDB(persistenceUnitName);
         entityManager.getTransaction().begin();
 
-     /*Task2
 
-        Product product = new Product();
+
+     /*   Product product = new Product();
         product.setName("alabala");
         product.setPrice(BigDecimal.TEN);
         Sale sale = new Sale();
-        sale.setName(LocalDateTime.now());
-        product.getSales().add(sale);
+        sale.setDate(LocalDateTime.now().now());
         sale.setProduct(product);
+        product.getSales().add(sale);
         entityManager.persist(product);*/
 
        /* Task 4
