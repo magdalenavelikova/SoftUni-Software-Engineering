@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Battleships Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="body-main">
+<header th:include="~{fragments/navigation}"></header>
+
+<main role="main">
+    <div class="jumbotron">
+        <h1 class="text-center p-5 text-white font-weight-bold">Battle</h1>
+        <form action="/" method="" class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row bg-blur mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Attacker</strong>
+                        <span th:text="${@loggedUser.fullName}"></span>
+                        <h3 class="mb-0 text-white">
+                            Select the attacker
+                        </h3>
+                        <div class="mb-1 text-white">Select one of the ships that are owned by the current user</div>
+                        <select class="form-select mt-5" aria-label="Default select example">
+                            <option selected>Select one of the ships that are owned by the current user</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+                         style="width: 200px; height: 250px;"
+                         src="/images/attacker.jpg"
+                         data-holder-rendered="true">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-blur card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-danger">Defender</strong>
+                        <h3 class="mb-0 text-white">
+                            Select the defender
+                        </h3>
+                        <div class="mb-1 text-white">Select one of the ships that are owned by other users</div>
+                        <select class="form-select mt-5" aria-label="Default select example">
+                            <option selected>Select one of the ships that are owned by other users</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+
+                         src="/images/defender.jpg"
+                         data-holder-rendered="true" style="width: 200px; height: 250px;">
+                </div>
+            </div>
+            <button type="submit" class="col-md-6 mx-auto btn btn-danger btn-lg btn-block mt-5 mb-5">FIRE !!!</button>
+        </form>
+        <div>
+            <div class="col-md-6 mx-auto bg-blur rounded text-white">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="d-inline-block mb-2 text-primary align-self-center">The All Ships And Their Status</h4>
+                    <div class="text-center">
+                        <h5>Name -- Health -- Power </h5>
+                        <ul>
+                            <li class="font-weight-bold">| Name    | Health    | Power    |</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="container text-white">
+    <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
+</footer>
+</body>
+</html>

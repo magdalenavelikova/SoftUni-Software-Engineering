@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Battleships Application</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="body-main">
+<header th:include="~{fragments/navigation}"></header>
+<main role="main">
+    <div class="jumbotron">
+        <div class="container text-light text-center">
+            <h1 class="display-3"><strong class="bg-blur rounded">Battleships</strong></h1>
+        </div>
+        <div class="container bg-blur text-white align-items-end rounded mt-5 p-5">
+            <div class="row">
+                <div>
+                    <div class="row">
+                        <img width="50px" src="/images/ufo.png" alt="Coffee image">
+                        <h2 class="pl-5">Start Now!!!</h2>
+                    </div>
+                    <p class="mt-3 ">Register new battleship and fight against your friends :)
+                      </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container mt-0 text-white">
+        <p>&copy;SoftUni Spring Team 2021. All rights reserved.</p>
+    </footer>
+</main>
+</body>
+</html>

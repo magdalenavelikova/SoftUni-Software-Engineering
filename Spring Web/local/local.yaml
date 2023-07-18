@@ -1,0 +1,29 @@
+version: '3.3'
+services:
+  db:
+    image: arm64v8/mysql:oracle
+    ports:
+    - "3306:3306"
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_bin', '--default-authentication-plugin=mysql_native_password']
+    environment:
+    - MYSQL_ALLOW_EMPTY_PASSWORD="yes"
+    - MYSQL_DATABASE=intro
+  mailhog:
+    image: mailhog/mailhog
+    logging:
+      driver: 'none'  # disable saving logs
+    ports:
+      - "1025:1025" # smtp server
+      - "8025:8025" # web ui
+  promtool:
+    image: prom/prometheus:v2.35.0
+    ports:
+      - 9090:9090
+    volumes:
+      - type: bind
+        source: ./prometheus.yml
+        target: /etc/prometheus/prometheus.yml
+  grafana:
+    image: grafana/grafana:8.2.7
+    ports:
+      - 3000:3000

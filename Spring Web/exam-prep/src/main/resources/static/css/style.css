@@ -1,0 +1,14 @@
+body {
+    background-image: url(/images/background.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron{
+    background-color: rgba(0,0,0,0.1);
+    min-height: 90vh;
+}
+
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+}

@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/intro?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
+        username: root
+    jpa:
+        # Choose either MySQL 8 or MySQL 5 below
+        # For MySQL 8:
+        #database-platform: org.hibernate.dialect.MySQL8Dialect
+        # For MySQL 5:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        hibernate:
+            ddl-auto: create-drop
