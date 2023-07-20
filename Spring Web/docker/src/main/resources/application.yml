@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:3306/mobilelele?useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC"
+    username: "${MYSQL_USER:root}"
+    password: "${MYSQL_PASSWORD:}"
+  sql:
+    init:
+      mode: always
+  jpa:
+    # Choose either MySQL 8 or MySQL 5 below
+    # For MySQL 8
+    #database-platform: org.hibernate.dialect.MySQL8Dialect
+    #For MySQL 5
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Battleships Application</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
+</head>
+<body class="body-main">
+<header th:include="~{fragments/navigation}"></header>
+<main role="main">
+    <div class="jumbotron">
+        <div class="container text-light ">
+            <h1 class="display-3 ">
+                <strong class="bg-blur rounded border-white pl-3 font-weight-bold">Add New Ship</strong></h1>
+        </div>
+        <div class="container bg-blur rounded p-5 mt-5 w-75">
+            <form th:action="@{/ships/add}"
+                  th:method="POST"
+                  th:object="${createShipDTO}"
+                  class=" text-center text-light">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text"
+                               class="form-control"
+                               id="name"
+                               th:field="*{name}"
+                               th:errorclass="is-invalid"
+                               aria-describedby="nameHelpInline" placeholder="Name">
+                        <small id="nameHelpInline" class="bg-danger text-light rounded invalid-feedback">
+                            Name must be between 2 and 10 characters.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="power" class="col-sm-2 col-form-label">Power</label>
+                    <div class="col-sm-10">
+                        <input type="number" step="1" class="form-control" id="power"
+                               aria-describedby="powerHelpInline"
+
+                               th:field="*{power}"
+                               th:errorclass="is-invalid">
+                        <small id="powerHelpInline" class="bg-danger text-light rounded invalid-feedback">
+                            The power must be positive.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="health" class="col-sm-2 col-form-label">Health</label>
+                    <div class="col-sm-10">
+                        <input type="number" step="1" class="form-control" id="health"
+                               aria-describedby="healthHelpInline"
+
+                               th:field="*{health}"
+                               th:errorclass="is-invalid">
+                        <small id="healthHelpInline" class="bg-danger text-light rounded invalid-feedback">
+                            The health must be positive.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="created" class="col-sm-2 col-form-label">Created date</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="created"
+                               aria-describedby="createdHelpInline"
+                               th:field="*{created}"
+                               th:errorclass="is-invalid">
+                        <small id="createdTimeHelpInline" class="bg-danger text-light rounded invalid-feedback">
+                            Created date cannot be in the future.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <select id="category" name="category" class="custom-select"
+                                aria-describedby="categoryHelpInline"
+                                th:field="*{category}"
+                                th:errorclass="is-invalid">
+                            <option value="-1" selected>Category</option>
+                            <option value="0">BATTLE</option>
+                            <option value="1">CARGO</option>
+                            <option value="2">PATROL</option>
+                        </select>
+                        <small id="categoryHelpInline" class="bg-danger text-light rounded invalid-feedback">
+                            You must select the category.
+                        </small>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-50">Add the new Ship</button>
+            </form>
+        </div>
+    </div>
+</main>
+<th:block th:replace="~{fragments/footer}" />
+</body>
+</html>

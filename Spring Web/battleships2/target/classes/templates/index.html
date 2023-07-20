@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Battleships Application</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
+
+</head>
+<body class="body-main">
+<header th:include="~{fragments/navigation}"></header>
+<main role="main">
+    <div class="jumbotron">
+        <div class="container text-light text-center">
+            <h1 class="display-3"><strong class="bg-blur rounded">Battleships</strong></h1>
+        </div>
+        <div class="container bg-blur text-white align-items-end rounded mt-5 p-5">
+            <div class="row">
+                <div>
+                    <div class="row">
+                        <img width="50px" src="/images/ufo.png" alt="Coffee image">
+                        <h2 class="pl-5">Start Now!!!</h2>
+                    </div>
+                    <p class="mt-3 ">Register new battleship and fight against your friends :)
+                      </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <th:block th:replace="~{fragments/footer}" />
+
+</main>
+</body>
+</html>

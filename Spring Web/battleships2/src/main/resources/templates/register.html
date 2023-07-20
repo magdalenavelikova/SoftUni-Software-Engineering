@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Battleships Application</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
+</head>
+<body class="body-main">
+<header th:include="~{fragments/navigation}"></header>
+<main role="main">
+    <div class="jumbotron">
+        <div class="container text-light ">
+            <h1 class="display-3">
+                <div class=" pl-3 font-weight-bold text-center">
+                    Register
+                </div>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 ">
+                <img class="rounded" width="100%" src="/images/register.jpg" alt="Battle ship image">
+            </div>
+
+            <div class="col-md-6">
+                <div class="container bg-blur rounded p-5 mt-5 w-75">
+                    <form th:action="@{/register}"
+                          th:method="POST"
+                          th:object="${registrationDTO}"
+                          class=" text-center text-light">
+                        <div class="form-group row">
+                            <label for="username" class="col-sm-2 col-form-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text"
+                                       class="form-control"
+                                       id="username"
+                                       aria-describedby="usernameHelpInline"
+                                       placeholder="Username"
+                                       th:field="*{username}"
+                                       th:errorclass="is-invalid">
+                                <small id="usernameHelpInline"
+                                       class="bg-danger text-light rounded invalid-feedback">
+                                    Username length must be between 5 and 20 characters.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="fullName" class="col-sm-2 col-form-label">Full name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control"
+                                       id="fullName"
+                                       th:field="*{fullName}"
+                                       th:errorclass="is-invalid"
+                                       aria-describedby="fullNameHelpInline"
+                                       placeholder="Full name">
+                                <small id="fullNameHelpInline"
+                                       class="bg-danger text-light rounded invalid-feedback">
+                                    Enter valid full name.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text"
+                                       class="form-control"
+                                       id="email"
+                                       th:field="*{email}"
+                                       th:errorclass="is-invalid"
+                                       aria-describedby="emailHelpInline"
+                                       placeholder="email@example.com">
+                                <small id="emailHelpInline"
+                                       class="bg-danger text-light rounded invalid-feedback">
+                                    Enter valid email address.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password"
+                                       th:field="*{password}"
+                                       th:errorclass="is-invalid"
+                                       class="form-control"
+                                       id="password"
+                                       aria-describedby="passwordHelpInline"
+                                       placeholder="Password">
+                                <small id="passwordHelpInline"
+                                       class="bg-danger text-light rounded invalid-feedback">
+                                    Password length must be more than 3 characters long.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password"
+                                       th:field="*{confirmPassword}"
+                                       th:errorclass="is-invalid"
+                                       class="form-control"
+                                       id="confirmPassword"
+                                       aria-describedby="confirmPasswordHelpInline"
+                                       placeholder="Confirm Password">
+                                <small
+                                        id="confirmPasswordHelpInline" class="bg-danger text-light rounded invalid-feedback">
+                                    Password length must be more than 3 characters long.
+                                </small>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-50">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<th:block th:replace="~{fragments/footer}" />
+</body>
+</html>
