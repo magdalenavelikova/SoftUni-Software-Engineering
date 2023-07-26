@@ -1,0 +1,40 @@
+</body>
+</html>
+<th:block th:fragment xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="container justify-content-center mt-3">
+        <div class="jumbotron index-jumbo d-flex justify-content-center">
+            <div class="container">
+                <div class="col-md-12 d-flex border-left border-bottom w-50 ">
+                    <h1 class="myBackgroundColor ">SoftWeather Forecast </h1>
+                </div>
+                <div class="col-md-12 d-flex mt-3">
+                    <h4>
+                        &nbsp;&nbsp;&nbsp;Accurate weekend SoftWeather Forecasts for hundreds of places around the World.
+                        We provide detailed Weather Forecasts over a 3 day period updated four times a day. Our interactive
+                        weather maps can be customized to show forecasts of temperature, sunrise and sunset.
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;The software of Weather Forecasts has crashed and the owner has turned to SoftUni for help.
+                        Now a small team led by you must take on this task and make the SoftWeather Forecast.
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;To offer a better experience to its customers, the SoftWeather team urgently needs a good enough
+                        application that collects all the information about all weather forecasts and can, with one click,
+                        dig through the sorted best locations for the weekend.
+                        <br/>
+                    </h4>
+                </div>
+                <div class="col-md-12 text-center">
+                    <th:block th:if="${areImported == true}">
+                        <p><a class="btn btn-warning export-button text-white" th:href="@{/export/best-offers}">Export forecast</a></p>
+                    </th:block>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <th:block th:if="${areImported == false}">
+                            <p class="bg-dark rounded p-2">Тo see the next task, first import all JSON and XML
+                                files.</p>
+                        </th:block>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</th:block>

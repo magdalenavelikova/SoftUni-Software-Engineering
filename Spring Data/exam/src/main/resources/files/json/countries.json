@@ -1,0 +1,78 @@
+[
+  {
+    "countryName": "Philippines",
+    "currency": "Peso"
+  },
+  {
+    "countryName": "Finland",
+    "currency": "Euro"
+  },
+  {
+    "countryName": "X",
+    "currency": "Euro"
+  },
+  {
+    "countryName": "Turkey",
+    "currency": "T"
+  },
+  {
+    "countryName": "Sweden",
+    "currency": "Krona"
+  },
+  {
+    "countryName": "China",
+    "currency": "Yuan Renmbinbi"
+  },
+  {
+    "countryName": "ThisNameShouldBeTooLongAndInvalidThisNameShouldBeTooLongAndIn",
+    "currency": "Yuan Renmbinbi"
+  },
+  {
+    "countryName": "France",
+    "currency": "Euro"
+  },
+  {
+    "countryName": "Japan",
+    "currency": "Yen"
+  },
+  {
+    "countryName": "Poland",
+    "currency": "Zloty"
+  },
+  {
+    "countryName": "Greece",
+    "currency": "Euro"
+  },
+  {
+    "countryName": "Bulgaria",
+    "currency": "Lev"
+  },
+  {
+    "countryName": "Germany",
+    "currency": "Euro"
+  },
+  {
+    "countryName": "Mexico",
+    "currency": "Peso"
+  },
+  {
+    "countryName": "United States",
+    "currency": "Dollar"
+  },
+  {
+    "countryName": "Egypt",
+    "currency": "Pound"
+  },
+  {
+    "countryName": "Argentina",
+    "currency": "Peso"
+  },
+  {
+    "countryName": "Israel",
+    "currency": "Shekel"
+  },
+  {
+    "countryName": "China",
+    "currency": "Yuan Renmbinbi"
+  }
+]
