@@ -1,0 +1,110 @@
+.navbar-background {
+    background-color: #e243ff;
+    color: white;
+}
+
+header , main, footer {
+    justify-content: center;
+}
+
+body {
+    background: url("/pics/background1.jpg") no-repeat center center fixed;
+    border-radius: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.my-hr {
+    width: 30%;
+    background-color: white;
+}
+
+.myBackgroundColor {
+    background-color: #2ec9aa;
+}
+
+.jumbotron-background {
+    background: url("/pics/inner-background.png") no-repeat center transparent;
+    border-radius: 50px;
+    min-height: 400px;
+    background-size: 75% 100%;
+    color: #ffffff;
+}
+
+.index-jumbo {
+    background-color: transparent;
+    color: whitesmoke;
+}
+body > main > div > div > div > div:nth-child(3) > h5, body > main > div > div > div > div:nth-child(1) > h1{
+    background-color: transparent;
+}
+
+body > header > nav > a > img{
+    width: 50px;
+}
+.hr-background {
+    background-color: white;
+    height: 1px;
+}
+
+.footer-background {
+    color: #E41B23;
+}
+
+.btn3d {
+    transition: all .08s linear;
+    position: relative;
+    outline: medium none;
+    -moz-outline-style: none;
+    border: 0px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.btn3d:focus {
+    outline: medium none;
+    -moz-outline-style: none;
+}
+
+.btn3d:active {
+    top: 9px;
+}
+
+.btn-default {
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #adadad, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.btn-primary {
+    box-shadow: 0 0 0 1px #428bca inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #428bca;
+}
+
+.btn-success {
+    box-shadow: 0 0 0 1px #000000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #136353, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #31debb;
+}
+
+.btn-info {
+    box-shadow: 0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #5bc0de;
+}
+
+.btn-warning {
+    box-shadow: 0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #eea236, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #f0ad4e;
+}
+
+.btn-danger {
+    box-shadow: 0 0 0 1px #4b6c16 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #3b5815, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #4f781a;
+    border-color: #dc3545;
+}
+
