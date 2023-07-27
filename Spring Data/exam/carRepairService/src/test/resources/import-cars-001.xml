@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+        <car>
+        <carMake>Dodge</carMake>
+        <carModel>Challenger</carModel>
+        <year>2010</year>
+        <plateNumber>AU3739FZ</plateNumber>
+        <kilometers>226423</kilometers>
+        <engine>1.4</engine>
+        <carType>SUV</carType>
+    </car>
+    <car>
+        <carMake>Mazda</carMake>
+        <carModel>Miata MX-5</carModel>
+        <year>2005</year>
+        <plateNumber>AU3739FZ</plateNumber>
+        <kilometers>267695</kilometers>
+        <engine>2.1</engine>
+        <carType>coupe</carType>
+    </car>
+</cars>

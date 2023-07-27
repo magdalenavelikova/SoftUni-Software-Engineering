@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+    <car>
+        <carMake>To</carMake>
+        <carModel>Camry</carModel>
+        <year>2010</year>
+        <plateNumber>TO1407ZT</plateNumber>
+        <kilometers>319292</kilometers>
+        <engine>2.4</engine>
+        <carType>coupe</carType>
+    </car>
+    <car>
+        <carMake>Mercedes-Benz is correct andOK</carMake>
+        <carModel>SL-Class</carModel>
+        <year>1993</year>
+        <plateNumber>MD9630WK</plateNumber>
+        <kilometers>86912</kilometers>
+        <engine>2.5</engine>
+        <carType>coupe</carType>
+    </car>
+    <car>
+        <carMake>X</carMake>
+        <carModel>Grand Prix</carModel>
+        <year>1981</year>
+        <plateNumber>JK1993AO</plateNumber>
+        <kilometers>260628</kilometers>
+        <engine>2.4</engine>
+        <carType>coupe</carType>
+    </car>
+    <car>
+        <carMake>Mercedes-Benz is not bad eXampl</carMake>
+        <carModel>Challenger</carModel>
+        <year>2010</year>
+        <plateNumber>AU3739FZ</plateNumber>
+        <kilometers>226423</kilometers>
+        <engine>1.4</engine>
+        <carType>SUV</carType>
+    </car>
+</cars>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+
+    <car>
+        <carMake>Toyota</carMake>
+        <carModel>Camry</carModel>
+        <year>2010</year>
+        <plateNumber>TO</plateNumber>
+        <kilometers>319292</kilometers>
+        <engine>2.4</engine>
+        <carType>coupe</carType>
+    </car>
+    <car>
+        <carMake>Mercedes-Benz</carMake>
+        <carModel>SL-Class</carModel>
+        <year>1993</year>
+        <plateNumber>MD9630WKISverylongbutItIsvalid</plateNumber>
+        <kilometers>86912</kilometers>
+        <engine>2.5</engine>
+        <carType>coupe</carType>
+    </car>
+    <car>
+        <carMake>Pontiac</carMake>
+        <carModel>Grand Prix</carModel>
+        <year>1981</year>
+        <plateNumber>X</plateNumber>
+        <kilometers>260628</kilometers>
+        <engine>2.4</engine>
+        <carType>coupe</carType>
+    </car>
+    <car>
+        <carMake>Dodge</carMake>
+        <carModel>Challenger</carModel>
+        <year>2010</year>
+        <plateNumber>MD9630WKISverylongAndISNOTValid</plateNumber>
+        <kilometers>226423</kilometers>
+        <engine>1.4</engine>
+        <carType>SUV</carType>
+    </car>
+</cars>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tasks>
+    <task>
+        <date>2020-12-28 13:48:06</date>
+        <price>646.92</price>
+        <car>
+            <id>44</id>
+        </car>
+        <mechanic>
+            <firstName>Dulcy</firstName>
+        </mechanic>
+        <part>
+            <id>44</id>
+        </part>
+    </task>
+    <task>
+        <date>2021-05-07 13:20:04</date>
+        <price>0</price>
+        <car>
+            <id>45</id>
+        </car>
+        <mechanic>
+            <firstName>Deanne</firstName>
+        </mechanic>
+        <part>
+            <id>11</id>
+        </part>
+    </task>
+    <task>
+        <date>2020-11-06 13:31:09</date>
+        <price>-1</price>
+        <car>
+            <id>89</id>
+        </car>
+        <mechanic>
+            <firstName>Viva</firstName>
+        </mechanic>
+        <part>
+            <id>37</id>
+        </part>
+    </task>
+</tasks>

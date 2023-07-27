@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tasks>
+    <task>
+        <date>2021-06-24 22:23:06</date>
+        <price>1464.86</price>
+        <car>
+            <id>83</id>
+        </car>
+        <mechanic>
+            <firstName>Lizbeth</firstName>
+        </mechanic>
+        <part>
+            <id>36</id>
+        </part>
+    </task>
+    <task>
+        <date>2022-07-23 06:57:11</date>
+        <price>1501.23</price>
+        <car>
+            <id>50</id>
+        </car>
+        <mechanic>
+            <firstName>Doesnt ExistX</firstName>
+        </mechanic>
+        <part>
+            <id>32</id>
+        </part>
+    </task>
+</tasks>

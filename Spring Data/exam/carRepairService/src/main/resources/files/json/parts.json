@@ -1,0 +1,262 @@
+[
+  {
+    "partName": "Alternator",
+    "price": 320.13,
+    "quantity": 40
+  },
+  {
+    "partName": "Battery",
+    "price": 419.14,
+    "quantity": 33
+  },
+  {
+    "partName": "Performance Battery",
+    "price": 455.38,
+    "quantity": 15
+  },
+  {
+    "partName": "Alternator",
+    "price": 240.13,
+    "quantity": 18
+  },
+  {
+    "partName": "Battery Box",
+    "price": 590.43,
+    "quantity": 21
+  },
+  {
+    "partName": "L",
+    "price": 154.12,
+    "quantity": 35
+  },
+  {
+    "partName": "Coupe filter",
+    "price": 5.12,
+    "quantity": 12
+  },
+  {
+    "partName": "Long cable",
+    "price": 329.73,
+    "quantity": -2
+  },
+  {
+    "partName": "Battery Cable",
+    "price": 269.73,
+    "quantity": 5
+  },
+  {
+    "partName": "Battery Plate",
+    "price": 416.1,
+    "quantity": 36
+  },
+  {
+    "partName": "Battery tray",
+    "price": 241.45,
+    "quantity": 13
+  },
+  {
+    "partName": "Battery Cap",
+    "price": 33.28,
+    "quantity": 24
+  },
+  {
+    "partName": "Distilled Water",
+    "price": 547.68,
+    "quantity": 6
+  },
+  {
+    "partName": "Ammeter",
+    "price": 148.61,
+    "quantity": 7
+  },
+  {
+    "partName": "Clinometer",
+    "price": 397.05,
+    "quantity": 12
+  },
+  {
+    "partName": "Dynamometer",
+    "price": 343.52,
+    "quantity": 6
+  },
+  {
+    "partName": "Fuel gauge",
+    "price": 452.04,
+    "quantity": 31
+  },
+  {
+    "partName": "Manometer",
+    "price": 368.82,
+    "quantity": 27
+  },
+  {
+    "partName": "Hydrometer",
+    "price": 162.69,
+    "quantity": 8
+  },
+  {
+    "partName": "Temperature gauge",
+    "price": 574.25,
+    "quantity": 40
+  },
+  {
+    "partName": "Tire pressure gauge",
+    "price": 511.9,
+    "quantity": 26
+  },
+  {
+    "partName": "Vacuum gauge",
+    "price": 385.88,
+    "quantity": 29
+  },
+  {
+    "partName": "Voltmeter",
+    "price": 594.86,
+    "quantity": 6
+  },
+  {
+    "partName": "Oil pressure gauge",
+    "price": 50.56,
+    "quantity": 40
+  },
+  {
+    "partName": "Sparking cable",
+    "price": 17.41,
+    "quantity": 28
+  },
+  {
+    "partName": "Distributor",
+    "price": 560.97,
+    "quantity": 37
+  },
+  {
+    "partName": "Distributor Cap",
+    "price": 289.08,
+    "quantity": 39
+  },
+  {
+    "partName": "Ignition box",
+    "price": 385.95,
+    "quantity": 10
+  },
+  {
+    "partName": "Ignition coil",
+    "price": 449.34,
+    "quantity": 12
+  },
+  {
+    "partName": "Ignition coil parts",
+    "price": 269.12,
+    "quantity": 3
+  },
+  {
+    "partName": "Ignition magneto",
+    "price": 29.82,
+    "quantity": 20
+  },
+  {
+    "partName": "Spark plug",
+    "price": 440.36,
+    "quantity": 27
+  },
+  {
+    "partName": "Glow Plug",
+    "price": 410.57,
+    "quantity": 6
+  },
+  {
+    "partName": "Starter drive",
+    "price": 93.68,
+    "quantity": 13
+  },
+  {
+    "partName": "starter pinion gear",
+    "price": 471.74,
+    "quantity": 38
+  },
+  {
+    "partName": "Starter motor",
+    "price": 45.13,
+    "quantity": 21
+  },
+  {
+    "partName": "Starter solenoid",
+    "price": 78.3,
+    "quantity": 26
+  },
+  {
+    "partName": "Door switch",
+    "price": 358.64,
+    "quantity": 2
+  },
+  {
+    "partName": "Ignition switch",
+    "price": 140.88,
+    "quantity": 17
+  },
+  {
+    "partName": "Power window switch",
+    "price": 578.73,
+    "quantity": 22
+  },
+  {
+    "partName": "Switch cover",
+    "price": 544.33,
+    "quantity": 37
+  },
+  {
+    "partName": "Switch panel",
+    "price": 221.84,
+    "quantity": 15
+  },
+  {
+    "partName": "Thermostat",
+    "price": 537.15,
+    "quantity": 2
+  },
+  {
+    "partName": "Frame switch",
+    "price": 281.97,
+    "quantity": 23
+  },
+  {
+    "partName": "Fan ditch",
+    "price": 207.16,
+    "quantity": 15
+  },
+  {
+    "partName": "Oil filter",
+    "price": 466.98,
+    "quantity": 33
+  },
+  {
+    "partName": "Oil gasket",
+    "price": 296.31,
+    "quantity": 28
+  },
+  {
+    "partName": "Oil pan",
+    "price": 426.31,
+    "quantity": 37
+  },
+  {
+    "partName": "Oil pipe",
+    "price": 14.84,
+    "quantity": 31
+  },
+  {
+    "partName": "Oil pump",
+    "price": 293.61,
+    "quantity": 2
+  },
+  {
+    "partName": "Oil strainer",
+    "price": 129.59,
+    "quantity": 21
+  },
+  {
+    "partName": "Oil suction filte",
+    "price": 484.65,
+    "quantity": 22
+  }
+]
