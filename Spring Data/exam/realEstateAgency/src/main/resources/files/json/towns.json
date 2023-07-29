@@ -1,0 +1,450 @@
+[
+  {
+    "townName": "Matingain",
+    "population": 2162142
+  },
+  {
+    "townName": "Frankfurt",
+    "population": -140256
+  },
+  {
+    "townName": "Prague",
+    "population": 2651904
+  },
+  {
+    "townName": "Tubuhue",
+    "population": 1886927
+  },
+  {
+    "townName": "General Vedia",
+    "population": 1592612
+  },
+  {
+    "townName": "Xunzhong",
+    "population": 3091280
+  },
+  {
+    "townName": "Minuyan",
+    "population": 3912685
+  },
+  {
+    "townName": "Minsk",
+    "population": 3606503
+  },
+  {
+    "townName": "Besançon",
+    "population": 2405131
+  },
+  {
+    "townName": "Catabola",
+    "population": 5536636
+  },
+  {
+    "townName": "Keleng",
+    "population": 5757179
+  },
+  {
+    "townName": "Anxiang",
+    "population": 2125557
+  },
+  {
+    "townName": "Caxias do Sul",
+    "population": 1799271
+  },
+  {
+    "townName": "Banaran",
+    "population": 130820
+  },
+  {
+    "townName": "Maevatanana",
+    "population": 4047798
+  },
+  {
+    "townName": "Lille",
+    "population": 3054344
+  },
+  {
+    "townName": "Angoulême",
+    "population": 3685012
+  },
+  {
+    "townName": "Unecha",
+    "population": 4704018
+  },
+  {
+    "townName": "Goiás",
+    "population": 1210797
+  },
+  {
+    "townName": "Ubá",
+    "population": 2429629
+  },
+  {
+    "townName": "Taklale",
+    "population": 5814000
+  },
+  {
+    "townName": "Arpajon",
+    "population": 5153336
+  },
+  {
+    "townName": "Hayil",
+    "population": 4089280
+  },
+  {
+    "townName": "Domsjö",
+    "population": 630574
+  },
+  {
+    "townName": "Kikuchi",
+    "population": 4955626
+  },
+  {
+    "townName": "Casal de São João",
+    "population": 2630228
+  },
+  {
+    "townName": "Pasar",
+    "population": 5187733
+  },
+  {
+    "townName": "Prengtale",
+    "population": 2264021
+  },
+  {
+    "townName": "Sofia",
+    "population": 2442144
+  },
+  {
+    "townName": "El Corpus",
+    "population": 2558557
+  },
+  {
+    "townName": "Nicosia",
+    "population": 2565597
+  },
+  {
+    "townName": "Balangonan",
+    "population": 1261111
+  },
+  {
+    "townName": "Huangascar",
+    "population": 4777552
+  },
+  {
+    "townName": "Tamisan",
+    "population": 657384
+  },
+  {
+    "townName": "San Juan",
+    "population": 3407132
+  },
+  {
+    "townName": "Lyon",
+    "population": 1422098
+  },
+  {
+    "townName": "Oslo",
+    "population": 3633756
+  },
+  {
+    "townName": "Skopje",
+    "population": 2476587
+  },
+  {
+    "townName": "Valtimo",
+    "population": 2850405
+  },
+  {
+    "townName": "Dachun",
+    "population": 1198552
+  },
+  {
+    "townName": "Barayong",
+    "population": 2290636
+  },
+  {
+    "townName": "El Dividive",
+    "population": 4428616
+  },
+  {
+    "townName": "Horad Krychaw",
+    "population": 2718526
+  },
+  {
+    "townName": "Nongoma",
+    "population": 5710947
+  },
+  {
+    "townName": "Akkol’",
+    "population": 1565261
+  },
+  {
+    "townName": "Moche",
+    "population": 3222665
+  },
+  {
+    "townName": "Wenceslao Escalante",
+    "population": 2758438
+  },
+  {
+    "townName": "Adh Dhayd",
+    "population": 5167426
+  },
+  {
+    "townName": "Riofrío",
+    "population": 1699829
+  },
+  {
+    "townName": "Rolante",
+    "population": 3946163
+  },
+  {
+    "townName": "Masingbi",
+    "population": 5641202
+  },
+  {
+    "townName": "Arteche",
+    "population": 1580182
+  },
+  {
+    "townName": "Vale",
+    "population": 2374638
+  },
+  {
+    "townName": "Haljala",
+    "population": 3541649
+  },
+  {
+    "townName": "Martil",
+    "population": 3139354
+  },
+  {
+    "townName": "Gwanda",
+    "population": 2529147
+  },
+  {
+    "townName": "Kadukaung",
+    "population": 2887706
+  },
+  {
+    "townName": "Knurów",
+    "population": 4278113
+  },
+  {
+    "townName": "Huzhen",
+    "population": 3266781
+  },
+  {
+    "townName": "Liski",
+    "population": 1594477
+  },
+  {
+    "townName": "Leeuwarden",
+    "population": 3155568
+  },
+  {
+    "townName": "Meilisi",
+    "population": 399820
+  },
+  {
+    "townName": "Altuf’yevskiy",
+    "population": 4986737
+  },
+  {
+    "townName": "Krupka",
+    "population": 5322296
+  },
+  {
+    "townName": "Xiashuitou",
+    "population": 3993297
+  },
+  {
+    "townName": "Yong’an",
+    "population": 5343063
+  },
+  {
+    "townName": "Thessaloníki",
+    "population": 4169645
+  },
+  {
+    "townName": "Moate",
+    "population": 3082186
+  },
+  {
+    "townName": "Xinjiezi",
+    "population": 5268569
+  },
+  {
+    "townName": "Amsterdam",
+    "population": 2588786
+  },
+  {
+    "townName": "Bucharest",
+    "population": 2700424
+  },
+  {
+    "townName": "Riga",
+    "population": 2807718
+  },
+  {
+    "townName": "Ngujuran",
+    "population": 4130473
+  },
+  {
+    "townName": "Mlonggo",
+    "population": 3167152
+  },
+  {
+    "townName": "Sekirnik",
+    "population": 5700006
+  },
+  {
+    "townName": "El Rancho",
+    "population": 5744632
+  },
+  {
+    "townName": "Tunoshna",
+    "population": 1747663
+  },
+  {
+    "townName": "Úštěk",
+    "population": 2844371
+  },
+  {
+    "townName": "Vänersborg",
+    "population": 665446
+  },
+  {
+    "townName": "Apoya",
+    "population": 3157847
+  },
+  {
+    "townName": "Skien",
+    "population": 2866290
+  },
+  {
+    "townName": "Sadahayu",
+    "population": 5338681
+  },
+  {
+    "townName": "Zhenxing",
+    "population": 809057
+  },
+  {
+    "townName": "Tromsø",
+    "population": 3880710
+  },
+  {
+    "townName": "Ufa",
+    "population": 378409
+  },
+  {
+    "townName": "Mayskiy",
+    "population": 2208031
+  },
+  {
+    "townName": "Náfplio",
+    "population": 2329737
+  },
+  {
+    "townName": "Hakodate",
+    "population": 0
+  },
+  {
+    "townName": "Cambanugoy",
+    "population": 2677299
+  },
+  {
+    "townName": "Oele",
+    "population": 1997541
+  },
+  {
+    "townName": "Qal‘ah-ye Shāhī",
+    "population": 1337166
+  },
+  {
+    "townName": "Yantang",
+    "population": 4708192
+  },
+  {
+    "townName": "I",
+    "population": 5108486
+  },
+  {
+    "townName": "San Miguel",
+    "population": 5245806
+  },
+  {
+    "townName": "Bocos",
+    "population": 4447834
+  },
+  {
+    "townName": "Mlanggeng",
+    "population": 2814560
+  },
+  {
+    "townName": "Maturín",
+    "population": 5455221
+  },
+  {
+    "townName": "Xiabao",
+    "population": 148076
+  },
+  {
+    "townName": "Qārah",
+    "population": 4961534
+  },
+  {
+    "townName": "Quma",
+    "population": 134258
+  },
+  {
+    "townName": "Nymburk",
+    "population": 4744717
+  },
+  {
+    "townName": "Batang",
+    "population": 4101233
+  },
+  {
+    "townName": "Xijiao",
+    "population": 5454151
+  },
+  {
+    "townName": "Irbid",
+    "population": 1159668
+  },
+  {
+    "townName": "Vigo",
+    "population": 3235162
+  },
+  {
+    "townName": "Lanxi",
+    "population": 2582045
+  },
+  {
+    "townName": "Tirana",
+    "population": 3864400
+  },
+  {
+    "townName": "Črenšovci",
+    "population": 4790478
+  },
+  {
+    "townName": "Belém",
+    "population": 2569007
+  },
+  {
+    "townName": "Corpus Christi",
+    "population": 2601672
+  },
+  {
+    "townName": "Shancheng",
+    "population": 2315466
+  },
+  {
+    "townName": "Hakodate",
+    "population": 5108486
+  }
+]

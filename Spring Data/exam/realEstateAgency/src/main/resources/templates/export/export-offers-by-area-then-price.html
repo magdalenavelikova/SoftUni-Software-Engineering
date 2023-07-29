@@ -1,0 +1,22 @@
+<th:block th:fragment>
+    <div class="container justify-content-center mt-3">
+        <div class="jumbotron jumbotron-background d-flex justify-content-center">
+            <div class="container">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <h4 class="myBackgroundColor">Offers of three_rooms apartments </h4>
+                </div>
+                 <hr class="hr-background my-hr"/>
+                <form >
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <label for="export-category-textarea">ordered by area in descending, then by price ascending</label>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div class="col-md-8 d-flex justify-content-center">
+                            <textarea class="form-control" id="export-category-textarea" rows="10" th:text="${offersByAreaThenPrice}" readonly></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</th:block>
