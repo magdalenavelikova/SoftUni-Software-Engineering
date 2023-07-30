@@ -1,0 +1,21 @@
+insert into constellations (id, description, name)
+values  (1, 'A princess chained to a rock, saved by Perseus.', 'Andromeda'),
+        (2, 'A half-human, half-horse creature wielding a spear.', 'Centaurus'),
+        (3, 'Queen punished for her vanity by being forced to sit on a throne.', 'Cassiopeia'),
+        (4, 'King and husband of Cassiopeia.', 'Cepheus'),
+        (5, 'The eagle carrying Zeus''s thunderbolts.', 'Aquila'),
+        (6, 'A dragon guarding the North Pole.', 'Draco'),
+        (7, 'A multi-headed serpent-like creature.', 'Hydra'),
+        (8, 'The lyre of the mythical musician Orpheus.', 'Lyra'),
+        (9, 'A mighty hunter wielding a club and a bow.', 'Orion'),
+        (10, 'A winged horse.', 'Pegasus'),
+        (11, 'A hero who slayed Medusa and saved Andromeda.', 'Perseus'),
+        (12, 'The arrow used by Hercules.', 'Sagitta'),
+        (13, 'An archer aiming his bow at the heart of Scorpius.', 'Sagittarius'),
+        (14, 'A scorpion with a prominent stinger.', 'Scorpius'),
+        (15, 'The bull from Greek mythology.', 'Taurus'),
+        (16, 'The Great Bear, containing the Big Dipper asterism.', 'Ursa Major'),
+        (17, 'The Little Bear, containing the North Star.', 'Ursa Minor'),
+        (18, 'A maiden holding wheat or a sheaf of wheat.', 'Virgo'),
+        (19, 'A fox carrying a goose in its jaws.', 'Vulpecula');
+

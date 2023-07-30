@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<astronomers>
+    <astronomer>
+        <average_observation_hours>209054.25</average_observation_hours>
+        <birthday>1988-05-03</birthday>
+        <first_name>Avril</first_name>
+        <last_name>Sp</last_name>
+        <salary>108576.5</salary>
+        <observing_star_id>78</observing_star_id>
+    </astronomer>
+    <astronomer>
+        <average_observation_hours>209054.25</average_observation_hours>
+        <birthday>1988-05-03</birthday>
+        <first_name>Wesle Mara MaraVeg</first_name>
+        <last_name>Spencer von de Bergen ScwharzV</last_name>
+        <salary>108576.5</salary>
+        <observing_star_id>78</observing_star_id>
+    </astronomer>
+    <astronomer>
+        <average_observation_hours>34635.09</average_observation_hours>
+        <birthday>1995-08-14</birthday>
+        <first_name>Xorhe</first_name>
+        <last_name>S</last_name>
+        <salary>104422.67</salary>
+        <observing_star_id>87</observing_star_id>
+    </astronomer>
+    <astronomer>
+        <average_observation_hours>83542.93</average_observation_hours>
+        <birthday>1980-12-10</birthday>
+        <first_name>Spencer von de Bergen ScwharzXa</first_name>
+        <last_name>Spencer</last_name>
+        <salary>377608.72</salary>
+        <observing_star_id>91</observing_star_id>
+    </astronomer>
+</astronomers>
