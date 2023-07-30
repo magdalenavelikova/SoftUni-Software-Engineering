@@ -1,0 +1,730 @@
+[
+  {
+    "description": "Glowing sphere of celestial gas",
+    "lightYears": 25.34,
+    "name": "X",
+    "starType": "WHITE_DWARF",
+    "constellation": 18
+  },
+  {
+    "description": "Glowing sphere of celestial gas",
+    "lightYears": 25.34,
+    "name": "Sirius",
+    "starType": "WHITE_DWARF",
+    "constellation": 18
+  },
+  {
+    "description": "Giant star",
+    "lightYears": 3197.45,
+    "name": "Galacticus Caelum Octavus Magnificensis",
+    "starType": "NEUTRON_STAR",
+    "constellation": 12
+  },
+  {
+    "description": "Luminous beacon in the vast expanse",
+    "lightYears": 1378.32,
+    "name": "Spica",
+    "starType": "RED_GIANT",
+    "constellation": 9
+  },
+  {
+    "description": "Luminous beacon in the vast expanse",
+    "lightYears": 1378.32,
+    "name": "Spica",
+    "starType": "RED_GIANT",
+    "constellation": 9
+  },
+  {
+    "description": "Distant cosmic entity",
+    "lightYears": -63.24,
+    "name": "Its wrong",
+    "starType": "NEUTRON_STAR",
+    "constellation": 14
+  },
+  {
+    "description": "Distant cosmic entity",
+    "lightYears": 463.54,
+    "name": "Vega",
+    "starType": "NEUTRON_STAR",
+    "constellation": 14
+  },
+  {
+    "description": "Radiating celestial body",
+    "lightYears": 2956.12,
+    "name": "Alpha Centauri",
+    "starType": "WHITE_DWARF",
+    "constellation": 19
+  },
+  {
+    "description": "Shimmering point of light in the night sky",
+    "lightYears": 809.76,
+    "name": "Polaris",
+    "starType": "NEUTRON_STAR",
+    "constellation": 2
+  },
+  {
+    "description": "Massive celestial object",
+    "lightYears": 523.88,
+    "name": "Antares",
+    "starType": "RED_GIANT",
+    "constellation": 8
+  },
+  {
+    "description": "Cosmic furnace",
+    "lightYears": 1789.23,
+    "name": "Arcturus",
+    "starType": "NEUTRON_STAR",
+    "constellation": 9
+  },
+  {
+    "description": "Radiant celestial entity",
+    "lightYears": 7021.67,
+    "name": "Caph",
+    "starType": "RED_GIANT",
+    "constellation": 9
+  },
+  {
+    "description": "Shining star",
+    "lightYears": 4023.55,
+    "name": "Rigel",
+    "starType": "WHITE_DWARF",
+    "constellation": 6
+  },
+  {
+    "description": "Fiery orb of gas",
+    "lightYears": 98.76,
+    "name": "Altair",
+    "starType": "WHITE_DWARF",
+    "constellation": 9
+  },
+  {
+    "description": "Dazzling cosmic body",
+    "lightYears": 654.99,
+    "name": "Aldebaran",
+    "starType": "NEUTRON_STAR",
+    "constellation": 5
+  },
+  {
+    "description": "Lustrous point of light",
+    "lightYears": 431.01,
+    "name": "Deneb",
+    "starType": "RED_GIANT",
+    "constellation": 1
+  },
+  {
+    "description": "Celestial source of light",
+    "lightYears": 656.88,
+    "name": "Regulus",
+    "starType": "NEUTRON_STAR",
+    "constellation": 13
+  },
+  {
+    "description": "Glowing sphere of hot plasma",
+    "lightYears": 243.47,
+    "name": "Betelgeuse",
+    "starType": "RED_GIANT",
+    "constellation": 18
+  },
+  {
+    "description": "Shimmering stellar object",
+    "lightYears": 586.12,
+    "name": "Castor",
+    "starType": "NEUTRON_STAR",
+    "constellation": 18
+  },
+  {
+    "description": "Luminous cosmic beacon",
+    "lightYears": 7614.09,
+    "name": "Pollux",
+    "starType": "WHITE_DWARF",
+    "constellation": 1
+  },
+  {
+    "description": "Distant sun",
+    "lightYears": 1025.11,
+    "name": "Fomalhaut",
+    "starType": "RED_GIANT",
+    "constellation": 13
+  },
+  {
+    "description": "Giant star",
+    "lightYears": 3197.45,
+    "name": "Bellatrix",
+    "starType": "NEUTRON_STAR",
+    "constellation": 12
+  },
+  {
+    "description": "Gleaming point of light",
+    "lightYears": 2815.21,
+    "name": "Alnitak",
+    "starType": "WHITE_DWARF",
+    "constellation": 3
+  },
+  {
+    "description": "Blazing cosmic entity",
+    "lightYears": 562.89,
+    "name": "Alnilam",
+    "starType": "RED_GIANT",
+    "constellation": 6
+  },
+  {
+    "description": "Celestial furnace",
+    "lightYears": 381.59,
+    "name": "Mintaka",
+    "starType": "WHITE_DWARF",
+    "constellation": 8
+  },
+  {
+    "description": "Radiant stellar body",
+    "lightYears": 1204.78,
+    "name": "Mirach",
+    "starType": "NEUTRON_STAR",
+    "constellation": 8
+  },
+  {
+    "description": "Shining beacon of the cosmos",
+    "lightYears": 692.45,
+    "name": "Algol",
+    "starType": "RED_GIANT",
+    "constellation": 15
+  },
+  {
+    "description": "Dazzling cosmic entity",
+    "lightYears": 437.22,
+    "name": "Baten",
+    "starType": "NEUTRON_STAR",
+    "constellation": 12
+  },
+  {
+    "description": "Glowing celestial object",
+    "lightYears": 139.92,
+    "name": "Yara",
+    "starType": "RED_GIANT",
+    "constellation": 3
+  },
+  {
+    "description": "Celestial source of light and energy",
+    "lightYears": 196.43,
+    "name": "Alhena",
+    "starType": "WHITE_DWARF",
+    "constellation": 5
+  },
+  {
+    "description": "Cosmic spectacle of luminosity",
+    "lightYears": 39.75,
+    "name": "Schedar",
+    "starType": "NEUTRON_STAR",
+    "constellation": 10
+  },
+  {
+    "description": "Luminous star",
+    "lightYears": 9000,
+    "name": "Gacrux",
+    "starType": "WHITE_DWARF",
+    "constellation": 6
+  },
+  {
+    "description": "Radiant point of light",
+    "lightYears": 1652.34,
+    "name": "Achernar",
+    "starType": "RED_GIANT",
+    "constellation": 19
+  },
+  {
+    "description": "Blazing celestial sphere",
+    "lightYears": 818.79,
+    "name": "Hamal",
+    "starType": "WHITE_DWARF",
+    "constellation": 16
+  },
+  {
+    "description": "Celestial object",
+    "lightYears": 1623.55,
+    "name": "Achird",
+    "starType": "NEUTRON_STAR",
+    "constellation": 7
+  },
+  {
+    "description": "Glowing cosmic body",
+    "lightYears": 599.23,
+    "name": "Menkar",
+    "starType": "RED_GIANT",
+    "constellation": 11
+  },
+  {
+    "description": "Shimmering celestial beacon",
+    "lightYears": 2624.47,
+    "name": "Diphda",
+    "starType": "NEUTRON_STAR",
+    "constellation": 19
+  },
+  {
+    "description": "Dazzling star",
+    "lightYears": 1745.88,
+    "name": "Alcyone",
+    "starType": "RED_GIANT",
+    "constellation": 9
+  },
+  {
+    "description": "Lustrous celestial entity",
+    "lightYears": 3452.76,
+    "name": "Aludra",
+    "starType": "WHITE_DWARF",
+    "constellation": 19
+  },
+  {
+    "description": "Celestial source of radiance",
+    "lightYears": 1689.67,
+    "name": "Alnair",
+    "starType": "NEUTRON_STAR",
+    "constellation": 6
+  },
+  {
+    "description": "Giant orb of cosmic fire",
+    "lightYears": 155.21,
+    "name": "Adhara",
+    "starType": "NEUTRON_STAR",
+    "constellation": 19
+  },
+  {
+    "description": "Radiant cosmic object",
+    "lightYears": 744.89,
+    "name": "Algieba",
+    "starType": "WHITE_DWARF",
+    "constellation": 12
+  },
+  {
+    "description": "Shining celestial body",
+    "lightYears": 557.59,
+    "name": "Alphard",
+    "starType": "RED_GIANT",
+    "constellation": 16
+  },
+  {
+    "description": "Fiery cosmic beacon",
+    "lightYears": 1382.12,
+    "name": "Alcor",
+    "starType": "RED_GIANT",
+    "constellation": 17
+  },
+  {
+    "description": "Luminous point of light",
+    "lightYears": 765.45,
+    "name": "Mira",
+    "starType": "NEUTRON_STAR",
+    "constellation": 4
+  },
+  {
+    "description": "Cosmic furnace",
+    "lightYears": 645.56,
+    "name": "Alkes",
+    "starType": "WHITE_DWARF",
+    "constellation": 10
+  },
+  {
+    "description": "Glowing celestial sphere",
+    "lightYears": 298.43,
+    "name": "Alhakim",
+    "starType": "NEUTRON_STAR",
+    "constellation": 8
+  },
+  {
+    "description": "Shimmering cosmic entity",
+    "lightYears": 195.75,
+    "name": "Almach",
+    "starType": "WHITE_DWARF",
+    "constellation": 15
+  },
+  {
+    "description": "Dazzling stellar beacon",
+    "lightYears": 4802.65,
+    "name": "Albireo",
+    "starType": "NEUTRON_STAR",
+    "constellation": 19
+  },
+  {
+    "description": "Lustrous celestial body",
+    "lightYears": 1943.56,
+    "name": "Alpherg",
+    "starType": "RED_GIANT",
+    "constellation": 1
+  },
+  {
+    "description": "Celestial source of light and energy",
+    "lightYears": 721.34,
+    "name": "Alphatrianguli",
+    "starType": "RED_GIANT",
+    "constellation": 4
+  },
+  {
+    "description": "Blazing star",
+    "lightYears": 245.45,
+    "name": "Alwaid",
+    "starType": "NEUTRON_STAR",
+    "constellation": 5
+  },
+  {
+    "description": "Celestial furnace",
+    "lightYears": 882.99,
+    "name": "Alwarid",
+    "starType": "WHITE_DWARF",
+    "constellation": 13
+  },
+  {
+    "description": "Radiant cosmic body",
+    "lightYears": 569.01,
+    "name": "Alzirr",
+    "starType": "NEUTRON_STAR",
+    "constellation": 18
+  },
+  {
+    "description": "Shining beacon in the night sky",
+    "lightYears": 282.88,
+    "name": "Proxima Centauri",
+    "starType": "RED_GIANT",
+    "constellation": 19
+  },
+  {
+    "description": "Glowing celestial object",
+    "lightYears": 413.34,
+    "name": "Celaeno",
+    "starType": "RED_GIANT",
+    "constellation": 2
+  },
+  {
+    "description": "Celestial entity",
+    "lightYears": 651.21,
+    "name": "Electra",
+    "starType": "WHITE_DWARF",
+    "constellation": 7
+  },
+  {
+    "description": "Radiant point of light",
+    "lightYears": 4715.78,
+    "name": "Eltanin",
+    "starType": "WHITE_DWARF",
+    "constellation": 13
+  },
+  {
+    "description": "Fiery cosmic beacon",
+    "lightYears": 2576.12,
+    "name": "Errai",
+    "starType": "NEUTRON_STAR",
+    "constellation": 16
+  },
+  {
+    "description": "Luminous celestial body",
+    "lightYears": 736.76,
+    "name": "Etamin",
+    "starType": "RED_GIANT",
+    "constellation": 3
+  },
+  {
+    "description": "Shimmering star",
+    "lightYears": 507.88,
+    "name": "Elnath",
+    "starType": "NEUTRON_STAR",
+    "constellation": 17
+  },
+  {
+    "description": "Cosmic furnace",
+    "lightYears": 270.23,
+    "name": "Epsilon Eridani",
+    "starType": "WHITE_DWARF",
+    "constellation": 12
+  },
+  {
+    "description": "Glowing stellar entity",
+    "lightYears": 600.12,
+    "name": "Eta Cassiopeiae",
+    "starType": "RED_GIANT",
+    "constellation": 10
+  },
+  {
+    "description": "Dazzling cosmic sphere",
+    "lightYears": 1681.47,
+    "name": "Gamma Draconis",
+    "starType": "RED_GIANT",
+    "constellation": 12
+  },
+  {
+    "description": "Lustrous celestial object",
+    "lightYears": 934.12,
+    "name": "Gienah",
+    "starType": "NEUTRON_STAR",
+    "constellation": 19
+  },
+  {
+    "description": "Celestial source of light and energy",
+    "lightYears": 2755.89,
+    "name": "Graffias",
+    "starType": "NEUTRON_STAR",
+    "constellation": 19
+  },
+  {
+    "description": "Blazing beacon in the cosmos",
+    "lightYears": 567.59,
+    "name": "Hadar",
+    "starType": "RED_GIANT",
+    "constellation": 13
+  },
+  {
+    "description": "Radiant point of light",
+    "lightYears": 1362.12,
+    "name": "Homam",
+    "starType": "WHITE_DWARF",
+    "constellation": 15
+  },
+  {
+    "description": "Shining celestial beacon",
+    "lightYears": 775.45,
+    "name": "Iota Draconis",
+    "starType": "NEUTRON_STAR",
+    "constellation": 16
+  },
+  {
+    "description": "Glowing cosmic body",
+    "lightYears": 635.56,
+    "name": "Izar",
+    "starType": "WHITE_DWARF",
+    "constellation": 2
+  },
+  {
+    "description": "Heavenly body",
+    "lightYears": 398.43,
+    "name": "Kaus Australis",
+    "starType": "RED_GIANT",
+    "constellation": 11
+  },
+  {
+    "description": "Luminous star",
+    "lightYears": 105.75,
+    "name": "Kaus Borealis",
+    "starType": "WHITE_DWARF",
+    "constellation": 5
+  },
+  {
+    "description": "Shimmering celestial object",
+    "lightYears": 752.65,
+    "name": "Kochab",
+    "starType": "NEUTRON_STAR",
+    "constellation": 17
+  },
+  {
+    "description": "Heavenly body illuminating the darkness",
+    "lightYears": 1843.56,
+    "name": "Lesath",
+    "starType": "RED_GIANT",
+    "constellation": 3
+  },
+  {
+    "description": "Lustrous celestial beacon",
+    "lightYears": 291.34,
+    "name": "Marfik",
+    "starType": "WHITE_DWARF",
+    "constellation": 14
+  },
+  {
+    "description": "Celestial source of light and energy",
+    "lightYears": 422.45,
+    "name": "Markab",
+    "starType": "NEUTRON_STAR",
+    "constellation": 12
+  },
+  {
+    "description": "Blazing star",
+    "lightYears": 338.99,
+    "name": "Mimosa",
+    "starType": "RED_GIANT",
+    "constellation": 9
+  },
+  {
+    "description": "Celestial furnace",
+    "lightYears": 539.01,
+    "name": "Mirphak",
+    "starType": "RED_GIANT",
+    "constellation": 19
+  },
+  {
+    "description": "Radiant cosmic body",
+    "lightYears": 192.88,
+    "name": "Mizar",
+    "starType": "NEUTRON_STAR",
+    "constellation": 16
+  },
+  {
+    "description": "Shining beacon of the cosmos",
+    "lightYears": 326.34,
+    "name": "Mu Cephei",
+    "starType": "WHITE_DWARF",
+    "constellation": 8
+  },
+  {
+    "description": "Glowing celestial sphere",
+    "lightYears": 1051.21,
+    "name": "Nashira",
+    "starType": "RED_GIANT",
+    "constellation": 4
+  },
+  {
+    "description": "Heavenly body radiating luminosity",
+    "lightYears": 3715.78,
+    "name": "Navi",
+    "starType": "NEUTRON_STAR",
+    "constellation": 7
+  },
+  {
+    "description": "Luminous point of light",
+    "lightYears": 976.12,
+    "name": "Peacock",
+    "starType": "WHITE_DWARF",
+    "constellation": 1
+  },
+  {
+    "description": "Cosmic furnace",
+    "lightYears": 646.76,
+    "name": "Phact",
+    "starType": "NEUTRON_STAR",
+    "constellation": 8
+  },
+  {
+    "description": "Glowing celestial entity",
+    "lightYears": 802.88,
+    "name": "Pi Hydrae",
+    "starType": "RED_GIANT",
+    "constellation": 3
+  },
+  {
+    "description": "Shimmering star",
+    "lightYears": 523.23,
+    "name": "Polis",
+    "starType": "RED_GIANT",
+    "constellation": 6
+  },
+  {
+    "description": "Dazzling cosmic beacon",
+    "lightYears": 270.12,
+    "name": "Porrima",
+    "starType": "WHITE_DWARF",
+    "constellation": 17
+  },
+  {
+    "description": "Lustrous celestial body",
+    "lightYears": 156.56,
+    "name": "Phecda",
+    "starType": "NEUTRON_STAR",
+    "constellation": 3
+  },
+  {
+    "description": "Celestial source of light and energy",
+    "lightYears": 196.43,
+    "name": "Rasalgethi",
+    "starType": "NEUTRON_STAR",
+    "constellation": 12
+  },
+  {
+    "description": "Blazing cosmic sphere",
+    "lightYears": 130.75,
+    "name": "Rasalhague",
+    "starType": "WHITE_DWARF",
+    "constellation": 15
+  },
+  {
+    "description": "Radiant star",
+    "lightYears": 4752.65,
+    "name": "Rastaban",
+    "starType": "RED_GIANT",
+    "constellation": 4
+  },
+  {
+    "description": "Shining celestial object",
+    "lightYears": 1681.47,
+    "name": "Rigil Kentaurus",
+    "starType": "NEUTRON_STAR",
+    "constellation": 16
+  },
+  {
+    "description": "Glowing cosmic beacon",
+    "lightYears": 934.12,
+    "name": "Ruchbah",
+    "starType": "WHITE_DWARF",
+    "constellation": 15
+  },
+  {
+    "description": "Heavenly body",
+    "lightYears": 2755.89,
+    "name": "Sadalbari",
+    "starType": "RED_GIANT",
+    "constellation": 12
+  },
+  {
+    "description": "Luminous point of light",
+    "lightYears": 567.59,
+    "name": "Sadalmelik",
+    "starType": "NEUTRON_STAR",
+    "constellation": 14
+  },
+  {
+    "description": "Cosmic furnace",
+    "lightYears": 1362.12,
+    "name": "Sadalsuud",
+    "starType": "NEUTRON_STAR",
+    "constellation": 15
+  },
+  {
+    "description": "Radiant celestial entity",
+    "lightYears": 775.45,
+    "name": "Saiph",
+    "starType": "RED_GIANT",
+    "constellation": 6
+  },
+  {
+    "description": "Shimmering star",
+    "lightYears": 635.56,
+    "name": "Sargas",
+    "starType": "WHITE_DWARF",
+    "constellation": 14
+  },
+  {
+    "description": "Dazzling cosmic body",
+    "lightYears": 398.43,
+    "name": "Scheat",
+    "starType": "RED_GIANT",
+    "constellation": 11
+  },
+  {
+    "description": "Lustrous celestial beacon",
+    "lightYears": 105.75,
+    "name": "Sheratan",
+    "starType": "NEUTRON_STAR",
+    "constellation": 19
+  },
+  {
+    "description": "Celestial source of light and energy",
+    "lightYears": 752.65,
+    "name": "Shaula",
+    "starType": "WHITE_DWARF",
+    "constellation": 1
+  },
+  {
+    "description": "Blazing star",
+    "lightYears": 1843.56,
+    "name": "Situla",
+    "starType": "NEUTRON_STAR",
+    "constellation": 10
+  },
+  {
+    "description": "Glowing celestial body",
+    "lightYears": 291.34,
+    "name": "Talitha",
+    "starType": "RED_GIANT",
+    "constellation": 17
+  },
+  {
+    "description": "Radiant point of light",
+    "lightYears": 422.45,
+    "name": "Thuban",
+    "starType": "NEUTRON_STAR",
+    "constellation": 13
+  }
+]

@@ -1,0 +1,42 @@
+</body>
+</html>
+<th:block th:fragment xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="container justify-content-center mt-3">
+        <div class="jumbotron index-jumbo d-flex justify-content-center">
+            <div class="container">
+                <div class="col-md-12 d-flex border-left border-bottom w-50 ">
+                    <h1 class="myBackgroundColor ">Find a Star </h1>
+                </div>
+                <div class="col-md-12 d-flex mt-3">
+                    <h4>
+                        &nbsp;&nbsp;&nbsp;Immerse yourself in the captivating world of stars, constellations, and the brilliant minds
+                        that have shaped our understanding of the cosmos. Expand your astronomical knowledge, discover
+                        hidden connections between celestial bodies, and embark on a journey through space and time.
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;You have the opportunity to delve into an extensive database filled with information about
+                        various stars and their celestial groupings. Discover the names, characteristics, and
+                        astronomical properties of countless stars, and learn how they come together to form
+                        awe-inspiring constellations.
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;To enhance the user experience, the "Find a Star" team is urgently seeking to develop an
+                        application that consolidates comprehensive information on stars and constellations. This application
+                        should efficiently retrieve and present all relevant data on celestial objects, allowing users to
+                        effortlessly identify the best star locations for specific events or occasions with just a single click.
+                        <br/>
+                    </h4>
+                </div>
+                <div class="col-md-12 text-center">
+                    <th:block th:if="${areImported == true}">
+                        <p><a class="btn btn-primary export-button text-white" th:href="@{/export/red-giant-stars}">Export stars</a></p>
+                    </th:block>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <th:block th:if="${areImported == false}">
+                            <p class="bg-dark rounded p-2">Тo see the next task, first import all JSON and XML files.</p>
+                        </th:block>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</th:block>

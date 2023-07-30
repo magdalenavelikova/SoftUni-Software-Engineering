@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<astronomers>
+    <astronomer>
+        <average_observation_hours>22836.19</average_observation_hours>
+        <birthday>1980-01-16</birthday>
+        <first_name>Helena</first_name>
+        <last_name>Bishop</last_name>
+        <salary>294111.44</salary>
+        <observing_star_id>80</observing_star_id>
+    </astronomer>
+    <astronomer>
+        <average_observation_hours>31049.67</average_observation_hours>
+        <birthday>1966-05-05</birthday>
+        <first_name>Dorian</first_name>
+        <last_name>Sawyer</last_name>
+        <salary>161438.11</salary>
+        <observing_star_id>101</observing_star_id>
+    </astronomer>
+</astronomers>

@@ -1,0 +1,31 @@
+<th:block th:fragment>
+    <nav class="navbar bg-transparent navbar-expand-lg navbar-background">
+        <a class="navbar-brand h4" th:href="@{/}">
+            <img  src="/pics/home.png" alt="Home">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end row" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active col-md-6 " style="white-space: nowrap;">
+                    <a class="nav-link h5" th:href="@{/import/json}">
+                        <button type="button" class="btn btn-primary btn-lg btn3d"><span
+                                class="glyphicon glyphicon-ok"></span>Import JSON
+                        </button>
+                    </a>
+                </li>
+                <li class="nav-item active col-md-6" style="white-space: nowrap;">
+                    <a class="nav-link h5" th:href="@{/import/xml}">
+                        <button type="button" class="btn btn-primary btn-lg btn3d"><span
+                                class="glyphicon glyphicon-ok"></span>Import XML
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</th:block>
