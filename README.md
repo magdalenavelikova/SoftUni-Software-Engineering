@@ -8,6 +8,6 @@
 [![oop](https://user-images.githubusercontent.com/113022603/231089653-97f17b4b-5ae5-4e2f-b801-b77cd4ea3159.jpg)](https://softuni.bg/certificates/details/168983/dfc217f7)
 [![HTML CSS](https://user-images.githubusercontent.com/113022603/225333325-4a6ff10c-c3af-448a-bbc6-d38edaffee27.jpg)](https://softuni.bg/certificates/details/162880/a35436ca)
 [![JS Front-End](https://user-images.githubusercontent.com/113022603/230883365-65cb0e67-4680-429a-847f-a4ce07eccaa5.png)](https://softuni.bg/certificates/details/168321/28a3310d)
-[![MySQL](https://user-images.githubusercontent.com/113022603/188855109-f3fd8228-d74a-4b20-8a22-c5758a5177f7.png)](https://softuni.bg/certificates/details/172101/0c7490b5)
-
+[![MySQL](mysql.png)](https://softuni.bg/certificates/details/172101/0c7490b5)
+[![Spring Data](spring%20data.png)](https://softuni.bg/certificates/details/180503/5afb6f8b)
 
