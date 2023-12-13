@@ -11,3 +11,4 @@
 [![MySQL](https://user-images.githubusercontent.com/113022603/188855109-f3fd8228-d74a-4b20-8a22-c5758a5177f7.png)](https://softuni.bg/certificates/details/172101/0c7490b5)
 [![Spring Data](https://user-images.githubusercontent.com/113022603/188855109-f3fd8228-d74a-4b20-8a22-c5758a5177f7.png)](https://softuni.bg/certificates/details/180503/5afb6f8b)
 [![Spring Fundamentals](https://user-images.githubusercontent.com/113022603/188855109-f3fd8228-d74a-4b20-8a22-c5758a5177f7.png)](https://softuni.bg/certificates/details/191493/c7877ded)
+[![Spring Advanced](https://user-images.githubusercontent.com/113022603/188855109-f3fd8228-d74a-4b20-8a22-c5758a5177f7.png)](https://softuni.bg/certificates/details/197659/28c7497f)
