@@ -7,15 +7,15 @@ import java.util.Scanner;
 public class SumOfCoins {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        String[] elements = in.nextLine().substring(7).split(", ");
+        String[] elements = scanner.nextLine().substring(7).split(", ");
         int[] coins = new int[elements.length];
         for (int i = 0; i < coins.length; i++) {
             coins[i] = Integer.parseInt(elements[i]);
         }
 
-        int targetSum = Integer.parseInt(in.nextLine().substring(5));
+        int targetSum = Integer.parseInt(scanner.nextLine().substring(5));
         Map<Integer, Integer> usedCoins = new LinkedHashMap<>();
         try {
             usedCoins = chooseCoins(coins, targetSum);
