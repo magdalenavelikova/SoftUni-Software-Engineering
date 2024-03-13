@@ -34,45 +34,18 @@ public class TextJustification {
                 for (int i = 0; i < maxWidth - num_of_letters; i++) {
                     current.set(i % (current.size() - 1 > 0 ? current.size() - 1 : 1), current.get(i % (current.size() - 1 > 0 ? current.size() - 1 : 1)) + " ");
                 }
+                 for (int i = 0; i < maxWidth - num_of_letters; i++) {
+                     int index=-1;
+                     if(current.size-1 > 0){
+                         index = i% (current.size()-1);
+                     }else{
+                         index = i % 1;//0
+                     }
 
-//                int maxLength = Integer.MIN_VALUE;
-//                int minLength = Integer.MAX_VALUE;
-//
-//                int minLengthIndex = -1;
-//                //    cur.set(i % (cur.size() - 1 > 0 ? cur.size() - 1 : 1), cur.get(i % (cur.size() - 1 > 0 ? cur.size() - 1 : 1)) + " ");
-//                for (int j = 0; j < current.size() - 1; j++) {
-//                    if (current.get(j).length() > maxLength) {
-//                        maxLength = current.get(j).length();
-//                    }
-//                    if (current.get(j).length() < minLength) {
-//                        minLength = current.get(j).length();
-//                        minLengthIndex = j;
-//                    }
-//                    current.set(j, current.get(j) + " ");
-//                    num_of_letters++;
-//                }
-//                while (maxLength - minLength < (maxWidth - num_of_letters) && maxLength-minLength>0) {
-//                    current.set(minLengthIndex, current.get(minLengthIndex) + "_");
-//                    minLength++;
-//                    num_of_letters++;
-//                }
-////                int spaces = maxWidth - num_of_letters;
-////                for (int j = 0; j < current.size() - 1; j++) {
-////                    if (current.get(j).length() < maxLength && maxLength - current.get(j).length() < spaces) {
-////                        current.set(j, current.get(j) + " ");
-////                        num_of_letters++;
-////                    }
-////                }
-//
-//                for (int i = 0; i < maxWidth - num_of_letters; i++) {
-//                    //    cur.set(i % (cur.size() - 1 > 0 ? cur.size() - 1 : 1), cur.get(i % (cur.size() - 1 > 0 ? cur.size() - 1 : 1)) + " ");
-//                    for (int j = 0; j < current.size() - 1; j++) {
-//
-//                            current.set(j, current.get(j) + " ");
-//                            num_of_letters++;
-//
-//                    }
-//                }
+                     current.set(i % (current.size() - 1 > 0 ? current.size() - 1 : 1), current.get(i % (current.size() - 1 > 0 ? current.size() - 1 : 1)) + " ");
+                }
+
+//                
 
                 StringBuilder sb = new StringBuilder();
                 current.forEach(sb::append);
